@@ -1,13 +1,15 @@
 # CampusHub 新对话开发交接
 
-更新日期：2026-10-24（北京时间）。工作目录：`E:\Project\CampusHub`。本次已获首次 GitHub v1.0.0 正式交付的一次性授权，覆盖 commit、Public 仓库创建、main 推送及版本标签。历史 G01/G02 尚未授权的描述保留为当时记录，以本节最新授权为准。
+更新日期：2026-10-24（北京时间）。工作目录：`E:\Project\CampusHub`。首次 GitHub v1.0.0 正式交付已完成：公开仓库、main、首次提交及版本标签均已实测确认。历史 G01/G02 尚未授权的描述保留为当时记录，以本节最新授权为准。
 
-## GitHub v1.0.0 正式交付
+## GitHub v1.0.0 正式交付（PASS，已完成并停止）
 
-- 目标：个人账号 Acecc228，公开仓库 CampusHub，主分支 main，标签 v1.0.0。
+- 仓库：https://github.com/Acecc228/CampusHub，Public，默认分支 main 已推送。首次 root commit `685066adb0bdaab425717207c93d5a96d709bb5e`，599 文件，提交信息 `feat: release CampusHub MVP v1.0.0`。annotated tag v1.0.0 已推送且指向该提交。
 - 用户已明确选择 MIT，版权 2026 Acecc228；Git 作者姓名 Acecc228，官方 noreply 邮箱 185771718+Acecc228@users.noreply.github.com，仅写仓库级配置。
 - G02 的 598 文件清单作为基线，仅补许可证、README、计划、交接及发布证据。业务代码、数据库和既有验收结论不变。
-- 过程及最终状态见 [发布记录](verification/github-v1.0.0-release.md)。认证完成后直接继续已授权操作，不重复审批或预审。
+- 远程完整树 599 文件与发布提交逐路径一致；三端源码、构建入口与锁文件齐全，排除文件未推送。实际 GitHub 页面 README 渲染和 5 图加载 PASS；GitHub API 识别 MIT。详见 [发布记录](verification/github-v1.0.0-release.md)。
+- 远程核验后以单独文档提交归档 PLAN、本交接与发布记录，再推送 main；v1.0.0 保持指向首次 MVP 提交。主 Agent 1 个，子 Agent 0 个；无新增发布阻断，C-04 既有风险继续保留。
+- 首次 staged 格式检查发现旧验收文本尾随空格/文件尾空行，未改写历史证据；本次修改的发布文档定向检查 PASS。不将历史格式问题伪报为全部差异检查通过。
 - 完成本次交付后立即停止；不部署后端、不正式发布微信小程序、不进入 M2.0。不重跑 MySQL 安装、初始化、baseline 或完整业务测试。
 
 ## M1.5-G02 历史结果（当时尚未授权发布）

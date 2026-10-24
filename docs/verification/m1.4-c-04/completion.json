@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "scope": "Local MVP on prepared Windows environment",
+  "at": "2026-10-24T08:02:33.916Z",
+  "backend": {
+    "tests": 70,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "database": "Real MySQL127.0.0.1:3307/campushub_test",
+    "flyway": "Both databases validate PASS",
+    "package": "PASS"
+  },
+  "vue": {
+    "unit": 12,
+    "browserE2E": 8,
+    "ciTypesLintBuild": "PASS"
+  },
+  "miniprogram": {
+    "unit": 23,
+    "realHttpClient": 18,
+    "officialWxml": 8,
+    "officialWxss": 10,
+    "realSimulatorFlow": "PASS",
+    "widths": [
+      360,
+      390,
+      430
+    ]
+  },
+  "crossClient": {
+    "status": "PASS",
+    "activityId": 634,
+    "registrationId": 292
+  },
+  "session": {
+    "idleSeconds": 1860,
+    "requestsDuringIdle": 0,
+    "afterIdleHttp": 401,
+    "relogin": "PASS",
+    "listRetry": "Independent real two-tab logout/relogin test PASS"
+  },
+  "database": {
+    "countMismatch": 0,
+    "overCapacity": 0,
+    "duplicate": 0,
+    "orphan": 0
+  },
+  "audit": {
+    "vueAll": 0,
+    "vueRuntime": 0,
+    "miniRuntime": 0,
+    "miniDevModerate": 5
+  },
+  "notRun": [
+    "Native WeChat long timeout or postcommit connection loss",
+    "Extra double-tap cancellation confirmation interrupted",
+    "Physical device and formal WeChat identity/release",
+    "Firefox/Safari, screen reader, clean-machine setup"
+  ],
+  "productBlockers": [],
+  "businessSourceChanges": false,
+  "agents": 2,
+  "stageStopped": true
+}

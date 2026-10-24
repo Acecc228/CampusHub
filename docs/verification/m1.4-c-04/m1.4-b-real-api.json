@@ -1,0 +1,88 @@
+{
+  "adapter": "Node fetch using production client; not wx.request runtime",
+  "database": "campushub_test",
+  "prefix": "M14B-1792810432218",
+  "activityIds": [
+    635,
+    636,
+    637,
+    638,
+    639,
+    640,
+    641
+  ],
+  "results": [
+    {
+      "name": "unauthenticated list and own registrations denied",
+      "status": "PASS"
+    },
+    {
+      "name": "student login and session survives consecutive requests",
+      "status": "PASS"
+    },
+    {
+      "name": "manager and isolated second student login",
+      "status": "PASS"
+    },
+    {
+      "name": "real categories",
+      "status": "PASS"
+    },
+    {
+      "name": "create isolated real test activities",
+      "status": "PASS"
+    },
+    {
+      "name": "home latest list, keyword, category and paging",
+      "status": "PASS"
+    },
+    {
+      "name": "detail and initial own registration",
+      "status": "PASS"
+    },
+    {
+      "name": "CSRF required even with valid session",
+      "status": "PASS"
+    },
+    {
+      "name": "normal and repeated registration stays one row",
+      "status": "PASS"
+    },
+    {
+      "name": "full capacity rejects second student",
+      "status": "PASS"
+    },
+    {
+      "name": "own registrations cannot impersonate another user",
+      "status": "PASS"
+    },
+    {
+      "name": "cancel and register again reuse history with newer version",
+      "status": "PASS"
+    },
+    {
+      "name": "stale cancel conflicts and does not cancel new registration",
+      "status": "PASS"
+    },
+    {
+      "name": "draft hidden and student management access denied",
+      "status": "PASS"
+    },
+    {
+      "name": "unpublished detail hidden; own record and cancellation retained",
+      "status": "PASS"
+    },
+    {
+      "name": "deadline enforced by server clock",
+      "status": "PASS"
+    },
+    {
+      "name": "lost response resolved by actual server state",
+      "status": "PASS"
+    },
+    {
+      "name": "logout destroys session and replay fails",
+      "status": "PASS"
+    }
+  ]
+}

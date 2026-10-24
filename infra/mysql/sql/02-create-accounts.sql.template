@@ -1,0 +1,5 @@
+-- Render only in memory. Each password is an independent cryptographic secret.
+CREATE USER 'campushub_app'@'127.0.0.1' IDENTIFIED BY '{{APP_PASSWORD}}';
+CREATE USER 'campushub_migrator'@'127.0.0.1' IDENTIFIED BY '{{MIGRATOR_PASSWORD}}';
+CREATE USER 'campushub_test_app'@'127.0.0.1' IDENTIFIED BY '{{TEST_APP_PASSWORD}}';
+CREATE USER 'campushub_test_migrator'@'127.0.0.1' IDENTIFIED BY '{{TEST_MIGRATOR_PASSWORD}}';

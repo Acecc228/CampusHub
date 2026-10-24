@@ -1,0 +1,8 @@
+{
+  "Status": "PASS",
+  "At": "2026-10-23T18:09:20.0954151Z",
+  "Host": "127.0.0.1:3307",
+  "Database": "campushub_test",
+  "Sql": "SELECT a.id,a.status,a.version,a.capacity,a.registered_count,r.id,r.user_id,r.status,r.version FROM activity a LEFT JOIN activity_registration r ON r.activity_id=a.id WHERE a.id=634 AND a.title LIKE 'M14C04-%';",
+  "Rows": "634\tPUBLISHED\t2\t2\t0\t292\t1\tCANCELLED\t2"
+}

@@ -1,0 +1,24 @@
+{
+  "Suite": "Bootstrap guards (non-sensitive fixtures; no database)",
+  "Passed": 3,
+  "Failed": 1,
+  "Results": [
+    {
+      "Check": "Read bootstrap record while server holds a write handle",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Reject missing bootstrap record",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Reject ambiguous bootstrap records",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Early environment failure returns sanitized JSON before database access",
+      "Status": "FAIL",
+      "ErrorType": "RuntimeException"
+    }
+  ]
+}

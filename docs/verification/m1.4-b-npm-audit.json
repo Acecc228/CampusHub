@@ -1,0 +1,136 @@
+{
+  "auditReportVersion": 2,
+  "vulnerabilities": {
+    "@jimp/core": {
+      "name": "@jimp/core",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "phin"
+      ],
+      "effects": [
+        "@jimp/custom"
+      ],
+      "range": "<=0.21.4--canary.1163.d07ed6254d130e2995d24101e93427ec091016e6.0",
+      "nodes": [
+        "node_modules/@jimp/core"
+      ],
+      "fixAvailable": {
+        "name": "miniprogram-automator",
+        "version": "0.5.1",
+        "isSemVerMajor": true
+      }
+    },
+    "@jimp/custom": {
+      "name": "@jimp/custom",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@jimp/core"
+      ],
+      "effects": [
+        "jimp"
+      ],
+      "range": "<=0.21.4--canary.1163.d07ed6254d130e2995d24101e93427ec091016e6.0",
+      "nodes": [
+        "node_modules/@jimp/custom"
+      ],
+      "fixAvailable": {
+        "name": "miniprogram-automator",
+        "version": "0.5.1",
+        "isSemVerMajor": true
+      }
+    },
+    "jimp": {
+      "name": "jimp",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@jimp/custom"
+      ],
+      "effects": [
+        "miniprogram-automator"
+      ],
+      "range": "0.3.6-alpha.5 - 0.21.4--canary.1163.d07ed6254d130e2995d24101e93427ec091016e6.0",
+      "nodes": [
+        "node_modules/jimp"
+      ],
+      "fixAvailable": {
+        "name": "miniprogram-automator",
+        "version": "0.5.1",
+        "isSemVerMajor": true
+      }
+    },
+    "miniprogram-automator": {
+      "name": "miniprogram-automator",
+      "severity": "moderate",
+      "isDirect": true,
+      "via": [
+        "jimp"
+      ],
+      "effects": [],
+      "range": ">=0.5.2",
+      "nodes": [
+        "node_modules/miniprogram-automator"
+      ],
+      "fixAvailable": {
+        "name": "miniprogram-automator",
+        "version": "0.5.1",
+        "isSemVerMajor": true
+      }
+    },
+    "phin": {
+      "name": "phin",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1096967,
+          "name": "phin",
+          "dependency": "phin",
+          "title": "phin may include sensitive headers in subsequent requests after redirect",
+          "url": "https://github.com/advisories/GHSA-x565-32qp-m3vf",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-200"
+          ],
+          "cvss": {
+            "score": 4.3,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N"
+          },
+          "range": "<3.7.1"
+        }
+      ],
+      "effects": [
+        "@jimp/core"
+      ],
+      "range": "<3.7.1",
+      "nodes": [
+        "node_modules/phin"
+      ],
+      "fixAvailable": {
+        "name": "miniprogram-automator",
+        "version": "0.5.1",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 5,
+      "high": 0,
+      "critical": 0,
+      "total": 5
+    },
+    "dependencies": {
+      "prod": 1,
+      "dev": 79,
+      "optional": 0,
+      "peer": 0,
+      "peerOptional": 0,
+      "total": 79
+    }
+  }
+}

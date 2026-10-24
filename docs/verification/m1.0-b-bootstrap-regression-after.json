@@ -1,0 +1,19 @@
+{
+  "Suite": "Bootstrap guards (non-sensitive fixtures; no database)",
+  "Passed": 3,
+  "Failed": 0,
+  "Results": [
+    {
+      "Check": "Read bootstrap record while server holds a write handle",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Reject missing bootstrap record",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Reject ambiguous bootstrap records",
+      "Status": "PASS"
+    }
+  ]
+}

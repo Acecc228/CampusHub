@@ -1,0 +1,34 @@
+[
+  {
+    "Name": "PowerShell default preview",
+    "Status": "PASS"
+  },
+  {
+    "Name": "Node default preview",
+    "Status": "PASS"
+  },
+  {
+    "Name": "Node syntax",
+    "Status": "PASS"
+  },
+  {
+    "Name": "Changed client test formatting",
+    "Status": "PASS"
+  },
+  {
+    "Name": "PowerShell 7 parse",
+    "Status": "PASS"
+  },
+  {
+    "Name": "PowerShell 5.1 parse",
+    "Status": "PASS"
+  },
+  {
+    "Name": "Preview returns before credential/service access",
+    "Status": "PASS"
+  },
+  {
+    "Name": "Existing evidence rejects rerun before business writes",
+    "Status": "PASS"
+  }
+]

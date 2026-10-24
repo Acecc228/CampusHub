@@ -1,0 +1,19 @@
+page {
+  --ch-primary: #4f46e5;
+  --ch-background: #f6f7fb;
+  --ch-surface: #ffffff;
+  --ch-text: #182239;
+  --ch-muted: #606b80;
+  --ch-border: #e4e7ef;
+  --ch-success: #187658;
+  --ch-danger: #b42318;
+  --ch-tint: #eeecff;
+  --ch-radius: 32rpx;
+  --ch-gap: 24rpx;
+  --ch-touch: 44px;
+  background: var(--ch-background);
+  color: var(--ch-text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+}

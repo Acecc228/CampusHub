@@ -1,0 +1,44 @@
+{
+  "CheckedAtUtc": "2026-10-19T10:03:49.8541909Z",
+  "Status": "PASS",
+  "Passed": 9,
+  "Failed": 0,
+  "Results": [
+    {
+      "Check": "Exact grant matrix and identity: app",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Exact grant matrix and identity: test-app",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Exact grant matrix and identity: migrator",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Exact grant matrix and identity: test-migrator",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Migration history and seeds: campushub",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Migration history and seeds: campushub_test",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Original probe definition and Unicode evidence unchanged",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Flyway rejects modified migration checksum without repair",
+      "Status": "PASS"
+    },
+    {
+      "Check": "MySQL80 fingerprint unchanged",
+      "Status": "PASS"
+    }
+  ]
+}

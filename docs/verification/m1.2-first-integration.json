@@ -1,0 +1,41 @@
+{
+  "Status": "FAIL",
+  "Reason": "MySQL CHECK error 3819 maps to UncategorizedSQLException; test expected narrower DataIntegrityViolationException",
+  "Suites": [
+    {
+      "Suite": "com.campushub.ActivityIT",
+      "Tests": 11,
+      "Failures": 1,
+      "Errors": 0,
+      "Skipped": 0
+    },
+    {
+      "Suite": "com.campushub.AuthenticationIT",
+      "Tests": 9,
+      "Failures": 0,
+      "Errors": 0,
+      "Skipped": 0
+    },
+    {
+      "Suite": "com.campushub.BackendIT",
+      "Tests": 11,
+      "Failures": 0,
+      "Errors": 0,
+      "Skipped": 0
+    },
+    {
+      "Suite": "com.campushub.DemoEnvironmentIT",
+      "Tests": 1,
+      "Failures": 0,
+      "Errors": 0,
+      "Skipped": 0
+    },
+    {
+      "Suite": "com.campushub.ProductionConfigurationIT",
+      "Tests": 3,
+      "Failures": 0,
+      "Errors": 0,
+      "Skipped": 0
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+<view wx:if="{{state !== 'ready'}}" class="state" aria-live="polite">
+  <view class="state-mark">{{state === 'loading' ? '· · ·' : state === 'login' ? 'C' : '—'}}</view>
+  <view class="state-title">{{state === 'loading' ? '正在加载' : state === 'login' ? '登录，开启校园新体验' : state === 'empty' ? emptyText : '暂时无法加载'}}</view>
+  <view class="muted">{{state === 'login' ? '使用学生演示账号，浏览活动与管理报名。' : message}}</view>
+  <button wx:if="{{state === 'login'}}" class="primary" bindtap="login" hover-class="pressed">学生登录</button>
+  <button wx:if="{{state === 'error'}}" class="secondary" bindtap="retry" hover-class="pressed">重新加载</button>
+</view>

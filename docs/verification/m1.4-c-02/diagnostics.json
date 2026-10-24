@@ -1,0 +1,9 @@
+{
+  "Status": "RESOLVED",
+  "BusinessTestsFailed": 0,
+  "EvidenceInvocationIssues": [
+    "Baseline JSON deserialized as PSCustomObject; legacy fingerprint checker indexes a dictionary. Fixed caller with -AsHashtable.",
+    "Automatic JSON date conversion plus string reparse shifted fixture selection window by 8 hours. Explicit -DateKind String and UTC parse restored exact window; 36 retained new activities matches total delta. Original selection preserved."
+  ],
+  "Cleanup": "Owned backend PID 98472 deliberately stopped; wrapper exit 1 is expected cleanup, not a failed test."
+}

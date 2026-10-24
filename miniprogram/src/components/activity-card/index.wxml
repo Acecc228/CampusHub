@@ -1,0 +1,5 @@
+<button class="activity-card" hover-class="pressed" bindtap="open" aria-label="{{activity.title}}，{{activity.availability.label}}，剩余{{activity.remainingCapacity}}人">
+  <view class="card-top"><view class="date"><text class="month">{{activity.month}}月</text><text class="day">{{activity.day}}</text></view><view class="card-main"><view class="category">{{activity.categoryName}}</view><view class="title">{{activity.title}}</view><view class="location">{{activity.location}}</view></view></view>
+  <view class="summary">{{activity.summary}}</view>
+  <view class="card-bottom"><text class="status">{{activity.availability.label}}</text><text>{{activity.registeredCount}} / {{activity.capacity}} 人 · 余 {{activity.remainingCapacity}}</text></view>
+</button>

@@ -1,0 +1,17 @@
+{
+  "Status": "PASS",
+  "Database": "campushub_test",
+  "Address": "127.0.0.1:3307",
+  "FixtureId": 386,
+  "PersistedActivity": "386\tUNPUBLISHED\t6\t30\t0",
+  "PersistedRegistration": "386\tCANCELLED\t2",
+  "CountMismatches": 0,
+  "DuplicateRegistrations": 0,
+  "RetainedM14AActivities": 52,
+  "DevActivityCount": 0,
+  "DevRegistrationCount": 0,
+  "DevOriginalUsers": 3,
+  "OriginalProbe": "PASS",
+  "DatabaseMutation": "NONE",
+  "MySQL80": "No connection or mutation"
+}

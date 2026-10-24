@@ -1,0 +1,31 @@
+CREATE TABLE activity (
+    id BIGINT NOT NULL AUTO_INCREMENT,
+    title VARCHAR(120) NOT NULL,
+    summary VARCHAR(500) NOT NULL,
+    content MEDIUMTEXT NOT NULL,
+    category_id BIGINT NOT NULL,
+    location VARCHAR(200) NOT NULL,
+    start_time DATETIME NOT NULL,
+    end_time DATETIME NOT NULL,
+    registration_start DATETIME NOT NULL,
+    registration_end DATETIME NOT NULL,
+    capacity INT NOT NULL,
+    creator_id BIGINT NOT NULL,
+    status VARCHAR(16) CHARACTER SET ascii COLLATE ascii_bin NOT NULL DEFAULT 'DRAFT',
+    version BIGINT NOT NULL DEFAULT 0,
+    created_at DATETIME(6) NOT NULL DEFAULT (UTC_TIMESTAMP(6)),
+    updated_at DATETIME(6) NOT NULL DEFAULT (UTC_TIMESTAMP(6)),
+    PRIMARY KEY (id),
+    KEY idx_activity_status_id (status, id),
+    KEY idx_activity_status_category_id (status, category_id, id),
+    KEY idx_activity_creator_id (creator_id, id),
+    KEY idx_activity_creator_status_id (creator_id, status, id),
+    CONSTRAINT fk_activity_category FOREIGN KEY (category_id) REFERENCES activity_category(id),
+    CONSTRAINT fk_activity_creator FOREIGN KEY (creator_id) REFERENCES app_user(id),
+    CONSTRAINT ck_activity_status CHECK (status IN ('DRAFT', 'PUBLISHED', 'UNPUBLISHED')),
+    CONSTRAINT ck_activity_capacity CHECK (capacity > 0),
+    CONSTRAINT ck_activity_version CHECK (version >= 0),
+    CONSTRAINT ck_activity_times CHECK (
+        registration_start < registration_end AND registration_end <= start_time AND start_time < end_time
+    )
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

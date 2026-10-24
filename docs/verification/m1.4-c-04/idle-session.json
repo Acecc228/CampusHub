@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "durationSeconds": 1860,
+  "requestsDuringIdle": [],
+  "started": "2026-10-24T02:52:53.623Z",
+  "finishedIdle": "2026-10-24T03:23:53.633Z",
+  "afterIdleHttp": 401,
+  "expiredOverlay": true,
+  "relogin": true
+}

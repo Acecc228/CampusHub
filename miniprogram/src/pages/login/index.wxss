@@ -1,0 +1,4 @@
+.login-page { padding-top: 56rpx; }
+.login-mark { width: 104rpx; height: 104rpx; line-height: 104rpx; text-align: center; font-size: 32px; color: var(--ch-surface); background: var(--ch-primary); border-radius: 28rpx; margin-bottom: 40rpx; }
+.login-page .heading { font-size: 30px; margin-bottom: 24rpx; }
+.login-page .panel { margin-top: 42rpx; }

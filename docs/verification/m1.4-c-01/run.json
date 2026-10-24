@@ -1,0 +1,731 @@
+{
+  "stage": "M1.4-C-01",
+  "status": "PASS",
+  "agents": 2,
+  "subagents": 1,
+  "startedAt": "2026-10-23T11:49:01.688Z",
+  "steps": [
+    {
+      "step": "01 Organizer login via Vue input/button",
+      "status": "PASS",
+      "at": "2026-10-23T11:50:04.34Z",
+      "identity": {
+        "id": 2,
+        "loginName": "demo_organizer",
+        "displayName": "Demo organizer",
+        "roles": [
+          "ORGANIZER"
+        ]
+      }
+    },
+    {
+      "step": "02 Create draft through Vue form",
+      "status": "PASS",
+      "at": "2026-10-23T11:51:07.013Z",
+      "id": 470,
+      "title": "M14C01-1792756204468 校园共创交流会"
+    },
+    {
+      "step": "03 Edit and publish via Vue",
+      "status": "PASS",
+      "at": "2026-10-23T11:51:16.716Z",
+      "id": 470,
+      "title": "M14C01-1792756204468 校园共创交流会（已编辑）"
+    },
+    {
+      "step": "04 Student logs in and finds Vue-created activity via native search",
+      "status": "PASS",
+      "at": "2026-10-23T11:51:45.05Z",
+      "id": 470,
+      "title": "M14C01-1792756204468 校园共创交流会（已编辑）"
+    },
+    {
+      "step": "05 Native detail shows registration dates and remaining capacity",
+      "status": "PASS",
+      "at": "2026-10-23T11:51:47.542Z",
+      "activity": {
+        "id": 470,
+        "title": "M14C01-1792756204468 校园共创交流会（已编辑）",
+        "summary": "M1.4-C-01 真实跨端闭环隔离验收活动",
+        "content": "组织者在 Vue 创建，学生通过微信原生小程序报名、取消和重新报名。仅测试库验收。",
+        "categoryId": 1,
+        "categoryName": "学术科技",
+        "location": "图书馆 201 共创空间",
+        "startTime": "2026-10-26T11:50:15Z",
+        "endTime": "2026-10-26T13:50:15Z",
+        "registrationStart": "2026-10-23T09:50:15Z",
+        "registrationEnd": "2026-10-25T11:50:15Z",
+        "capacity": 3,
+        "creatorId": 2,
+        "status": "PUBLISHED",
+        "version": 2,
+        "createdAt": "2026-10-23T11:50:16.274694Z",
+        "updatedAt": "2026-10-23T11:51:16.533936Z",
+        "registeredCount": 0,
+        "remainingCapacity": 3,
+        "myRegistration": {
+          "id": null,
+          "activityId": 470,
+          "userId": 1,
+          "status": "NONE",
+          "version": 0,
+          "createdAt": null,
+          "updatedAt": null
+        },
+        "month": "10",
+        "day": "26",
+        "timeText": "2026/10/26 19:50",
+        "endText": "2026/10/26 21:50",
+        "registrationStartText": "2026/10/23 17:50",
+        "registrationEndText": "2026/10/25 19:50",
+        "availability": {
+          "label": "开放报名",
+          "enabled": true
+        },
+        "confirmed": false,
+        "canCancel": true
+      }
+    },
+    {
+      "step": "06 Student registers through native detail button",
+      "status": "PASS",
+      "at": "2026-10-23T11:52:31.455Z",
+      "registration": {
+        "id": 197,
+        "activityId": 470,
+        "userId": 1,
+        "status": "CONFIRMED",
+        "version": 1,
+        "createdAt": "2026-10-23T11:52:30.360538Z",
+        "updatedAt": "2026-10-23T11:52:30.360538Z"
+      }
+    },
+    {
+      "step": "07 My registrations shows real current student record",
+      "status": "PASS",
+      "at": "2026-10-23T11:52:37.235Z",
+      "row": {
+        "id": 470,
+        "registration": {
+          "id": 197,
+          "activityId": 470,
+          "userId": 1,
+          "status": "CONFIRMED",
+          "version": 1,
+          "createdAt": "2026-10-23T11:52:30.360538Z",
+          "updatedAt": "2026-10-23T11:52:30.360538Z"
+        },
+        "activity": {
+          "id": 470,
+          "title": "M14C01-1792756204468 校园共创交流会（已编辑）",
+          "summary": "M1.4-C-01 真实跨端闭环隔离验收活动",
+          "content": "组织者在 Vue 创建，学生通过微信原生小程序报名、取消和重新报名。仅测试库验收。",
+          "categoryId": 1,
+          "categoryName": "学术科技",
+          "location": "图书馆 201 共创空间",
+          "startTime": "2026-10-26T11:50:15Z",
+          "endTime": "2026-10-26T13:50:15Z",
+          "registrationStart": "2026-10-23T09:50:15Z",
+          "registrationEnd": "2026-10-25T11:50:15Z",
+          "capacity": 3,
+          "creatorId": 2,
+          "status": "PUBLISHED",
+          "version": 2,
+          "createdAt": "2026-10-23T11:50:16.274694Z",
+          "updatedAt": "2026-10-23T11:51:16.533936Z",
+          "registeredCount": 1,
+          "remainingCapacity": 2,
+          "myRegistration": {
+            "id": 197,
+            "activityId": 470,
+            "userId": 1,
+            "status": "CONFIRMED",
+            "version": 1,
+            "createdAt": "2026-10-23T11:52:30.360538Z",
+            "updatedAt": "2026-10-23T11:52:30.360538Z"
+          },
+          "month": "10",
+          "day": "26",
+          "timeText": "2026/10/26 19:50",
+          "endText": "2026/10/26 21:50",
+          "registrationStartText": "2026/10/23 17:50",
+          "registrationEndText": "2026/10/25 19:50",
+          "availability": {
+            "label": "开放报名",
+            "enabled": true
+          },
+          "confirmed": true,
+          "canCancel": true
+        },
+        "label": "已报名",
+        "unavailable": false,
+        "title": "M14C01-1792756204468 校园共创交流会（已编辑）",
+        "updated": "2026/10/23 19:52",
+        "uncertain": false
+      }
+    },
+    {
+      "step": "08 Vue refreshed roster shows one confirmed registration",
+      "status": "PASS",
+      "at": "2026-10-23T11:52:37.421Z"
+    },
+    {
+      "step": "09 initial native cancellation persisted",
+      "status": "PASS",
+      "at": "2026-10-23T11:54:06.768Z",
+      "sql": "sql-cancelled-v2.json",
+      "registrationId": 197,
+      "version": 2
+    },
+    {
+      "step": "11 initial native re-registration persisted",
+      "status": "PASS",
+      "at": "2026-10-23T11:54:06.769Z",
+      "sql": "sql-reconfirmed-v3.json",
+      "registrationId": 197,
+      "version": 3
+    },
+    {
+      "step": "09 complete cycle: native cancellation confirmed",
+      "status": "PASS",
+      "at": "2026-10-23T11:54:23.398Z",
+      "registration": {
+        "id": 197,
+        "activityId": 470,
+        "userId": 1,
+        "status": "CANCELLED",
+        "version": 4,
+        "createdAt": "2026-10-23T11:52:30.360538Z",
+        "updatedAt": "2026-10-23T11:54:12.323818Z"
+      }
+    },
+    {
+      "step": "10 Vue refresh shows cancelled history and zero count",
+      "status": "PASS",
+      "at": "2026-10-23T11:54:23.537Z"
+    },
+    {
+      "step": "11 complete cycle: re-registration uses same record",
+      "status": "PASS",
+      "at": "2026-10-23T11:54:35.493Z",
+      "registration": {
+        "id": 197,
+        "activityId": 470,
+        "userId": 1,
+        "status": "CONFIRMED",
+        "version": 5,
+        "createdAt": "2026-10-23T11:52:30.360538Z",
+        "updatedAt": "2026-10-23T11:54:33.622268Z"
+      }
+    },
+    {
+      "step": "12 Vue refresh shows same student, single record and count one",
+      "status": "PASS",
+      "at": "2026-10-23T11:54:35.64Z"
+    },
+    {
+      "step": "13 Organizer unpublishes via Vue while second student retains old detail",
+      "status": "PASS",
+      "at": "2026-10-23T11:56:00.145Z"
+    },
+    {
+      "step": "14 Unpublished public list empty and direct detail rejects access",
+      "status": "PASS",
+      "at": "2026-10-23T11:58:50.896Z",
+      "state": "error",
+      "error": "活动不存在",
+      "activity": null
+    },
+    {
+      "step": "14 regression: native stale registration rejected, details hidden, action unlocked",
+      "status": "PASS",
+      "at": "2026-10-23T12:00:49.586Z",
+      "state": {
+        "state": "error",
+        "error": "活动不存在",
+        "activity": null,
+        "busy": false,
+        "uncertain": false,
+        "feedback": "活动不存在",
+        "__webviewId__": 24
+      }
+    },
+    {
+      "step": "15 Second student reload recovers after republish without writing",
+      "status": "PASS",
+      "at": "2026-10-23T12:02:01.043Z",
+      "myRegistration": {
+        "id": null,
+        "activityId": 470,
+        "userId": 158,
+        "status": "NONE",
+        "version": 0,
+        "createdAt": null,
+        "updatedAt": null
+      },
+      "registeredCount": 1
+    },
+    {
+      "step": "15 Original student history preserved after republish",
+      "status": "PASS",
+      "at": "2026-10-23T12:02:23.917Z",
+      "row": {
+        "id": 470,
+        "registration": {
+          "id": 197,
+          "activityId": 470,
+          "userId": 1,
+          "status": "CONFIRMED",
+          "version": 5,
+          "createdAt": "2026-10-23T11:52:30.360538Z",
+          "updatedAt": "2026-10-23T11:54:33.622268Z"
+        },
+        "activity": {
+          "id": 470,
+          "title": "M14C01-1792756204468 校园共创交流会（已编辑）",
+          "summary": "M1.4-C-01 真实跨端闭环隔离验收活动",
+          "content": "组织者在 Vue 创建，学生通过微信原生小程序报名、取消和重新报名。仅测试库验收。",
+          "categoryId": 1,
+          "categoryName": "学术科技",
+          "location": "图书馆 201 共创空间",
+          "startTime": "2026-10-26T11:50:15Z",
+          "endTime": "2026-10-26T13:50:15Z",
+          "registrationStart": "2026-10-23T09:50:15Z",
+          "registrationEnd": "2026-10-25T11:50:15Z",
+          "capacity": 3,
+          "creatorId": 2,
+          "status": "PUBLISHED",
+          "version": 8,
+          "createdAt": "2026-10-23T11:50:16.274694Z",
+          "updatedAt": "2026-10-23T12:01:04.688658Z",
+          "registeredCount": 1,
+          "remainingCapacity": 2,
+          "myRegistration": {
+            "id": 197,
+            "activityId": 470,
+            "userId": 1,
+            "status": "CONFIRMED",
+            "version": 5,
+            "createdAt": "2026-10-23T11:52:30.360538Z",
+            "updatedAt": "2026-10-23T11:54:33.622268Z"
+          },
+          "month": "10",
+          "day": "26",
+          "timeText": "2026/10/26 19:50",
+          "endText": "2026/10/26 21:50",
+          "registrationStartText": "2026/10/23 17:50",
+          "registrationEndText": "2026/10/25 19:50",
+          "availability": {
+            "label": "开放报名",
+            "enabled": true
+          },
+          "confirmed": true,
+          "canCancel": true
+        },
+        "label": "已报名",
+        "unavailable": false,
+        "title": "M14C01-1792756204468 校园共创交流会（已编辑）",
+        "updated": "2026/10/23 19:54",
+        "uncertain": false
+      }
+    },
+    {
+      "step": "16 Final UI student identity remains separate from Vue organizer after supplemental security probes",
+      "status": "PASS",
+      "at": "2026-10-23T12:05:29.969Z",
+      "student": {
+        "id": 1,
+        "loginName": "demo_student",
+        "displayName": "Demo student",
+        "roles": [
+          "STUDENT"
+        ]
+      },
+      "organizer": {
+        "id": 2,
+        "loginName": "demo_organizer",
+        "displayName": "Demo organizer",
+        "roles": [
+          "ORGANIZER"
+        ]
+      }
+    }
+  ],
+  "exceptions": 0,
+  "requests": [
+    {
+      "client": "Vue",
+      "method": "GET",
+      "path": "/api/v1/auth/csrf",
+      "status": 200,
+      "at": "2026-10-23T11:49:56.241Z"
+    },
+    {
+      "client": "Vue",
+      "method": "POST",
+      "path": "/api/v1/auth/demo-login",
+      "status": 200,
+      "at": "2026-10-23T11:49:56.982Z"
+    },
+    {
+      "client": "Vue",
+      "method": "GET",
+      "path": "/api/v1/auth/me",
+      "status": 200,
+      "at": "2026-10-23T11:49:56.998Z"
+    },
+    {
+      "client": "Vue",
+      "method": "GET",
+      "path": "/api/v1/manage/activities",
+      "status": 200,
+      "at": "2026-10-23T11:49:57.302Z"
+    },
+    {
+      "client": "Vue",
+      "method": "GET",
+      "path": "/api/v1/manage/activities",
+      "status": 200,
+      "at": "2026-10-23T11:49:57.305Z"
+    },
+    {
+      "client": "Vue",
+      "method": "GET",
+      "path": "/api/v1/manage/activities",
+      "status": 200,
+      "at": "2026-10-23T11:49:57.315Z"
+    },
+    {
+      "client": "Vue",
+      "method": "GET",
+      "path": "/api/v1/manage/activities",
+      "status": 200,
+      "at": "2026-10-23T11:49:57.325Z"
+    },
+    {
+      "client": "Vue",
+      "method": "GET",
+      "path": "/api/v1/activity-categories",
+      "status": 200,
+      "at": "2026-10-23T11:50:04.577Z"
+    },
+    {
+      "client": "Vue",
+      "method": "GET",
+      "path": "/api/v1/auth/csrf",
+      "status": 200,
+      "at": "2026-10-23T11:50:16.003Z"
+    },
+    {
+      "client": "Vue",
+      "method": "POST",
+      "path": "/api/v1/manage/activities",
+      "status": 201,
+      "at": "2026-10-23T11:50:16.79Z"
+    },
+    {
+      "client": "Vue",
+      "method": "GET",
+      "path": "/api/v1/manage/activities",
+      "status": 200,
+      "at": "2026-10-23T11:50:16.875Z"
+    },
+    {
+      "client": "Vue",
+      "method": "GET",
+      "path": "/api/v1/activity-categories",
+      "status": 200,
+      "at": "2026-10-23T11:50:16.877Z"
+    },
+    {
+      "client": "Vue",
+      "method": "GET",
+      "path": "/api/v1/manage/activities/470",
+      "status": 200,
+      "at": "2026-10-23T11:50:16.977Z"
+    },
+    {
+      "client": "Vue",
+      "method": "GET",
+      "path": "/api/v1/manage/activities/470",
+      "status": 200,
+      "at": "2026-10-23T11:51:07.076Z"
+    },
+    {
+      "client": "Vue",
+      "method": "GET",
+      "path": "/api/v1/activity-categories",
+      "status": 200,
+      "at": "2026-10-23T11:51:07.079Z"
+    },
+    {
+      "client": "Vue",
+      "method": "PUT",
+      "path": "/api/v1/manage/activities/470",
+      "status": 200,
+      "at": "2026-10-23T11:51:07.165Z"
+    },
+    {
+      "client": "Vue",
+      "method": "GET",
+      "path": "/api/v1/manage/activities",
+      "status": 200,
+      "at": "2026-10-23T11:51:07.207Z"
+    },
+    {
+      "client": "Vue",
+      "method": "GET",
+      "path": "/api/v1/activity-categories",
+      "status": 200,
+      "at": "2026-10-23T11:51:07.209Z"
+    },
+    {
+      "client": "Vue",
+      "method": "GET",
+      "path": "/api/v1/manage/activities/470",
+      "status": 200,
+      "at": "2026-10-23T11:51:07.254Z"
+    },
+    {
+      "client": "Vue",
+      "method": "POST",
+      "path": "/api/v1/manage/activities/470/publish",
+      "status": 200,
+      "at": "2026-10-23T11:51:16.564Z"
+    },
+    {
+      "client": "Vue",
+      "method": "GET",
+      "path": "/api/v1/manage/activities/470",
+      "status": 200,
+      "at": "2026-10-23T11:52:37.266Z"
+    },
+    {
+      "client": "Vue",
+      "method": "GET",
+      "path": "/api/v1/manage/activities/470",
+      "status": 200,
+      "at": "2026-10-23T11:52:37.322Z"
+    },
+    {
+      "client": "Vue",
+      "method": "GET",
+      "path": "/api/v1/manage/activities/470/registrations",
+      "status": 200,
+      "at": "2026-10-23T11:52:37.324Z"
+    },
+    {
+      "client": "Vue",
+      "method": "GET",
+      "path": "/api/v1/manage/activities/470",
+      "status": 200,
+      "at": "2026-10-23T11:54:23.431Z"
+    },
+    {
+      "client": "Vue",
+      "method": "GET",
+      "path": "/api/v1/manage/activities/470/registrations",
+      "status": 200,
+      "at": "2026-10-23T11:54:23.434Z"
+    },
+    {
+      "client": "Vue",
+      "method": "GET",
+      "path": "/api/v1/manage/activities/470",
+      "status": 200,
+      "at": "2026-10-23T11:54:35.531Z"
+    },
+    {
+      "client": "Vue",
+      "method": "GET",
+      "path": "/api/v1/manage/activities/470/registrations",
+      "status": 200,
+      "at": "2026-10-23T11:54:35.534Z"
+    },
+    {
+      "client": "Vue",
+      "method": "POST",
+      "path": "/api/v1/manage/activities/470/unpublish",
+      "status": 200,
+      "at": "2026-10-23T11:55:42.779Z"
+    },
+    {
+      "client": "Vue",
+      "method": "POST",
+      "path": "/api/v1/manage/activities/470/publish",
+      "status": 200,
+      "at": "2026-10-23T11:59:00.229Z"
+    },
+    {
+      "client": "Vue",
+      "method": "POST",
+      "path": "/api/v1/manage/activities/470/unpublish",
+      "status": 200,
+      "at": "2026-10-23T11:59:07.212Z"
+    },
+    {
+      "client": "Vue",
+      "method": "POST",
+      "path": "/api/v1/manage/activities/470/publish",
+      "status": 200,
+      "at": "2026-10-23T12:00:40.967Z"
+    },
+    {
+      "client": "Vue",
+      "method": "POST",
+      "path": "/api/v1/manage/activities/470/unpublish",
+      "status": 200,
+      "at": "2026-10-23T12:00:47.427Z"
+    },
+    {
+      "client": "Vue",
+      "method": "GET",
+      "path": "/api/v1/manage/activities/470/registrations",
+      "status": 200,
+      "at": "2026-10-23T12:01:04.33Z"
+    },
+    {
+      "client": "Vue",
+      "method": "GET",
+      "path": "/api/v1/manage/activities/470",
+      "status": 200,
+      "at": "2026-10-23T12:01:04.332Z"
+    },
+    {
+      "client": "Vue",
+      "method": "POST",
+      "path": "/api/v1/manage/activities/470/publish",
+      "status": 200,
+      "at": "2026-10-23T12:01:04.707Z"
+    }
+  ],
+  "toolNotes": [
+    "Default Playwright executable absent; no install attempted; attached to existing agent-browser Chrome via CDP.",
+    "Harness navigation matcher ignored returnTo query; recovered existing draft without duplicate create.",
+    "Harness initial login wait too short; inspected completed navigation without replay.",
+    "Harness captured stale mini page handle after tab switch; cancellation v2 and re-registration v3 persisted, but Vue intermediate cancellation not observed. Repeat one complete cancel/re-register cycle using current page handle.",
+    "Build output updated but WeChat runtime retained old modules; explicitly used actual DevTools compile button, observed cold login state, then retested. First post-build recheck still reproduced old behavior; not counted as fixed."
+  ],
+  "run": "M14C01-1792756204468",
+  "activityId": 470,
+  "title": "M14C01-1792756204468 校园共创交流会（已编辑）",
+  "registrationId": 197,
+  "student": {
+    "id": 1,
+    "loginName": "demo_student",
+    "displayName": "Demo student",
+    "roles": [
+      "STUDENT"
+    ]
+  },
+  "secondStudent": {
+    "id": 158,
+    "loginName": "m14a_8084e3814606_1",
+    "fixture": "Existing retained M1.4-A test student; password hash matched inside SQL, never exported"
+  },
+  "staleRegistrationUI": {
+    "state": "ready",
+    "error": "操作结果尚未确认，请先核实报名状态，不要重复提交。",
+    "feedback": "",
+    "busy": false,
+    "uncertain": true,
+    "activity": {
+      "id": 470,
+      "title": "M14C01-1792756204468 校园共创交流会（已编辑）",
+      "summary": "M1.4-C-01 真实跨端闭环隔离验收活动",
+      "content": "组织者在 Vue 创建，学生通过微信原生小程序报名、取消和重新报名。仅测试库验收。",
+      "categoryId": 1,
+      "categoryName": "学术科技",
+      "location": "图书馆 201 共创空间",
+      "startTime": "2026-10-26T11:50:15Z",
+      "endTime": "2026-10-26T13:50:15Z",
+      "registrationStart": "2026-10-23T09:50:15Z",
+      "registrationEnd": "2026-10-25T11:50:15Z",
+      "capacity": 3,
+      "creatorId": 2,
+      "status": "PUBLISHED",
+      "version": 2,
+      "createdAt": "2026-10-23T11:50:16.274694Z",
+      "updatedAt": "2026-10-23T11:51:16.533936Z",
+      "registeredCount": 1,
+      "remainingCapacity": 2,
+      "myRegistration": {
+        "id": null,
+        "activityId": 470,
+        "userId": 158,
+        "status": "NONE",
+        "version": 0,
+        "createdAt": null,
+        "updatedAt": null
+      },
+      "month": "10",
+      "day": "26",
+      "timeText": "2026/10/26 19:50",
+      "endText": "2026/10/26 21:50",
+      "registrationStartText": "2026/10/23 17:50",
+      "registrationEndText": "2026/10/25 19:50",
+      "availability": {
+        "label": "开放报名",
+        "enabled": true
+      },
+      "confirmed": false,
+      "canCancel": true
+    }
+  },
+  "defect": {
+    "status": "PASS_REAL_SIMULATOR",
+    "file": "miniprogram/src/domain/registration.ts",
+    "red": "registration-red.txt",
+    "green": "unit-green.txt",
+    "description": "Known 4xx rejection followed by failed status read incorrectly retained unknown-result lock and old detail."
+  },
+  "security": {
+    "status": "PASS",
+    "native": {
+      "transport": "actual wx.request (supplemental security probe; not UI E2E)",
+      "login": 200,
+      "rotated": true,
+      "identity": {
+        "id": 1,
+        "loginName": "demo_student",
+        "displayName": "Demo student",
+        "roles": [
+          "STUDENT"
+        ]
+      },
+      "studentManageDenied": 403,
+      "missingCsrfDenied": 403,
+      "sessionSurvivesDeniedLogout": 200,
+      "logout": 204,
+      "anonymous": 401
+    },
+    "vue": {
+      "identity": {
+        "id": 2,
+        "loginName": "demo_organizer",
+        "displayName": "Demo organizer",
+        "roles": [
+          "ORGANIZER"
+        ]
+      },
+      "organizerStudentDenied": 403,
+      "foreignActivity398Denied": 403,
+      "missingCsrfDenied": 403,
+      "sessionSurvives": 2
+    }
+  },
+  "agentRoles": {
+    "main": "Astra: planning, UI and database execution, fix, integration and acceptance",
+    "reviewer": "gpt-6-luna / medium: read-only registration fix review; no files/DB changed, no nested agents"
+  },
+  "review": {
+    "status": "PASS",
+    "critical": 0,
+    "important": 0,
+    "minor": 0,
+    "tests": "NOT_RUN by reviewer; root ran actual tests",
+    "risk": "Existing assumption: explicit 4xx rejects writes; revisit if server contract changes"
+  },
+  "deliveryClientDate": "2026-10-24",
+  "scope": "M1.4-C-01 only; C-02/C-03/C-04 NOT_RUN and not authorized"
+}

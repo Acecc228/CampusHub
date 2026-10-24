@@ -1,0 +1,41 @@
+{
+  "system": {
+    "platform": "devtools",
+    "SDKVersion": "3.17.5",
+    "windowWidth": 390,
+    "windowHeight": 671,
+    "pixelRatio": 3
+  },
+  "runtime": {
+    "cookiesArray": true,
+    "setCookieHeader": true,
+    "explicitCookieSent": true,
+    "rotated": true,
+    "login": 200,
+    "me": 200,
+    "student": true,
+    "csrfDenied": 403,
+    "logout": 204,
+    "expired": 401
+  },
+  "exceptions": 0,
+  "results": [
+    {
+      "name": "actual wx.request Cookie, Set-Cookie, session rotation, CSRF and logout",
+      "status": "PASS"
+    },
+    {
+      "name": "native login page validates empty fields",
+      "status": "PASS"
+    },
+    {
+      "name": "student login via actual input and button",
+      "status": "PASS"
+    },
+    {
+      "name": "activity plaza keyword search, category and native card navigation",
+      "status": "FAIL",
+      "reason": "No context found for objectId 5"
+    }
+  ]
+}

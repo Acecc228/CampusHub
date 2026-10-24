@@ -1,0 +1,27 @@
+{
+  "Status": "PASS",
+  "Checkpoint": "cancelled-v4",
+  "At": "2026-10-23T11:54:25.2441049Z",
+  "Database": "campushub_test",
+  "Address": "127.0.0.1:3307",
+  "Credential": "test-app",
+  "Activity": {
+    "Id": 470,
+    "Status": "PUBLISHED",
+    "Version": 2,
+    "Capacity": 3,
+    "RegisteredCount": 0,
+    "CreatorId": 2
+  },
+  "Registrations": [
+    {
+      "Id": 197,
+      "ActivityId": 470,
+      "UserId": 1,
+      "Status": "CANCELLED",
+      "Version": 4
+    }
+  ],
+  "ConfirmedRows": 0,
+  "DatabaseMutation": "NONE"
+}

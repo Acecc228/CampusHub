@@ -1,0 +1,5 @@
+{
+  "status": "PASS",
+  "method": "Browser request temporarily held, then route.continue to real backend; no synthetic response",
+  "at": "2026-10-24T07:55:32.208Z"
+}

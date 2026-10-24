@@ -1,0 +1,24 @@
+{
+  "Status": "PASS",
+  "PowerShell": "7.6.5",
+  "Scripts": [
+    {
+      "Check": "Invoke-AdminTestBackend.ps1",
+      "Parse": "PASS",
+      "DefaultPreview": "PASS"
+    },
+    {
+      "Check": "Test-AdminWeb.ps1",
+      "Parse": "PASS",
+      "DefaultPreview": "PASS"
+    },
+    {
+      "Check": "Test-AdminDatabase.ps1",
+      "Parse": "PASS",
+      "DefaultPreview": "PASS"
+    }
+  ],
+  "OccupiedPortRefused": "PASS",
+  "ExistingProcessPreserved": "PASS",
+  "DatabaseWrites": "NONE"
+}

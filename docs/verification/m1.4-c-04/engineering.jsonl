@@ -1,0 +1,10 @@
+{"Check":"admin-web-ci","ExitCode":0,"Time":"2026-10-23T18:00:54.5805885Z"}
+{"Check":"admin-web-run-typecheck","ExitCode":0,"Time":"2026-10-23T18:00:59.0581276Z"}
+{"Check":"admin-web-run-lint","ExitCode":0,"Time":"2026-10-23T18:01:01.3426755Z"}
+{"Check":"admin-web-test","ExitCode":0,"Time":"2026-10-23T18:01:03.7768892Z"}
+{"Check":"admin-web-run-build","ExitCode":0,"Time":"2026-10-23T18:01:08.8482075Z"}
+{"Check":"miniprogram-ci","ExitCode":0,"Time":"2026-10-23T18:01:34.0737556Z"}
+{"Check":"miniprogram-run-typecheck","ExitCode":0,"Time":"2026-10-23T18:01:35.4041806Z"}
+{"Check":"miniprogram-run-lint","ExitCode":0,"Time":"2026-10-23T18:01:37.2166292Z"}
+{"Check":"miniprogram-test","ExitCode":0,"Time":"2026-10-23T18:01:39.4562739Z"}
+{"Check":"miniprogram-run-build","ExitCode":0,"Time":"2026-10-23T18:01:40.8754003Z"}

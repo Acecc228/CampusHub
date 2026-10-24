@@ -1,0 +1,14 @@
+<view class="page"><view class="eyebrow">MY CAMPUS PASS</view><view class="heading">每一次参与，
+都值得记录。</view><view class="muted">当前账号的报名与取消记录，共 {{total}} 条。</view>
+<page-state state="{{state}}" message="{{error}}" empty-text="还没有报名，去发现你的第一场活动" bind:retry="load" bind:login="login"/>
+<button wx:if="{{state === 'empty'}}" class="primary" bindtap="explore">去发现活动</button>
+<view wx:if="{{feedback}}" class="panel" aria-live="polite">{{feedback}}</view>
+<view wx:for="{{rows}}" wx:key="id" class="panel registration-card">
+  <view class="row"><view class="badge {{item.registration.status === 'CONFIRMED' ? 'success' : ''}}">{{item.label}}</view><text class="small">报名 #{{item.registration.id}}</text></view>
+  <view class="registration-title">{{item.title}}</view>
+  <view wx:if="{{item.activity}}" class="muted">{{item.activity.timeText}} · 北京时间</view><view wx:if="{{item.activity}}" class="muted break">{{item.activity.location}}</view>
+  <view wx:if="{{item.unavailable}}" class="small">活动已不公开展示。你的报名记录仍保留；是否可取消由服务端确认。</view>
+  <view class="small updated">最近变更 {{item.updated}}</view>
+  <view class="row actions"><button wx:if="{{item.activity}}" class="secondary" data-id="{{item.registration.activityId}}" bindtap="open">查看活动</button><button wx:if="{{item.registration.status === 'CONFIRMED' || item.uncertain}}" class="{{item.uncertain ? 'primary' : 'danger'}}" disabled="{{busyId !== 0 || (!item.uncertain && item.activity && !item.activity.canCancel)}}" loading="{{busyId === item.registration.activityId}}" data-id="{{item.registration.activityId}}" bindtap="cancel">{{item.uncertain ? '核实状态' : item.activity && !item.activity.canCancel ? '已开始，不能取消' : '取消报名'}}</button></view>
+</view>
+<view wx:if="{{error && state === 'ready'}}" class="error">{{error}}</view><button wx:if="{{more}}" class="secondary" bindtap="more" disabled="{{loadingMore}}" loading="{{loadingMore}}">加载更多记录</button><view wx:if="{{state === 'ready' && !more}}" class="footer-note">已显示全部报名记录 · 取消后可按条件重新报名</view></view>

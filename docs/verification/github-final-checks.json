@@ -1,0 +1,127 @@
+{
+  "stage": "M1.5-G02",
+  "date": "2026-10-24 Asia/Shanghai",
+  "candidateFiles": 598,
+  "totalBytes": 13210845,
+  "groups": {
+    "(root)": 11,
+    "LICENSES": 1,
+    "admin-web": 38,
+    "backend": 52,
+    "docs": 377,
+    "infra": 13,
+    "miniprogram": 72,
+    "scripts": 34
+  },
+  "largestFiles": [
+    {
+      "path": "admin-web/package-lock.json",
+      "bytes": 133404
+    },
+    {
+      "path": "docs/verification/m1.4-a-screenshots/activities-1440.png",
+      "bytes": 132427
+    },
+    {
+      "path": "docs/verification/m1.4-a-screenshots/activities-1280.png",
+      "bytes": 131182
+    },
+    {
+      "path": "docs/verification/m1.4-c-04/admin-screenshots/activities-1440.png",
+      "bytes": 130885
+    },
+    {
+      "path": "docs/verification/m1.4-a-screenshots/activities-900.png",
+      "bytes": 129662
+    }
+  ],
+  "privacy": {
+    "personalPathOrCurrentUsernameHits": [],
+    "emailPatternHits": [],
+    "scope": "Non-ignored public text, excluding generic PUBLIC_USER; G01 image review reused; no repeated secret/credential scan."
+  },
+  "jsonParseFailures": [],
+  "markdownLinksChecked": 299,
+  "brokenLinks": [],
+  "linkedIgnoredFiles": [],
+  "requiredFilesChecked": 140,
+  "missingRequired": [],
+  "exclusionFailures": [],
+  "nestedRepositories": [],
+  "nestedScope": "Project directories excluding .git, .local, .superpowers, dependencies and build/cache trees",
+  "gitmodulesPresent": false,
+  "gitlinks": [],
+  "git": {
+    "branch": "setup/mysql84-preparation",
+    "commits": "0",
+    "remoteCount": 0,
+    "indexEntries": 27,
+    "indexNonemptyBlobs": [],
+    "cachedDiffQuietExit": 0,
+    "refs": [
+      "refs/codex/turn-diffs/checkpoints/1e77c5bf9210ff5e8689e4a51b342600/0c549934a561ba4f63005a3d60327597/1792365460231/4d2d9a6d-f125-4831-bb99-9c85f80451fc tree",
+      "refs/codex/turn-diffs/checkpoints/6a7ed9e6a69a29b8b0c6250051e52234/e7b0550979ec6da43ba1dc1f4cf73d50/1792384570198/da92f89c-a596-470e-a786-cbde03fc58dd tree",
+      "refs/codex/turn-diffs/checkpoints/70df68a1e6aa35a1ee2c1b16073a94bf/3a123482a59f7a44f1eb1cd8c703dba9/1792364743122/7b039b4c-bf28-47b3-8b8e-94bd8550f845 tree",
+      "refs/codex/turn-diffs/checkpoints/ca4813d1c78ea84789ac79b4a21a2ca9/c6249c3e5b4d6ac69910fde271438142/1792404671939/debf7465-7f2e-4cd7-af25-fa3673dcb2a5 tree"
+    ],
+    "identity": {
+      "user.name": {
+        "configured": true,
+        "scope": "global"
+      },
+      "user.email": {
+        "configured": true,
+        "scope": "global",
+        "githubNoreply": false
+      }
+    },
+    "identityEnvironmentOverridesPresent": [],
+    "configMutated": false,
+    "indexMutated": false
+  },
+  "frozenOriginalHashUnchanged": true,
+  "redactedHistoricalFields": [
+    {
+      "path": "docs/verification/m1.4-a-e2e-first-failure.json",
+      "historicalFieldsPreserved": true
+    },
+    {
+      "path": "docs/verification/m1.4-a-e2e.json",
+      "historicalFieldsPreserved": true
+    },
+    {
+      "path": "docs/verification/m1.4-a-review-red.json",
+      "historicalFieldsPreserved": true
+    },
+    {
+      "path": "docs/verification/m1.4-c-04/browser-e2e.json",
+      "historicalFieldsPreserved": true
+    },
+    {
+      "path": "docs/verification/uac-launch.json",
+      "historicalFieldsPreserved": true
+    }
+  ],
+  "diffCheckExit": 0,
+  "diffCheckOutput": [],
+  "notRun": [
+    "full secret scan (reuse G01)",
+    "business/database/browser/WeChat suites (reuse C-04)",
+    "full dependency license audit",
+    "unreachable Git object forensics",
+    "GitHub online render",
+    "fresh computer setup"
+  ],
+  "agents": {
+    "main": 1,
+    "subagents": 0
+  },
+  "status": "PASS",
+  "finalVerification": {
+    "manifestMatchesCurrentCandidates": true,
+    "markdownTrailingWhitespaceIssues": 0,
+    "gitDiffCheckExit": 0,
+    "gitCachedDiffQuietExit": 0,
+    "note": "Git emitted expected CRLF-to-LF normalization warnings only; no whitespace errors. Filename manifest includes itself and this audit; byte count includes all current files."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "profile": "product-admin",
+  "sourceRoots": ["admin-web/src"],
+  "locale": "zh-CN",
+  "canonicalMap": "UX-CONTRACT.md",
+  "requiredCapabilities": ["Select/Listbox", "Date", "Form", "Scrollbar", "Toast", "CRUD"],
+  "ownership": { "Select/Listbox": "authored", "Date": "typed" },
+  "requiredCommands": ["unit", "e2e", "typecheck", "build"],
+  "commands": {
+    "unit": "npm --prefix admin-web test",
+    "e2e": "pwsh -NoProfile -File scripts/Test-AdminWeb.ps1 -Apply",
+    "typecheck": "npm --prefix admin-web run typecheck",
+    "build": "npm --prefix admin-web run build"
+  },
+  "evidence": { "crudFullFlow": "admin-web/tests/admin.spec.ts", "failurePaths": "admin-web/tests/admin.spec.ts" }
+}

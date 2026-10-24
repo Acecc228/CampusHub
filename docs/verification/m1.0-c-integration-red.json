@@ -1,0 +1,8 @@
+{
+  "Errors": 2,
+  "Log": "E:\\Project\\CampusHub\\.local\\backend-logs\\integration-red-20261019T042306151.log",
+  "Tests": 2,
+  "Skipped": 0,
+  "Status": "FAIL",
+  "ExpectedReason": "No SpringBootConfiguration before backend implementation"
+}

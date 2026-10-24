@@ -1,0 +1,810 @@
+{
+  "CheckedAtUtc": "2026-10-18T22:51:43.9605170Z",
+  "Scope": "M1.0-A installation and credential-free read-only acceptance",
+  "Overall": "PASS",
+  "Counts": {
+    "PASS": 16,
+    "FAIL": 0,
+    "BLOCKED": 0,
+    "NOT_RUN": 4
+  },
+  "Checks": [
+    {
+      "Id": "01_INSTALLER_COMPLETED",
+      "Status": "PASS",
+      "Evidence": {
+        "RunId": "9e27ec4a45aa4dafbc69ab461b5992c2",
+        "InstallerInvokedOnce": true,
+        "Result": {
+          "Status": "PASS",
+          "Mode": "APPLY",
+          "Stage": "Complete",
+          "SourceFilesVerified": 6,
+          "PackageSignature": "VALIDSIG",
+          "InstallerInvoked": true,
+          "InstallerResult": {
+            "Status": "PASS",
+            "Stage": "Service installation only",
+            "DatabaseBootstrap": "NOT_RUN",
+            "Runtime": "E:\\CampusHubRuntime\\mysql84",
+            "LegacySql": "NOT_RUN"
+          },
+          "NativeExitCode": null,
+          "NativeStage": null,
+          "ErrorType": null,
+          "TimeUtc": "2026-10-18T18:09:57.0722382Z"
+        },
+        "ResultWrittenAtUtc": "2026-10-18T18:10:20.4584538Z",
+        "ElevatedProcessExitCode": null,
+        "ExitCodeNote": "Original parent terminal ended with OS shutdown; persisted result and live service independently verified"
+      }
+    },
+    {
+      "Id": "02_FROZEN_SOURCE_INTEGRITY",
+      "Status": "PASS",
+      "Evidence": {
+        "BaselineSha256": "F7067F8C32F2902A54D86441264C113813E1C50EBC811497474A3BA919FC88FC",
+        "Files": [
+          {
+            "RelativePath": "scripts\\Install-MySql84.ps1",
+            "Sha256": "1B73B7AF5507CE2DB55776B1F5C2362423BBCCC0690A9BE174C18F234B03E634"
+          },
+          {
+            "RelativePath": "scripts\\lib\\CampusHub.MySql.psm1",
+            "Sha256": "00951359055CBE1CBA02461B98A20F6B48766B7DC9A29FEC1C5F0B71365A4F74"
+          },
+          {
+            "RelativePath": "scripts\\lib\\CampusHub.Package.psm1",
+            "Sha256": "5423A1452EF70D8BB1BCA9AE0DEAC8FFF9E267DC5C83A813BDED2DEC86A5E16C"
+          },
+          {
+            "RelativePath": "infra\\mysql\\mysql84.psd1",
+            "Sha256": "41DB8F544A79D29C1616FD6D0AAF3DF1685C42C825AADFBF1F94FB5B09AB93DB"
+          },
+          {
+            "RelativePath": "infra\\mysql\\my.ini.template",
+            "Sha256": "5CDE4ED5E087D006295F92390985DED148642A35FAD39562BDAA4FABCBE64433"
+          },
+          {
+            "RelativePath": "scripts\\Test-MySqlPackage.ps1",
+            "Sha256": "7B72360FF3CF540EC53E6F917B2276097476F4AB65DD31E9B790150B032807F4"
+          }
+        ]
+      }
+    },
+    {
+      "Id": "03_PACKAGE_TRUST",
+      "Status": "PASS",
+      "Evidence": {
+        "Status": "PASS",
+        "VerifiedAtUtc": "2026-10-18T22:50:50.010939Z",
+        "Version": "8.4.11",
+        "ArchivePath": "E:\\Project\\CampusHub.local\\packages\\mysql-8.4.11-winx64.zip",
+        "Bytes": 281191914,
+        "Md5": "2e833921898a9a030ea6bfe81bd811bc",
+        "Sha256": "A492371D687D2BAB088B0062581144A0044B8964BAEFDF4FAA579292B423D25C",
+        "Sha256Basis": "Locally measured after pinned official GPG verification",
+        "Signature": "VALIDSIG",
+        "SignerFingerprint": "BCA43417C3B485DD128EC6D4B7B3B788A8D3785C",
+        "GpgExitCode": 0,
+        "ValidSigStatus": "[GNUPG:] VALIDSIG BCA43417C3B485DD128EC6D4B7B3B788A8D3785C 2026-07-01 1782929968 0 4 0 1 8 00 BCA43417C3B485DD128EC6D4B7B3B788A8D3785C",
+        "GpgExecutable": "D:\\Git\\usr\\bin\\gpg.exe",
+        "TrustBasis": "Full fingerprint independently checked against official MySQL manual",
+        "SignatureSha256": "A3E8621364225A50EB37B24503D00298B1D0514CB33F489BD239456E2D54DF6B",
+        "KeySha256": "A4BCD9F16A53CC763F87B9955DBCDCED33C7AA90296B157EB6CEEF0F156F4327",
+        "DownloadPage": "https://dev.mysql.com/downloads/mysql/8.4.html",
+        "DownloadUrl": "https://dev.mysql.com/get/Downloads/MySQL-8.4/mysql-8.4.11-winx64.zip",
+        "SignatureUrl": "https://cdn.mysql.com/Downloads/MySQL-8.4/mysql-8.4.11-winx64.zip.asc",
+        "PublicKeyUrl": "https://repo.mysql.com/RPM-GPG-KEY-mysql-2025",
+        "FingerprintSource": "https://dev.mysql.com/doc/refman/8.4/en/checking-gpg-signature.html"
+      }
+    },
+    {
+      "Id": "04_NEW_SERVICE_RUNNING",
+      "Status": "PASS",
+      "Evidence": {
+        "Name": "MySQL84CampusHub",
+        "State": "Running",
+        "StartMode": "Manual",
+        "StartName": "NT AUTHORITY\\LocalService",
+        "PathName": "E:\\CampusHubRuntime\\mysql84\\server\\bin\\mysqld.exe --defaults-file=E:\\CampusHubRuntime\\mysql84\\config\\my.ini MySQL84CampusHub",
+        "ProcessId": 27148,
+        "ExitCode": 0
+      }
+    },
+    {
+      "Id": "05_MANUAL_LOCAL_SERVICE",
+      "Status": "PASS",
+      "Evidence": {
+        "StartMode": "Manual",
+        "StartName": "NT AUTHORITY\\LocalService"
+      }
+    },
+    {
+      "Id": "06_BINARY_CONFIG_PATHS",
+      "Status": "PASS",
+      "Evidence": {
+        "PathName": "E:\\CampusHubRuntime\\mysql84\\server\\bin\\mysqld.exe --defaults-file=E:\\CampusHubRuntime\\mysql84\\config\\my.ini MySQL84CampusHub",
+        "ConfigurationSha256": "5CDE4ED5E087D006295F92390985DED148642A35FAD39562BDAA4FABCBE64433"
+      }
+    },
+    {
+      "Id": "07_ONLY_LOOPBACK_3307",
+      "Status": "PASS",
+      "Evidence": {
+        "ServiceAndChildPids": [
+          27148,
+          5748
+        ],
+        "TCP": [
+          {
+            "LocalAddress": "127.0.0.1",
+            "LocalPort": 3307,
+            "OwningProcess": 5748
+          }
+        ],
+        "UDP": [],
+        "XProtocolListener": false
+      }
+    },
+    {
+      "Id": "08_ACTUAL_VERSION",
+      "Status": "PASS",
+      "Evidence": {
+        "BinaryVersion": "E:\\CampusHubRuntime\\mysql84\\server\\bin\\mysqld.exe  Ver 8.4.11 for Win64 on x86_64 (MySQL Community Server - GPL)",
+        "TcpGreeting": "8.4.11",
+        "BinarySha256": "B83561F885785133B79CFE53F225DFFBDBDEC160EA54B5245CFB30CC7A440FA7",
+        "MatchesVerifiedZipEntry": true,
+        "AuthenticationPerformed": false
+      }
+    },
+    {
+      "Id": "09_INDEPENDENT_DATA_DIRECTORY",
+      "Status": "PASS",
+      "Evidence": {
+        "ConfiguredDataDirectory": "E:\\CampusHubRuntime\\mysql84\\data",
+        "SystemTablespaceExists": true,
+        "ReparsePoint": false,
+        "LegacyDataDirectory": "C:\\ProgramData\\MySQL\\MySQL Server 8.0\\Data",
+        "SqlDatadir": "NOT_RUN"
+      }
+    },
+    {
+      "Id": "10_RUNTIME_ACL",
+      "Status": "PASS",
+      "Evidence": [
+        {
+          "Path": "E:\\CampusHubRuntime",
+          "Protected": true,
+          "Owner": "BUILTIN\\Administrators",
+          "Rules": [
+            {
+              "Sid": "S-1-5-18",
+              "Rights": "FullControl",
+              "Inherited": false,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-19",
+              "Rights": "ReadAndExecute, Synchronize",
+              "Inherited": false,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-32-544",
+              "Rights": "FullControl",
+              "Inherited": false,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-21-2285941875-3831842194-2244050682-1001",
+              "Rights": "FullControl",
+              "Inherited": false,
+              "Type": "Allow"
+            }
+          ]
+        },
+        {
+          "Path": "E:\\CampusHubRuntime\\mysql84",
+          "Protected": true,
+          "Owner": "BUILTIN\\Administrators",
+          "Rules": [
+            {
+              "Sid": "S-1-5-18",
+              "Rights": "FullControl",
+              "Inherited": false,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-19",
+              "Rights": "ReadAndExecute, Synchronize",
+              "Inherited": false,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-32-544",
+              "Rights": "FullControl",
+              "Inherited": false,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-21-2285941875-3831842194-2244050682-1001",
+              "Rights": "FullControl",
+              "Inherited": false,
+              "Type": "Allow"
+            }
+          ]
+        },
+        {
+          "Path": "E:\\CampusHubRuntime\\mysql84\\config",
+          "Protected": true,
+          "Owner": "BUILTIN\\Administrators",
+          "Rules": [
+            {
+              "Sid": "S-1-5-18",
+              "Rights": "FullControl",
+              "Inherited": false,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-19",
+              "Rights": "ReadAndExecute, Synchronize",
+              "Inherited": false,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-32-544",
+              "Rights": "FullControl",
+              "Inherited": false,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-21-2285941875-3831842194-2244050682-1001",
+              "Rights": "FullControl",
+              "Inherited": false,
+              "Type": "Allow"
+            }
+          ]
+        },
+        {
+          "Path": "E:\\CampusHubRuntime\\mysql84\\package",
+          "Protected": true,
+          "Owner": "BUILTIN\\Administrators",
+          "Rules": [
+            {
+              "Sid": "S-1-5-18",
+              "Rights": "FullControl",
+              "Inherited": false,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-19",
+              "Rights": "ReadAndExecute, Synchronize",
+              "Inherited": false,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-32-544",
+              "Rights": "FullControl",
+              "Inherited": false,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-21-2285941875-3831842194-2244050682-1001",
+              "Rights": "FullControl",
+              "Inherited": false,
+              "Type": "Allow"
+            }
+          ]
+        },
+        {
+          "Path": "E:\\CampusHubRuntime\\mysql84\\data",
+          "Protected": true,
+          "Owner": "BUILTIN\\Administrators",
+          "Rules": [
+            {
+              "Sid": "S-1-5-18",
+              "Rights": "FullControl",
+              "Inherited": false,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-19",
+              "Rights": "Modify, Synchronize",
+              "Inherited": false,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-32-544",
+              "Rights": "FullControl",
+              "Inherited": false,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-21-2285941875-3831842194-2244050682-1001",
+              "Rights": "FullControl",
+              "Inherited": false,
+              "Type": "Allow"
+            }
+          ]
+        },
+        {
+          "Path": "E:\\CampusHubRuntime\\mysql84\\logs",
+          "Protected": true,
+          "Owner": "BUILTIN\\Administrators",
+          "Rules": [
+            {
+              "Sid": "S-1-5-18",
+              "Rights": "FullControl",
+              "Inherited": false,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-19",
+              "Rights": "Modify, Synchronize",
+              "Inherited": false,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-32-544",
+              "Rights": "FullControl",
+              "Inherited": false,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-21-2285941875-3831842194-2244050682-1001",
+              "Rights": "FullControl",
+              "Inherited": false,
+              "Type": "Allow"
+            }
+          ]
+        },
+        {
+          "Path": "E:\\CampusHubRuntime\\mysql84\\tmp",
+          "Protected": true,
+          "Owner": "BUILTIN\\Administrators",
+          "Rules": [
+            {
+              "Sid": "S-1-5-18",
+              "Rights": "FullControl",
+              "Inherited": false,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-19",
+              "Rights": "Modify, Synchronize",
+              "Inherited": false,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-32-544",
+              "Rights": "FullControl",
+              "Inherited": false,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-21-2285941875-3831842194-2244050682-1001",
+              "Rights": "FullControl",
+              "Inherited": false,
+              "Type": "Allow"
+            }
+          ]
+        },
+        {
+          "Path": "E:\\CampusHubRuntime\\mysql84\\secrets",
+          "Protected": true,
+          "Owner": "BUILTIN\\Administrators",
+          "Rules": [
+            {
+              "Sid": "S-1-5-18",
+              "Rights": "FullControl",
+              "Inherited": false,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-32-544",
+              "Rights": "FullControl",
+              "Inherited": false,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-21-2285941875-3831842194-2244050682-1001",
+              "Rights": "FullControl",
+              "Inherited": false,
+              "Type": "Allow"
+            }
+          ]
+        },
+        {
+          "Path": "E:\\CampusHubRuntime\\mysql84\\diagnostics",
+          "Protected": true,
+          "Owner": "BUILTIN\\Administrators",
+          "Rules": [
+            {
+              "Sid": "S-1-5-18",
+              "Rights": "FullControl",
+              "Inherited": false,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-32-544",
+              "Rights": "FullControl",
+              "Inherited": false,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-21-2285941875-3831842194-2244050682-1001",
+              "Rights": "FullControl",
+              "Inherited": false,
+              "Type": "Allow"
+            }
+          ]
+        },
+        {
+          "Path": "E:\\CampusHubRuntime\\mysql84\\server",
+          "Protected": false,
+          "Owner": "BUILTIN\\Administrators",
+          "Rules": [
+            {
+              "Sid": "S-1-5-18",
+              "Rights": "FullControl",
+              "Inherited": true,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-19",
+              "Rights": "ReadAndExecute, Synchronize",
+              "Inherited": true,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-32-544",
+              "Rights": "FullControl",
+              "Inherited": true,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-21-2285941875-3831842194-2244050682-1001",
+              "Rights": "FullControl",
+              "Inherited": true,
+              "Type": "Allow"
+            }
+          ]
+        },
+        {
+          "Path": "E:\\CampusHubRuntime\\mysql84\\server\\bin\\mysqld.exe",
+          "Protected": false,
+          "Owner": "BUILTIN\\Administrators",
+          "Rules": [
+            {
+              "Sid": "S-1-5-18",
+              "Rights": "FullControl",
+              "Inherited": true,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-19",
+              "Rights": "ReadAndExecute, Synchronize",
+              "Inherited": true,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-32-544",
+              "Rights": "FullControl",
+              "Inherited": true,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-21-2285941875-3831842194-2244050682-1001",
+              "Rights": "FullControl",
+              "Inherited": true,
+              "Type": "Allow"
+            }
+          ]
+        },
+        {
+          "Path": "E:\\CampusHubRuntime\\mysql84\\config\\my.ini",
+          "Protected": false,
+          "Owner": "BUILTIN\\Administrators",
+          "Rules": [
+            {
+              "Sid": "S-1-5-18",
+              "Rights": "FullControl",
+              "Inherited": true,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-19",
+              "Rights": "ReadAndExecute, Synchronize",
+              "Inherited": true,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-32-544",
+              "Rights": "FullControl",
+              "Inherited": true,
+              "Type": "Allow"
+            },
+            {
+              "Sid": "S-1-5-21-2285941875-3831842194-2244050682-1001",
+              "Rights": "FullControl",
+              "Inherited": true,
+              "Type": "Allow"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "11_SENSITIVE_LOG_ACL",
+      "Status": "PASS",
+      "Evidence": {
+        "Path": "E:\\CampusHubRuntime\\mysql84\\logs\\mysql84.err",
+        "Protected": false,
+        "Owner": "BUILTIN\\Administrators",
+        "Rules": [
+          {
+            "Sid": "S-1-5-18",
+            "Rights": "FullControl",
+            "Inherited": true,
+            "Type": "Allow"
+          },
+          {
+            "Sid": "S-1-5-19",
+            "Rights": "Modify, Synchronize",
+            "Inherited": true,
+            "Type": "Allow"
+          },
+          {
+            "Sid": "S-1-5-32-544",
+            "Rights": "FullControl",
+            "Inherited": true,
+            "Type": "Allow"
+          },
+          {
+            "Sid": "S-1-5-21-2285941875-3831842194-2244050682-1001",
+            "Rights": "FullControl",
+            "Inherited": true,
+            "Type": "Allow"
+          }
+        ]
+      }
+    },
+    {
+      "Id": "12_LEGACY_SERVICE_UNCHANGED",
+      "Status": "PASS",
+      "Evidence": {
+        "Name": "MySQL80",
+        "State": "Running",
+        "StartMode": "Auto",
+        "StartName": "NT AUTHORITY\\NetworkService",
+        "PathName": "\"C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\mysqld.exe\" --defaults-file=\"C:\\ProgramData\\MySQL\\MySQL Server 8.0\\my.ini\" MySQL80",
+        "ConfigHash": "1253B6E07E8CF0323D093EE21C50A02FF5B06585B4060C6F18C9C65F91F7263F"
+      }
+    },
+    {
+      "Id": "13_LEGACY_PORTS_AND_VERSION",
+      "Status": "PASS",
+      "Evidence": {
+        "TCP": [
+          {
+            "LocalAddress": "::",
+            "LocalPort": 33060,
+            "OwningProcess": 7088
+          },
+          {
+            "LocalAddress": "::",
+            "LocalPort": 3306,
+            "OwningProcess": 7088
+          }
+        ],
+        "Version": "8.0.44",
+        "AuthenticationPerformed": false
+      }
+    },
+    {
+      "Id": "14_PROCESS_POLICY_ONLY",
+      "Status": "PASS",
+      "Evidence": {
+        "CurrentPolicy": [
+          {
+            "Scope": "MachinePolicy",
+            "Policy": "Undefined"
+          },
+          {
+            "Scope": "UserPolicy",
+            "Policy": "Undefined"
+          },
+          {
+            "Scope": "Process",
+            "Policy": "Undefined"
+          },
+          {
+            "Scope": "CurrentUser",
+            "Policy": "Undefined"
+          },
+          {
+            "Scope": "LocalMachine",
+            "Policy": "RemoteSigned"
+          }
+        ],
+        "UnchangedFromBeforeUac": true,
+        "ElevatedLaunchPolicy": "RemoteSigned (process only)"
+      }
+    },
+    {
+      "Id": "15_POST_REBOOT_SERVICE_START",
+      "Status": "PASS",
+      "Evidence": {
+        "LastBootUtc": "2026-10-18T22:40:47.5Z",
+        "Action": {
+          "Status": "PASS",
+          "Action": "StartExistingServiceOnly",
+          "Stage": "Complete",
+          "Started": true,
+          "ErrorType": null,
+          "TimeUtc": "2026-10-18T22:48:55.4723578Z"
+        },
+        "ReinstallationPerformed": false
+      }
+    },
+    {
+      "Id": "16_SANITIZED_DIAGNOSTICS",
+      "Status": "PASS",
+      "Evidence": {
+        "CheckedAtUtc": "2026-10-18T22:51:41.7191426Z",
+        "FileAccess": "Read",
+        "FileShare": "ReadWrite",
+        "RawLogRetainedInReport": false,
+        "ErrorMarkers": 0,
+        "SelfSignedCaWarning": true,
+        "Markers": [
+          {
+            "Time": "2026-10-18T18:10:13.908966Z",
+            "Level": "System",
+            "Code": "MY-015017"
+          },
+          {
+            "Time": "2026-10-18T18:10:13.923784Z",
+            "Level": "System",
+            "Code": "MY-013169"
+          },
+          {
+            "Time": "2026-10-18T18:10:13.984585Z",
+            "Level": "System",
+            "Code": "MY-013576"
+          },
+          {
+            "Time": "2026-10-18T18:10:14.272041Z",
+            "Level": "System",
+            "Code": "MY-013577"
+          },
+          {
+            "Time": "2026-10-18T18:10:16.665359Z",
+            "Level": "System",
+            "Code": "MY-015018"
+          },
+          {
+            "Time": "2026-10-18T18:10:17.959537Z",
+            "Level": "System",
+            "Code": "MY-015015"
+          },
+          {
+            "Time": "2026-10-18T18:10:18.135224Z",
+            "Level": "System",
+            "Code": "MY-010116"
+          },
+          {
+            "Time": "2026-10-18T18:10:18.159747Z",
+            "Level": "System",
+            "Code": "MY-013576"
+          },
+          {
+            "Time": "2026-10-18T18:10:18.431210Z",
+            "Level": "System",
+            "Code": "MY-013577"
+          },
+          {
+            "Time": "2026-10-18T18:10:18.729169Z",
+            "Level": "Warning",
+            "Code": "MY-010068"
+          },
+          {
+            "Time": "2026-10-18T18:10:18.730687Z",
+            "Level": "System",
+            "Code": "MY-013602"
+          },
+          {
+            "Time": "2026-10-18T18:10:18.760216Z",
+            "Level": "System",
+            "Code": "MY-010931"
+          },
+          {
+            "Time": "2026-10-18T18:21:06.871439Z",
+            "Level": "System",
+            "Code": "MY-013105"
+          },
+          {
+            "Time": "2026-10-18T18:21:07.391233Z",
+            "Level": "System",
+            "Code": "MY-010910"
+          },
+          {
+            "Time": "2026-10-18T18:21:07.394792Z",
+            "Level": "System",
+            "Code": "MY-015016"
+          },
+          {
+            "Time": "2026-10-18T22:48:58.648287Z",
+            "Level": "System",
+            "Code": "MY-015015"
+          },
+          {
+            "Time": "2026-10-18T22:48:58.863326Z",
+            "Level": "System",
+            "Code": "MY-010116"
+          },
+          {
+            "Time": "2026-10-18T22:48:58.960588Z",
+            "Level": "System",
+            "Code": "MY-013576"
+          },
+          {
+            "Time": "2026-10-18T22:48:59.367006Z",
+            "Level": "System",
+            "Code": "MY-013577"
+          },
+          {
+            "Time": "2026-10-18T22:48:59.642185Z",
+            "Level": "Warning",
+            "Code": "MY-010068"
+          },
+          {
+            "Time": "2026-10-18T22:48:59.643439Z",
+            "Level": "System",
+            "Code": "MY-013602"
+          },
+          {
+            "Time": "2026-10-18T22:48:59.683728Z",
+            "Level": "System",
+            "Code": "MY-010931"
+          }
+        ],
+        "FailureDiagnosticFileCount": 0,
+        "SecretsFileCount": 0
+      }
+    },
+    {
+      "Id": "17_NEW_AUTHENTICATED_SQL",
+      "Status": "NOT_RUN",
+      "Reason": "No usable credentials established; temporary root password was not extracted or used for authentication. Only sanitized log metadata was retained. @@datadir SQL remains unverified."
+    },
+    {
+      "Id": "18_LEGACY_AUTHENTICATED_SQL",
+      "Status": "NOT_RUN",
+      "Reason": "Existing database credentials not supplied or accessed."
+    },
+    {
+      "Id": "19_BUSINESS_BOOTSTRAP_FLYWAY_BACKEND",
+      "Status": "NOT_RUN",
+      "Reason": "Outside current authorization; no business database/account initialization or migrations."
+    },
+    {
+      "Id": "20_CONTROLLED_STOP_START_SQL_TEST",
+      "Status": "NOT_RUN",
+      "Reason": "No deliberate stop cycle or credentialed isolation SQL test performed."
+    }
+  ],
+  "PreviousAttempt": {
+    "Path": "docs/verification/mysql84-install-acceptance.json",
+    "CheckedAtUtc": "2026-10-18T22:50:52.6716716Z",
+    "Failure": "Readonly log reader used incompatible sharing mode (IOException)",
+    "Correction": "Read-only FileStream with FileShare.ReadWrite; no ACL, log content, service or database modification",
+    "OtherEvidence": "Checks 01-15 retain prior timestamps; service, old baseline and frozen hashes rechecked now"
+  },
+  "FinalRecheck": {
+    "CampusService": "PASS",
+    "LegacyBaseline": "PASS",
+    "FrozenHashes": "PASS"
+  }
+}

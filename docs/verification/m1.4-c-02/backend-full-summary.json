@@ -1,0 +1,134 @@
+[
+  {
+    "Suite": "com.campushub.ActivityIT",
+    "Tests": 15,
+    "Failures": 0,
+    "Errors": 0,
+    "Skipped": 0,
+    "Cases": [
+      "publishRechecksDeadlineAfterWaitingForRowLock",
+      "keywordUsesLiteralWildcardsAndBoundParameters",
+      "timeOrderingExpiryAndTimezoneRoundTrip",
+      "ownershipIsEnforcedAndAdminCanManageOtherOrganizers",
+      "publishedFieldsFreezeAndInvalidOrStaleTransitionsConflict",
+      "managementRequiresAuthenticationAndRoleAndCsrf",
+      "databaseConstraintsAndUtcStorageAreReal",
+      "listsFilterPaginateAndNeverRevealUnpublishedContent",
+      "lifecycleAndPublicVisibility",
+      "invalidInputsAndQueryBoundsAre400",
+      "studentCannotReadOrMutateManagementDetails",
+      "csrfAndLogoutProtectEveryMutation",
+      "simultaneousTransitionsAndEditPublishHaveExactlyOneWinner",
+      "supportedDateExtremesRoundTripWithoutCalendarDrift",
+      "jsonTextAndTimesMustHaveTheirDeclaredTypes"
+    ]
+  },
+  {
+    "Suite": "com.campushub.AuthenticationIT",
+    "Tests": 9,
+    "Failures": 0,
+    "Errors": 0,
+    "Skipped": 0,
+    "Cases": [
+      "wrongPasswordUnknownUserAndIdOnlyLoginAre401",
+      "anonymousLogoutWithValidCsrfIs401",
+      "threeRolesLoginAndOnlyAccessOwnRoleEndpoints",
+      "csrfRequiredAndLogoutRevokesOldCookie",
+      "failedLoginClearsPreviouslyAuthenticatedIdentity",
+      "roleAndUserIdTamperingNeverChangesIdentity",
+      "anonymousAndForgedSessionAre401",
+      "expiredSessionCannotAccessProtectedEndpoint",
+      "disabledAndNonDemoAccountsCannotAuthenticate"
+    ]
+  },
+  {
+    "Suite": "com.campushub.BackendIT",
+    "Tests": 11,
+    "Failures": 0,
+    "Errors": 0,
+    "Skipped": 0,
+    "Cases": [
+      "realDatabaseIdentityAndTlsAreCorrect",
+      "unicodeRoundTripsAndSpringTransactionRollsBack",
+      "categoriesComeFromRealMySqlInStableOrder",
+      "applicationRuntimeContainsNoFlyway",
+      "healthIsPublicAndDoesNotDiscloseDatabaseDetails",
+      "developmentOpenApiAndSwaggerUiAreReal",
+      "protectedAndUnknownAnonymousRequestsReturnJson401",
+      "categoryWriteMethodIsNotPublic",
+      "applicationCannotDdlReadHistoryProbeOrDevelopmentSchema",
+      "devWithoutExplicitOptInCannotUseDemoLogin",
+      "applicationPurposeRejectsActualTestAccountAndUnknownPurpose"
+    ]
+  },
+  {
+    "Suite": "com.campushub.DemoEnvironmentIT",
+    "Tests": 1,
+    "Failures": 0,
+    "Errors": 0,
+    "Skipped": 0,
+    "Cases": [
+      "demoCannotBeEnabledOutsideExclusiveLocalDevOrTest"
+    ]
+  },
+  {
+    "Suite": "com.campushub.ProductionConfigurationIT",
+    "Tests": 3,
+    "Failures": 0,
+    "Errors": 0,
+    "Skipped": 0,
+    "Cases": [
+      "unknownAuthenticatedApiGetsUnified404",
+      "productionHasNoDemoLoginEvenForAuthenticatedRequest",
+      "productionDocumentsAreAbsentEvenForAuthenticatedRequests"
+    ]
+  },
+  {
+    "Suite": "com.campushub.RegistrationIT",
+    "Tests": 28,
+    "Failures": 0,
+    "Errors": 0,
+    "Skipped": 0,
+    "Cases": [
+      "logoutAndExpiredCookiesCannotMutateAndDoNotRevokeOtherSession",
+      "cancellationAfterStartIsRejectedAndLockWaitRechecksDeadline",
+      "registerCancelRetryAndRejoin",
+      "unpublishedRejectionLeavesNoRecordAndRepublishAllowsFreshRegistration",
+      "ownHistorySurvivesUnpublishWithoutLeakingPrivateActivityContent",
+      "realLockTimeoutRollsBackAndConnectionCanRetry",
+      "testApplicationGrantsAllowOnlyAuthorizedTableOperations",
+      "differentActivitiesFirstRegistrationsDoNotDeadlockOnMissingKeys()[1]",
+      "differentActivitiesFirstRegistrationsDoNotDeadlockOnMissingKeys()[2]",
+      "differentActivitiesFirstRegistrationsDoNotDeadlockOnMissingKeys()[3]",
+      "rolesCsrfOwnershipAndCallerIdentityAreEnforced",
+      "uniqueAndCounterConstraintsRejectInvalidDatabaseStates",
+      "manyStudentsNeverExceedCapacity",
+      "databaseFailureAfterSeatUpdateRollsBackBothInsertAndCancellation",
+      "unpublishRepublishAndCapacityEditingPreserveExistingRegistrations",
+      "lastSeatHasOneWinnerAcrossIndependentConnections()[1]",
+      "lastSeatHasOneWinnerAcrossIndependentConnections()[2]",
+      "lastSeatHasOneWinnerAcrossIndependentConnections()[3]",
+      "cancelledStudentMustRecheckWindowPublicationAndRemainingSeats",
+      "unpublishAndRegistrationRespectBothControlledCommitOrders",
+      "registrationAndCancellationRacePreservesCountsAndRejectsOldLifecycle",
+      "invalidAndOtherSessionCsrfCannotRegisterOrCancel",
+      "registrationAndUnpublishSerializeOnActivityRow",
+      "cancellationAndCapacityEditUseTheSameLockOrder",
+      "sameStudentConcurrentRetriesUseOneRecordAndOneSeat",
+      "concurrentAuthenticatedHttpRequestsCompeteForLastSeat",
+      "personalHistoryAndRosterPaginateCancelledAndConfirmedRecords",
+      "publicWindowAndInvalidRequestsReturnBusinessErrors"
+    ]
+  },
+  {
+    "Suite": "com.campushub.GlobalExceptionHandlerTest",
+    "Tests": 2,
+    "Failures": 0,
+    "Errors": 0,
+    "Skipped": 0,
+    "Cases": [
+      "unexpectedErrorsHaveSafeJsonAndLogs(CapturedOutput)",
+      "databaseErrorsAndLogsDoNotExposeExceptionDetails(CapturedOutput)"
+    ]
+  }
+]

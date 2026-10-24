@@ -1,0 +1,30 @@
+{
+    "PowerShell":  "5.1.26100.9711",
+    "Status":  "PASS",
+    "Results":  [
+                    {
+                        "Errors":  0,
+                        "File":  "scripts\\lib\\CampusHub.Backend.psm1"
+                    },
+                    {
+                        "Errors":  0,
+                        "File":  "scripts\\Invoke-BackendMigration.ps1"
+                    },
+                    {
+                        "Errors":  0,
+                        "File":  "scripts\\Invoke-Backend.ps1"
+                    },
+                    {
+                        "Errors":  0,
+                        "File":  "scripts\\Test-BackendDatabase.ps1"
+                    },
+                    {
+                        "Errors":  0,
+                        "File":  "scripts\\Test-BackendPackage.ps1"
+                    },
+                    {
+                        "Errors":  0,
+                        "File":  "scripts\\tests\\Test-BackendSafety.ps1"
+                    }
+                ]
+}

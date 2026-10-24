@@ -1,0 +1,11 @@
+<view class="page">
+  <view class="eyebrow">EXPLORE CAMPUS</view><view class="heading">下一场，去哪里？</view>
+  <view class="search"><input value="{{keyword}}" bindinput="input" bindconfirm="search" confirm-type="search" maxlength="100" placeholder="搜索活动标题或简介" aria-label="搜索活动标题或简介"/><button class="primary" bindtap="search">搜索</button></view>
+  <scroll-view scroll-x class="filter-strip"><view class="filters"><button class="filter {{categoryId === 0 ? 'selected' : ''}}" data-id="0" bindtap="filter">全部</button><button wx:for="{{categories}}" wx:key="id" class="filter {{categoryId === item.id ? 'selected' : ''}}" data-id="{{item.id}}" bindtap="filter">{{item.name}}</button></view></scroll-view>
+  <view class="row"><text class="small">{{total}} 场已发布活动</text><button wx:if="{{keyword || categoryId}}" class="ghost" bindtap="clear">清除筛选</button></view>
+  <page-state state="{{state}}" message="{{error}}" empty-text="没有匹配的活动，试试其他关键词" bind:retry="load" bind:login="login"/>
+  <activity-card class="campus-card" wx:for="{{items}}" wx:key="id" activity="{{item}}" bind:open="detail"/>
+  <view wx:if="{{error && state === 'ready'}}" class="error">{{error}}</view>
+  <button wx:if="{{more && state === 'ready'}}" class="secondary" loading="{{loadingMore}}" disabled="{{loadingMore}}" bindtap="more">{{loadingMore ? '正在加载' : '加载更多活动'}}</button>
+  <view wx:if="{{state === 'ready' && !more}}" class="footer-note">已经看到全部活动了</view>
+</view>

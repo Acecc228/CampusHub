@@ -1,0 +1,8 @@
+{
+  "Source": "https://devtools.wxqcloud.qq.com.cn/WechatWebDev/release/be1ec64cf6184b0fa64091919793f068/wechat_devtools_2.02.2608080_win32_x64.exe",
+  "Bytes": 190935184,
+  "SHA256": "8A3255FE7626879B472DC5145E1B29D797F86D0A6BD9D775097F2BA5F9BB7467",
+  "SignatureStatus": "Valid",
+  "Signer": "CN=Tencent Technology (Shenzhen) Company Limited, O=Tencent Technology (Shenzhen) Company Limited, L=Shenzhen, S=Guangdong Province, C=CN, SERIALNUMBER=9144030071526726XG, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.1=Shenzhen, OID.1.3.6.1.4.1.311.60.2.1.2=Guangdong Province, OID.1.3.6.1.4.1.311.60.2.1.3=CN",
+  "Version": "2.02.2608080"
+}

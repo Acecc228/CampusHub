@@ -1,0 +1,8 @@
+.detail-page { padding-bottom: calc(110px + env(safe-area-inset-bottom)); }
+.detail-page .heading { margin-top: 24rpx; }
+.ticket { border-color: var(--ch-primary); }
+.seat { text-align: right; }.seat > text { color: var(--ch-primary); font-size: 36px; font-weight: 750; }
+.ticket-bottom { border-top: 1px dashed var(--ch-border); padding-top: 20rpx; margin-top: 20rpx; color: var(--ch-muted); font-size: 13px; }
+.content { margin-top: 24rpx; line-height: 1.9; }
+.action-bar { position: fixed; bottom: 0; left: 0; right: 0; z-index: 10; padding: 12px 16px calc(12px + env(safe-area-inset-bottom)); background: var(--ch-surface); border-top: 1px solid var(--ch-border); }
+.action-inner { max-width: 640px; margin: auto; display: flex; align-items: center; gap: 24rpx; }.action-inner button { flex: 1; }.action-inner .small { max-width: 40%; }

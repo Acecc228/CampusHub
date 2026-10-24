@@ -1,0 +1,28 @@
+{
+  "Status": "PASS",
+  "CheckedAtUtc": "2026-10-20T21:58:58.0554997Z",
+  "MavenTests": 60,
+  "MavenFailures": 0,
+  "MavenErrors": 0,
+  "MavenSkipped": 0,
+  "DatabaseChecks": 11,
+  "GuardChecks": 25,
+  "PowerShellFiles": 25,
+  "PowerShellParseErrors": 0,
+  "PackagedProfiles": "dev,prod",
+  "JarSha256": "2AFB07D55F6FE583365D3A0C9105172E15E28921FB9AC1D72C5594EC833733C2",
+  "TestOrMigrationArtifactsInJar": 0,
+  "RemainingCampusHubJavaProcesses": 0,
+  "DataConsistency": "PASS",
+  "LegacyMySQL80Fingerprint": "PASS",
+  "M14": "NOT_RUN",
+  "Documents": [
+    "PLAN.md",
+    "docs/DEV_HANDOFF.md",
+    "docs/backend-development.md",
+    "docs/database-permissions.md",
+    "docs/interview-notes.md",
+    "docs/m1.3-design.md",
+    "docs/verification/m1.3-registrations.md"
+  ]
+}

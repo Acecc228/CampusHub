@@ -1,0 +1,47 @@
+{
+  "RunId": "9e27ec4a45aa4dafbc69ab461b5992c2",
+  "Directory": "E:\\Project\\CampusHub\\.local\\install-run\\9e27ec4a45aa4dafbc69ab461b5992c2",
+  "Launcher": "E:\\Project\\CampusHub\\scripts\\Invoke-ReviewedMySqlInstall.ps1",
+  "LauncherSha256": "33B36F4BB199797EDB0EF1790D2C5DAF977CDA6A54FDFA3EFE9C22F4FA831FCB",
+  "PowerShell": "C:\\Users\\PUBLIC_USER\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+  "Arguments": [
+    "-NoProfile",
+    "-NonInteractive",
+    "-ExecutionPolicy",
+    "RemoteSigned",
+    "-File",
+    "E:\\Project\\CampusHub\\scripts\\Invoke-ReviewedMySqlInstall.ps1",
+    "-Apply",
+    "-RunId",
+    "9e27ec4a45aa4dafbc69ab461b5992c2"
+  ],
+  "Verb": "RunAs",
+  "WindowStyle": "Hidden",
+  "Purpose": "One finite user-approved installation process; no elevation service",
+  "CurrentPolicy": [
+    {
+      "Scope": "MachinePolicy",
+      "Policy": "Undefined"
+    },
+    {
+      "Scope": "UserPolicy",
+      "Policy": "Undefined"
+    },
+    {
+      "Scope": "Process",
+      "Policy": "Undefined"
+    },
+    {
+      "Scope": "CurrentUser",
+      "Policy": "Undefined"
+    },
+    {
+      "Scope": "LocalMachine",
+      "Policy": "RemoteSigned"
+    }
+  ],
+  "_publication": {
+    "kind": "redacted-public-evidence",
+    "note": "G02 anonymized Windows user directory; original bytes retained locally; historical results unchanged."
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "At": "2026-10-24T02:59:51.2714273Z",
+  "Host": "127.0.0.1:3307",
+  "Database": "campushub_test",
+  "Sql": "SELECT a.id,a.status,a.version,a.capacity,a.registered_count,r.id,r.user_id,r.status,r.version FROM activity a LEFT JOIN activity_registration r ON r.activity_id=a.id WHERE a.id IN(634,642) ORDER BY a.id,r.id;",
+  "Rows": "634\tPUBLISHED\t4\t2\t1\t292\t1\tCONFIRMED\t3\r\n642\tPUBLISHED\t3\t1\t1\t295\t1\tCONFIRMED\t1"
+}

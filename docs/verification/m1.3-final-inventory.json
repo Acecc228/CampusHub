@@ -1,0 +1,28 @@
+{
+  "Status": "PASS",
+  "CheckedAtUtc": "2026-10-20T21:55:44.9329630Z",
+  "OriginalProbe": "PASS",
+  "MySQL80OriginalFingerprint": "PASS",
+  "Databases": [
+    {
+      "Database": "campushub",
+      "Activities": 0,
+      "Registrations": 0,
+      "Users": 3,
+      "Confirmed": 0,
+      "CountMismatches": 0,
+      "DuplicateActivityUserPairs": 0,
+      "History": "1\t1160888031\t1\r\n2\t436036048\t1\r\n3\t-852546724\t1\r\n4\t653386617\t1\r\n"
+    },
+    {
+      "Database": "campushub_test",
+      "Activities": 78,
+      "Registrations": 88,
+      "Users": 115,
+      "Confirmed": 67,
+      "CountMismatches": 0,
+      "DuplicateActivityUserPairs": 0,
+      "History": "0\tNULL\t1\r\n1\t1160888031\t1\r\n2\t436036048\t1\r\n3\t-852546724\t1\r\n4\t653386617\t1\r\n"
+    }
+  ]
+}

@@ -1,0 +1,512 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Users\\PUBLIC_USER\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+      "E:\\Project\\CampusHub\\admin-web\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "E:\\Project\\CampusHub\\admin-web\\playwright.config.ts",
+    "rootDir": "E:/Project/CampusHub/admin-web/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/Project/CampusHub/.local/admin-e2e",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "E:/Project/CampusHub/admin-web/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\Project\\CampusHub\\.local\\admin-e2e",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "E:\\Project\\CampusHub\\admin-web\\tests",
+        "snapshotDir": "E:\\Project\\CampusHub\\admin-web\\tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:5173",
+          "channel": "msedge",
+          "actionTimeout": 10000,
+          "viewport": {
+            "width": 1440,
+            "height": 960
+          },
+          "trace": "off",
+          "screenshot": "off",
+          "video": "off"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "../docs/verification/m1.4-a-e2e.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "admin.spec.ts",
+      "file": "admin.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "组织者真实创建、编辑、发布、学生报名、下架和重发布闭环",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "serial",
+                  "location": {
+                    "file": "E:\\Project\\CampusHub\\admin-web\\tests\\admin.spec.ts",
+                    "line": 0,
+                    "column": 0
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 13847,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('有效报名 0 人，剩余 30 个名额。')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText('有效报名 0 人，剩余 30 个名额。') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByText('有效报名 0 人，剩余 30 个名额。')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('有效报名 0 人，剩余 30 个名额。')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText('有效报名 0 人，剩余 30 个名额。') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByText('有效报名 0 人，剩余 30 个名额。')\u001b[22m\n\n    at E:\\Project\\CampusHub\\admin-web\\tests\\admin.spec.ts:99:73",
+                    "location": {
+                      "file": "E:\\Project\\CampusHub\\admin-web\\tests\\admin.spec.ts",
+                      "column": 73,
+                      "line": 99
+                    },
+                    "snippet": "   97 |   await page.getByRole('button', { name: '刷新名单', exact: true }).click()\n   98 |   await expect(page.locator('tbody')).toContainText('已取消')\n>  99 |   await expect(page.getByText('有效报名 0 人，剩余 30 个名额。', { exact: false })).toBeVisible()\n      |                                                                         ^\n  100 |   await page.getByRole('button', { name: '重新发布', exact: true }).click()\n  101 |   await page.getByRole('dialog').getByRole('button', { name: '重新发布', exact: true }).click()\n  102 |   await expect(page.getByRole('button', { name: '下架活动', exact: true })).toBeVisible()"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\Project\\CampusHub\\admin-web\\tests\\admin.spec.ts",
+                        "column": 73,
+                        "line": 99
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('有效报名 0 人，剩余 30 个名额。')\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText('有效报名 0 人，剩余 30 个名额。') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByText('有效报名 0 人，剩余 30 个名额。')\u001b[22m\n\n\n   97 |   await page.getByRole('button', { name: '刷新名单', exact: true }).click()\n   98 |   await expect(page.locator('tbody')).toContainText('已取消')\n>  99 |   await expect(page.getByText('有效报名 0 人，剩余 30 个名额。', { exact: false })).toBeVisible()\n      |                                                                         ^\n  100 |   await page.getByRole('button', { name: '重新发布', exact: true }).click()\n  101 |   await page.getByRole('dialog').getByRole('button', { name: '重新发布', exact: true }).click()\n  102 |   await expect(page.getByRole('button', { name: '下架活动', exact: true })).toBeVisible()\n    at E:\\Project\\CampusHub\\admin-web\\tests\\admin.spec.ts:99:73"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T04:04:23.867Z",
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "E:\\Project\\CampusHub\\admin-web\\tests\\admin.spec.ts",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\Project\\CampusHub\\.local\\admin-e2e\\admin-组织者真实创建、编辑、发布、学生报名、下架和重发布闭环\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\Project\\CampusHub\\admin-web\\tests\\admin.spec.ts",
+                    "column": 73,
+                    "line": 99
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "d4043a9dd1ab94463227-045d6a55beeabb3c180e",
+          "file": "admin.spec.ts",
+          "line": 53,
+          "column": 1
+        },
+        {
+          "title": "管理员真实筛选、分页、跨组织者管理和多尺寸视觉",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "serial",
+                  "location": {
+                    "file": "E:\\Project\\CampusHub\\admin-web\\tests\\admin.spec.ts",
+                    "line": 0,
+                    "column": 0
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T04:04:38.267Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "d4043a9dd1ab94463227-13a0226c138ad8acd014",
+          "file": "admin.spec.ts",
+          "line": 108,
+          "column": 1
+        },
+        {
+          "title": "真实认证失败、CSRF 拒绝、学生 403、组织者归属隔离",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "serial",
+                  "location": {
+                    "file": "E:\\Project\\CampusHub\\admin-web\\tests\\admin.spec.ts",
+                    "line": 0,
+                    "column": 0
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T04:04:38.267Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "d4043a9dd1ab94463227-a8647286ada270ca9d73",
+          "file": "admin.spec.ts",
+          "line": 142,
+          "column": 1
+        },
+        {
+          "title": "真实版本冲突保留输入，未保存保护和 Session 失效后同身份恢复",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "serial",
+                  "location": {
+                    "file": "E:\\Project\\CampusHub\\admin-web\\tests\\admin.spec.ts",
+                    "line": 0,
+                    "column": 0
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T04:04:38.267Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "d4043a9dd1ab94463227-6a6e61cec331f6c223cd",
+          "file": "admin.spec.ts",
+          "line": 167,
+          "column": 1
+        },
+        {
+          "title": "网络失败、无结果、慢请求、搜索乱序保护与 404",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "serial",
+                  "location": {
+                    "file": "E:\\Project\\CampusHub\\admin-web\\tests\\admin.spec.ts",
+                    "line": 0,
+                    "column": 0
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T04:04:38.267Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "d4043a9dd1ab94463227-eb9b96ade8cb8d813bc7",
+          "file": "admin.spec.ts",
+          "line": 198,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "review.spec.ts",
+      "file": "review.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "审查回归：保存等待期间阻止编辑丢失",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 10969,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#summary')\nExpected: disabled\nReceived: enabled\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" locator('#summary') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#summary')\u001b[22m\n\u001b[2m    24 × locator resolved to <textarea rows=\"3\" id=\"summary\" maxlength=\"500\" class=\"resize-none\" aria-invalid=\"false\" placeholder=\"这场活动有什么值得期待？\" aria-describedby=\"summary-help\"></textarea>\u001b[22m\n\u001b[2m       - unexpected value \"enabled\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#summary')\nExpected: disabled\nReceived: enabled\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" locator('#summary') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#summary')\u001b[22m\n\u001b[2m    24 × locator resolved to <textarea rows=\"3\" id=\"summary\" maxlength=\"500\" class=\"resize-none\" aria-invalid=\"false\" placeholder=\"这场活动有什么值得期待？\" aria-describedby=\"summary-help\"></textarea>\u001b[22m\n\u001b[2m       - unexpected value \"enabled\"\u001b[22m\n\n    at E:\\Project\\CampusHub\\admin-web\\tests\\review.spec.ts:29:44",
+                    "location": {
+                      "file": "E:\\Project\\CampusHub\\admin-web\\tests\\review.spec.ts",
+                      "column": 44,
+                      "line": 29
+                    },
+                    "snippet": "  27 |   await page.getByRole('button', { name: '保存修改' }).click()\n  28 |   try {\n> 29 |     await expect(page.locator('#summary')).toBeDisabled()\n     |                                            ^\n  30 |     await expect(page.getByRole('combobox', { name: '活动分类', exact: true })).toBeDisabled()\n  31 |   } finally { release() }\n  32 |   await expect(page).toHaveURL(/\\/activities$/)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\Project\\CampusHub\\admin-web\\tests\\review.spec.ts",
+                        "column": 44,
+                        "line": 29
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#summary')\nExpected: disabled\nReceived: enabled\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" locator('#summary') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#summary')\u001b[22m\n\u001b[2m    24 × locator resolved to <textarea rows=\"3\" id=\"summary\" maxlength=\"500\" class=\"resize-none\" aria-invalid=\"false\" placeholder=\"这场活动有什么值得期待？\" aria-describedby=\"summary-help\"></textarea>\u001b[22m\n\u001b[2m       - unexpected value \"enabled\"\u001b[22m\n\n\n  27 |   await page.getByRole('button', { name: '保存修改' }).click()\n  28 |   try {\n> 29 |     await expect(page.locator('#summary')).toBeDisabled()\n     |                                            ^\n  30 |     await expect(page.getByRole('combobox', { name: '活动分类', exact: true })).toBeDisabled()\n  31 |   } finally { release() }\n  32 |   await expect(page).toHaveURL(/\\/activities$/)\n    at E:\\Project\\CampusHub\\admin-web\\tests\\review.spec.ts:29:44"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T04:04:38.667Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\Project\\CampusHub\\.local\\admin-e2e\\review-审查回归：保存等待期间阻止编辑丢失\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\Project\\CampusHub\\admin-web\\tests\\review.spec.ts",
+                    "column": 44,
+                    "line": 29
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "12f883ce49bb8436c3d7-4f26249e7986ef5a6631",
+          "file": "review.spec.ts",
+          "line": 17,
+          "column": 1
+        },
+        {
+          "title": "审查回归：Session 失效关闭包含业务信息的确认框",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 11316,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.el-message-box')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('.el-message-box') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('.el-message-box')\u001b[22m\n\u001b[2m    24 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.el-message-box')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('.el-message-box') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('.el-message-box')\u001b[22m\n\u001b[2m    24 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n    at E:\\Project\\CampusHub\\admin-web\\tests\\review.spec.ts:46:49",
+                    "location": {
+                      "file": "E:\\Project\\CampusHub\\admin-web\\tests\\review.spec.ts",
+                      "column": 49,
+                      "line": 46
+                    },
+                    "snippet": "  44 |   release()\n  45 |   await expect(page.getByRole('heading', { name: '重新连接工作台' })).toBeVisible()\n> 46 |   await expect(page.locator('.el-message-box')).toHaveCount(0)\n     |                                                 ^\n  47 |   await page.locator('#username').fill('demo_organizer')\n  48 |   await page.locator('#password').fill(secrets.Accounts.find(a => a.LoginName === 'demo_organizer')!.Password)\n  49 |   await page.getByRole('button', { name: '登录管理中心' }).click()"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\Project\\CampusHub\\admin-web\\tests\\review.spec.ts",
+                        "column": 49,
+                        "line": 46
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.el-message-box')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('.el-message-box') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('.el-message-box')\u001b[22m\n\u001b[2m    24 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n\n  44 |   release()\n  45 |   await expect(page.getByRole('heading', { name: '重新连接工作台' })).toBeVisible()\n> 46 |   await expect(page.locator('.el-message-box')).toHaveCount(0)\n     |                                                 ^\n  47 |   await page.locator('#username').fill('demo_organizer')\n  48 |   await page.locator('#password').fill(secrets.Accounts.find(a => a.LoginName === 'demo_organizer')!.Password)\n  49 |   await page.getByRole('button', { name: '登录管理中心' }).click()\n    at E:\\Project\\CampusHub\\admin-web\\tests\\review.spec.ts:46:49"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T04:04:50.603Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\Project\\CampusHub\\.local\\admin-e2e\\review-审查回归：Session-失效关闭包含业务信息的确认框\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\Project\\CampusHub\\admin-web\\tests\\review.spec.ts",
+                    "column": 49,
+                    "line": 46
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "12f883ce49bb8436c3d7-24943855fc14817ffdc5",
+          "file": "review.spec.ts",
+          "line": 34,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-21T04:04:23.330Z",
+    "duration": 39170.655,
+    "expected": 0,
+    "skipped": 4,
+    "unexpected": 3,
+    "flaky": 0
+  },
+  "_publication": {
+    "kind": "redacted-public-evidence",
+    "note": "G02 anonymized Windows user directory; original bytes retained locally; historical results unchanged."
+  }
+}

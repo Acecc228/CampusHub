@@ -1,0 +1,114 @@
+{
+  "stage": "M1.5-G01",
+  "date": "2026-10-24 Asia/Shanghai",
+  "readiness": "CONDITIONAL: no real credential leakage found; author to confirm low-risk historical user-directory disclosure and project license choice before publication.",
+  "deliveryChecks": {
+    "date": "2026-10-24 Asia/Shanghai",
+    "candidateFiles": 597,
+    "markdownLinksChecked": 294,
+    "brokenLinks": [],
+    "linkedIgnoredFiles": [],
+    "requiredFilesChecked": 141,
+    "missingOrIgnoredRequired": [],
+    "ignoreChecks": 19,
+    "ignoreFailures": [],
+    "exampleIgnoreFailures": [],
+    "jsonParseFailures": [],
+    "pomXmlParse": "PASS",
+    "lockDirectDependenciesMatch": {
+      "admin-web": true,
+      "miniprogram": true
+    },
+    "indexNonemptyBlobs": [],
+    "gitDiffCheckExit": 0,
+    "gitDiffCheck": [],
+    "gitDiffWarnings": [],
+    "commits": "0",
+    "remoteCount": 0,
+    "installPreflightSha256": "F7067F8C32F2902A54D86441264C113813E1C50EBC811497474A3BA919FC88FC"
+  },
+  "secretRules": {
+    "private-key": 0,
+    "provider-token": 0,
+    "credential-url": 0,
+    "session-value": 0,
+    "password-literal": 3,
+    "personal-path": 9,
+    "wechat-id": 2,
+    "email": 0
+  },
+  "secretRuleClassification": {
+    "passwordLiterals": "3 source/environment or guard-fixture matches; no real password",
+    "personalPaths": "9 low-risk historical metadata paths; retained to preserve evidence",
+    "wechatIds": "test AppID and official webpage; no AppSecret"
+  },
+  "currentCredentialExactComparison": {
+    "status": "PASS",
+    "privateCredentialFilesReadInMemory": 8,
+    "uniqueValuesCompared": 12,
+    "historicalBlobs": 154,
+    "matches": [],
+    "scope": "Current external credentials versus non-ignored delivery files and reachable local tree snapshots; no values or hashes saved."
+  },
+  "history": {
+    "commits": 0,
+    "localTreeRefs": 4,
+    "uniqueBlobsChecked": 154,
+    "scope": "Reachable tree snapshots plus current empty intent-to-add index; unreachable-object forensic scan NOT_RUN."
+  },
+  "screenshots": {
+    "initialImages": 134,
+    "privateDesktopOriginalsExcluded": 2,
+    "remainingImagesIncludingIcons": 132,
+    "readmeOriginalImagesViewed": 5,
+    "review": "Contact-sheet overview; original-size README images and desktop originals; no OCR or pixel-forensic claim."
+  },
+  "wrapper": {
+    "command": "cmd /d /c backend\\mvnw.cmd -v",
+    "exitCode": 0,
+    "maven": "3.9.16",
+    "java": "21.0.2",
+    "status": "PASS"
+  },
+  "launcherPreviews": {
+    "Invoke-Backend.ps1": "PASS: PREVIEW",
+    "Invoke-AdminTestBackend.ps1": "PASS: PREVIEW",
+    "applyUsed": false
+  },
+  "apacheLicenseSha256": "CFC7749B96F63BD31C3C42B5C471BF756814053E847C10F3EB003417BC523D30",
+  "notRunThisStage": [
+    "full Maven/MySQL concurrency suite",
+    "browser E2E",
+    "WeChat simulator end-to-end",
+    "npm audit refresh",
+    "GitHub online rendering",
+    "fresh-computer setup",
+    "deployment",
+    "full dependency-license audit",
+    "penetration test"
+  ],
+  "agents": {
+    "main": 1,
+    "subagents": 0
+  },
+  "gitMutations": {
+    "staged": false,
+    "committed": false,
+    "remoteChanged": false,
+    "pushed": false,
+    "historyRewritten": false
+  },
+  "modifiedDeliveryFiles": [
+    ".gitignore",
+    "README.md",
+    "backend/mvnw.cmd",
+    "LICENSE.md",
+    "THIRD_PARTY_NOTICES.md",
+    "LICENSES/Apache-2.0.txt",
+    "PLAN.md",
+    "docs/DEV_HANDOFF.md",
+    "docs/verification/m1.4-c-02.md",
+    "docs/verification/github-preflight.md",
+    "docs/verification/github-preflight-checks.json"
+  ]
+}

@@ -1,0 +1,3 @@
+.state { min-height: 240px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 20rpx; padding: 32rpx; }
+.state-mark { color: var(--ch-primary); background: var(--ch-tint); border-radius: 24rpx; width: 96rpx; height: 96rpx; line-height: 96rpx; font-size: 28px; font-weight: 700; }
+.state-title { font-size: 18px; font-weight: 600; }

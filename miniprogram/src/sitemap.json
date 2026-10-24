@@ -1,0 +1,4 @@
+{
+  "desc": "本地演示，不参与搜索收录",
+  "rules": [{ "action": "disallow", "page": "*" }]
+}

@@ -1,0 +1,10 @@
+{
+  "Status": "PASS",
+  "CheckedAtUtc": "2026-10-19T10:10:33.0396593Z",
+  "CredentialDirectoryAndFilesAcl": "PASS",
+  "CredentialValuesAbsentFromNonIgnoredSource": "PASS",
+  "FilesScanned": 122,
+  "TemporaryPackagedProcessesRemaining": 0,
+  "GitPush": "NOT_RUN",
+  "ProductionDeployment": "NOT_RUN"
+}

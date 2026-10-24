@@ -1,0 +1,184 @@
+{
+  "wechat_style_primary_color": "#07C160",
+  "channels": [
+    {
+      "id": "stable",
+      "name": "稳定版 Stable Build",
+      "name_en": "Stable Build",
+      "version": "2.02.2608080",
+      "date": "2026-09-30",
+      "tags": [
+        {
+          "text": "推荐",
+          "text_en": "Recommended",
+          "color": "green"
+        },
+        {
+          "text": "Stable",
+          "color": "gray"
+        }
+      ],
+      "description": "测试版缺陷收敛后转为稳定版。Stable 版本从 2.02 版本开始基于 Electron 版本进行迭代， 从 1.06 开始不支持Windows7，建议开发者升级Windows版本。",
+      "description_en": "The beta version transitions to the stable version once the defect count has stabilized. Starting with version 2.02, the Stable version is built upon Electron; support for Windows 7 was dropped beginning with version 1.06, so developers are advised to upgrade their Windows version.",
+      "history_file": "history_stable.json",
+      "downloads": [
+        {
+          "os": "Windows",
+          "arch": "64",
+          "url": "https://devtools.wxqcloud.qq.com.cn/WechatWebDev/release/be1ec64cf6184b0fa64091919793f068/wechat_devtools_2.02.2608080_win32_x64.exe"
+        },
+        {
+          "os": "macOS",
+          "arch": "x64",
+          "url": "https://devtools.wxqcloud.qq.com.cn/WechatWebDev/release/be1ec64cf6184b0fa64091919793f068/wechat_devtools_2.02.2608080_darwin_x64.pkg"
+        },
+        {
+          "os": "macOS",
+          "arch": "ARM64",
+          "url": "https://devtools.wxqcloud.qq.com.cn/WechatWebDev/release/be1ec64cf6184b0fa64091919793f068/wechat_devtools_2.02.2608080_darwin_arm64.pkg"
+        }
+      ]
+    },
+    {
+      "id": "rc",
+      "name": "预发布版 RC Build",
+      "name_en": "RC Build",
+      "version": "2.02.2609231",
+      "date": "2026-09-23",
+      "tags": [
+        {
+          "text": "RC",
+          "color": "blue"
+        }
+      ],
+      "description": "预发布版， 开始基于 Electron 36.6, Chromium 136，包含大的特性；通过内部测试，稳定性尚可。RC版本从 1.06 开始不支持Windows7，建议开发者升级Windows版本。",
+      "description_en": "RC Build includes major features; passed internal testing, stability is acceptable. RC version does not support Windows 7 starting from 1.06.",
+      "log_file": "logs/rc_v2.02.2609231.json",
+      "history_file": "history_rc.json",
+      "downloads": [
+        {
+          "os": "Windows",
+          "arch": "64",
+          "url": "https://devtools.wxqcloud.qq.com.cn/WechatWebDev/release/be1ec64cf6184b0fa64091919793f068/wechat_devtools_2.02.2609231_win32_x64.exe"
+        },
+        {
+          "os": "macOS",
+          "arch": "x64",
+          "url": "https://devtools.wxqcloud.qq.com.cn/WechatWebDev/release/be1ec64cf6184b0fa64091919793f068/wechat_devtools_2.02.2609231_darwin_x64.pkg"
+        },
+        {
+          "os": "macOS",
+          "arch": "ARM64",
+          "url": "https://devtools.wxqcloud.qq.com.cn/WechatWebDev/release/be1ec64cf6184b0fa64091919793f068/wechat_devtools_2.02.2609231_darwin_arm64.pkg"
+        }
+      ]
+    },
+    {
+      "id": "nightly",
+      "name": "开发版 Nightly Electron Build",
+      "name_en": "Nightly Electron Build",
+      "version": "2.02.2610202",
+      "date": "2026-10-20",
+      "tags": [
+        {
+          "text": "Nightly Electron",
+          "color": "purple"
+        }
+      ],
+      "description": "日常构建版本(2.02.2603212 开始基于 Electron 36.6, Chromium 136， 更早之前版本是基于 NW.js 0.54.1， Chromium 93)，用于尽快修复缺陷和敏捷上线小的特性；开发自测验证，稳定性欠佳",
+      "description_en": "Nightly Build (based on Electron 36.6) is used for quick defect fixes and agile launch of small features; stability is poor. ",
+      "downloads": [
+        {
+          "os": "Windows",
+          "arch": "64",
+          "url": "https://devtools.wxqcloud.qq.com.cn/WechatWebDev/nightly/electron-36.6.0/wechat_devtools_2.02.2610202_win32_x64.exe"
+        },
+        {
+          "os": "macOS",
+          "arch": "x64",
+          "url": "https://devtools.wxqcloud.qq.com.cn/WechatWebDev/nightly/electron-36.6.0/wechat_devtools_2.02.2610202_darwin_x64.pkg"
+        },
+        {
+          "os": "macOS",
+          "arch": "ARM64",
+          "url": "https://devtools.wxqcloud.qq.com.cn/WechatWebDev/nightly/electron-36.6.0/wechat_devtools_2.02.2610202_darwin_arm64.pkg"
+        }
+      ],
+      "log_file": "logs/nightly_v2022610202.json"
+    },
+    {
+      "id": "nightly-old",
+      "nolog": true,
+      "name": "开发版 Nightly Build(旧版基于 NWJS)",
+      "name_en": "Nightly NWJS Build",
+      "version": "2.01.2602282",
+      "date": "2026-02-28",
+      "tags": [
+        {
+          "text": "Nightly",
+          "color": "purple"
+        }
+      ],
+      "description": "日常构建版本(基于 NW.js 0.54.1)，用于尽快修复缺陷和敏捷上线小的特性；开发自测验证，稳定性欠佳。Nightly版本从 1.06 开始不支持Windows7，建议开发者升级Windows版本。",
+      "description_en": "Nightly Build (based on NW.js 0.54.1) is used for quick defect fixes and agile launch of small features; stability is poor. Nightly version does not support Windows 7 starting from 1.06.",
+      "log_file": "logs/nightly_v2012602282.json",
+      "history_file": "history_nightly.json",
+      "downloads": [
+        {
+          "os": "Windows",
+          "arch": "64",
+          "url": "https://dldir1.qq.com/WechatWebDev/nightly/p-3bd19c2db3a642a0b39af853efaf67f8/0.54.1/wechat_devtools_2.01.2602282_win32_x64.exe"
+        },
+        {
+          "os": "Windows",
+          "arch": "32",
+          "url": "https://dldir1.qq.com/WechatWebDev/nightly/p-3bd19c2db3a642a0b39af853efaf67f8/0.54.1/wechat_devtools_2.01.2602282_win32_ia32.exe"
+        },
+        {
+          "os": "macOS",
+          "arch": "x64",
+          "url": "https://dldir1.qq.com/WechatWebDev/nightly/p-3bd19c2db3a642a0b39af853efaf67f8/0.54.1/wechat_devtools_2.01.2602282_darwin_x64.dmg"
+        },
+        {
+          "os": "macOS",
+          "arch": "ARM64",
+          "url": "https://dldir1.qq.com/WechatWebDev/nightly/p-3bd19c2db3a642a0b39af853efaf67f8/0.54.1/wechat_devtools_2.01.2602282_darwin_arm64.dmg"
+        }
+      ]
+    }
+  ],
+  "legacy_groups": [
+    {
+      "title": "历史版本支持 (1.05 系列)",
+      "title_en": "Legacy Support (1.05 Series)",
+      "description": "支持 Windows 7 的最后一个版本系列。原则上只会修复重大 Bug，不会跟随 1.06 节奏更新。",
+      "description_en": "The last version series supporting Windows 7. In principle, only major bugs will be fixed, and it will not be updated following the 1.06 rhythm.",
+      "versions": [
+        {
+          "name": "稳定版",
+          "name_en": "Stable",
+          "version": "1.05.2204250",
+          "tags": [
+            {
+              "text": "Stable",
+              "color": "green"
+            }
+          ],
+          "downloads": [
+            {
+              "os": "Windows",
+              "arch": "64",
+              "url": "https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64&from=mpwiki&download_version=1052204250&version_type=1"
+            },
+            {
+              "os": "Windows",
+              "arch": "32",
+              "url": "https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32&from=mpwiki&download_version=1052204250&version_type=1"
+            }
+          ],
+          "log": "更新信息"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "CheckedAtUtc": "2026-10-19T04:21:15.3363116Z",
+  "LegacyBefore": {
+    "Name": "MySQL80",
+    "State": "Running",
+    "StartMode": "Auto",
+    "StartName": "NT AUTHORITY\\NetworkService",
+    "PathName": "\"C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\mysqld.exe\" --defaults-file=\"C:\\ProgramData\\MySQL\\MySQL Server 8.0\\my.ini\" MySQL80",
+    "ConfigHash": "1253B6E07E8CF0323D093EE21C50A02FF5B06585B4060C6F18C9C65F91F7263F"
+  },
+  "DevTables": "",
+  "TestTables": "m10b_unicode_probe\tBASE TABLE\r\n",
+  "ProbeDefinition": "m10b_unicode_probe\tCREATE TABLE `m10b_unicode_probe` (\r\n  `id` int NOT NULL,\r\n  `payload` varchar(100) NOT NULL,\r\n  PRIMARY KEY (`id`)\r\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci\r\n",
+  "ProbeData": "1\tE6A0A1E59BADE6B4BBE58AA87CE298837CF09F98807CF0A080807C65CC81\r\n"
+}

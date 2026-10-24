@@ -1,0 +1,35 @@
+instance	3307	8.4.11	campushub_test	campushub_test_app@127.0.0.1
+count_mismatches	0
+out_of_capacity	0
+duplicate_pairs	0
+orphan_records	0
+totals	233	216	164	263
+470	PUBLISHED	8	3	1	2
+556	PUBLISHED	3	2	0	2
+197	470	1	CONFIRMED	5
+238	556	1	CANCELLED	2
+activity_registration	idx_registration_user_id	1	user_id,id
+activity_registration	PRIMARY	0	id
+activity_registration	uk_registration_activity_user	0	activity_id,user_id
+activity	ck_activity_capacity	CHECK
+activity	ck_activity_registered_count	CHECK
+activity	ck_activity_status	CHECK
+activity	ck_activity_times	CHECK
+activity	ck_activity_version	CHECK
+activity	fk_activity_category	FOREIGN KEY
+activity	fk_activity_creator	FOREIGN KEY
+activity	PRIMARY	PRIMARY KEY
+activity_registration	ck_registration_status	CHECK
+activity_registration	ck_registration_version	CHECK
+activity_registration	fk_registration_activity	FOREIGN KEY
+activity_registration	fk_registration_user	FOREIGN KEY
+activity_registration	PRIMARY	PRIMARY KEY
+activity_registration	uk_registration_activity_user	UNIQUE
+GRANT USAGE ON *.* TO `campushub_test_app`@`127.0.0.1`
+GRANT SELECT, INSERT, UPDATE, DELETE ON `campushub_test`.`activity_category` TO `campushub_test_app`@`127.0.0.1`
+GRANT SELECT, INSERT, UPDATE ON `campushub_test`.`activity_registration` TO `campushub_test_app`@`127.0.0.1`
+GRANT SELECT, INSERT, UPDATE, DELETE ON `campushub_test`.`activity` TO `campushub_test_app`@`127.0.0.1`
+GRANT SELECT ON `campushub_test`.`app_role` TO `campushub_test_app`@`127.0.0.1`
+GRANT SELECT, INSERT, UPDATE, DELETE ON `campushub_test`.`app_user_role` TO `campushub_test_app`@`127.0.0.1`
+GRANT SELECT, INSERT, UPDATE, DELETE ON `campushub_test`.`app_user` TO `campushub_test_app`@`127.0.0.1`
+

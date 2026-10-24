@@ -1,0 +1,15 @@
+{
+  "Status": "PASS",
+  "At": "2026-10-23T17:06:58.2932536Z",
+  "CountMismatches": 0,
+  "OutOfCapacity": 0,
+  "DuplicatePairs": 0,
+  "OrphanRecords": 0,
+  "Probe": "PASS",
+  "C01Unchanged": true,
+  "Dev": "0\t0\t3",
+  "LegacyUnchanged": true,
+  "MigrationFilesUnchanged": true,
+  "ClientActivityId": 556,
+  "FixtureQuery": "SELECT a.id,a.status,a.version,a.capacity,a.registered_count,(SELECT COUNT(*) FROM activity_registration r WHERE r.activity_id=a.id AND r.status='CONFIRMED') AS confirmed,a.capacity-a.registered_count AS remaining,(SELECT COUNT(*) FROM activity_registration r WHERE r.activity_id=a.id) AS records FROM activity a WHERE a.created_at>='2026-10-23 08:59:36' ORDER BY a.id;"
+}

@@ -1,0 +1,6 @@
+{"label":"standard","pages":[],"system":{"width":390,"height":671,"platform":"devtools","SDKVersion":"3.17.5"},"status":"FAIL","reason":"timeout waiting for automator response"}
+Exception: E:\Project\CampusHub\scripts\Test-MiniprogramSimulator.ps1:19
+Line |
+  19 |  … XITCODE -ne 0){throw 'Simulator checks failed; see sanitized report'}
+     |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Simulator checks failed; see sanitized report

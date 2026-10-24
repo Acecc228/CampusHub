@@ -1,0 +1,80 @@
+✔ explicit JSESSIONID from cookies, rotate after login and fetch fresh CSRF (1.785ms)
+✔ case insensitive Set-Cookie fallback, only session forwarded, deletion respected (0.3513ms)
+✔ 401 clears credentials and signals invalidation, 403 does not logout (1.4155ms)
+✔ POST network timeout is unknown and never automatically retried (0.2872ms)
+✔ reject absolute or traversing URL before sending credentials (0.4622ms)
+✔ clearing session invalidates an in-flight response (4.2962ms)
+✖ encoded search preserves legitimate punctuation: O'Reilly (0.5639ms)
+✖ encoded search preserves legitimate punctuation: 活动 (线上) (0.12ms)
+✖ encoded search preserves legitimate punctuation: 你好! (0.1123ms)
+✖ encoded search preserves legitimate punctuation: 活动.. (0.239ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 6
+ℹ fail 4
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 143.4922
+
+✖ failing tests:
+
+test at miniprogram\tests\client.test.cjs:110:3
+✖ encoded search preserves legitimate punctuation: O'Reilly (0.5639ms)
+  Error: 请求地址无效。
+      at Object.request (E:\Project\CampusHub\miniprogram\dist\services\client.js:95:39)
+      at TestContext.<anonymous> (E:\Project\CampusHub\miniprogram\tests\client.test.cjs:112:18)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    status: 0,
+    code: 'INVALID_PATH'
+  }
+
+test at miniprogram\tests\client.test.cjs:110:3
+✖ encoded search preserves legitimate punctuation: 活动 (线上) (0.12ms)
+  Error: 请求地址无效。
+      at Object.request (E:\Project\CampusHub\miniprogram\dist\services\client.js:95:39)
+      at TestContext.<anonymous> (E:\Project\CampusHub\miniprogram\tests\client.test.cjs:112:18)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    status: 0,
+    code: 'INVALID_PATH'
+  }
+
+test at miniprogram\tests\client.test.cjs:110:3
+✖ encoded search preserves legitimate punctuation: 你好! (0.1123ms)
+  Error: 请求地址无效。
+      at Object.request (E:\Project\CampusHub\miniprogram\dist\services\client.js:95:39)
+      at TestContext.<anonymous> (E:\Project\CampusHub\miniprogram\tests\client.test.cjs:112:18)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    status: 0,
+    code: 'INVALID_PATH'
+  }
+
+test at miniprogram\tests\client.test.cjs:110:3
+✖ encoded search preserves legitimate punctuation: 活动.. (0.239ms)
+  Error: 请求地址无效。
+      at Object.request (E:\Project\CampusHub\miniprogram\dist\services\client.js:95:39)
+      at TestContext.<anonymous> (E:\Project\CampusHub\miniprogram\tests\client.test.cjs:112:18)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    status: 0,
+    code: 'INVALID_PATH'
+  }

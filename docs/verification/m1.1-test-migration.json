@@ -1,0 +1,18 @@
+{
+  "Status": "PASS",
+  "Database": "campushub_test",
+  "Instance": "MySQL84CampusHub 127.0.0.1:3307",
+  "Operation": "Flyway migrate and validate; no baseline",
+  "History": [
+    {
+      "Version": "1",
+      "Checksum": "1160888031",
+      "Success": true
+    },
+    {
+      "Version": "2",
+      "Checksum": "436036048",
+      "Success": true
+    }
+  ]
+}

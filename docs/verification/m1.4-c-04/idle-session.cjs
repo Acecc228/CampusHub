@@ -1,0 +1,51 @@
+// One-off C-04 acceptance evidence. Run only with the dedicated local test backend.
+const fs = require('node:fs');
+const path = require('node:path');
+const assert = require('node:assert/strict');
+const { chromium } = require('../../../admin-web/node_modules/playwright');
+if (process.env.CH_E2E_APPLY !== 'true') throw Error('Explicit test-environment wrapper required');
+const out = __dirname;
+const result = { status: 'NOT_RUN', durationSeconds: 1860, requestsDuringIdle: [] };
+let browser;
+async function save() { fs.writeFileSync(path.join(out, 'idle-session.json'), JSON.stringify(result, null, 2)); }
+(async () => {
+  const config = JSON.parse(fs.readFileSync('E:/CampusHubRuntime/mysql84/secrets/campushub_test-demo.json', 'utf8').replace(/^\uFEFF/, ''));
+  assert.equal(config.Database, 'campushub_test');
+  const account = config.Accounts.find(x => x.LoginName === 'demo_organizer');
+  browser = await chromium.launch({ channel: 'msedge', headless: true });
+  const page = await browser.newPage();
+  page.setDefaultTimeout(10000);
+  await page.goto('http://127.0.0.1:5173/login');
+  await page.locator('#username').fill(account.LoginName);
+  await page.locator('#password').fill(account.Password);
+  await page.getByRole('button', { name: '登录管理中心', exact: true }).click();
+  await page.waitForURL(u => !u.pathname.includes('login'));
+  await page.waitForLoadState('networkidle');
+  result.started = new Date().toISOString();
+  const observe = req => { if (req.url().includes('/api/')) result.requestsDuringIdle.push({ at: new Date().toISOString(), path: new URL(req.url()).pathname }); };
+  page.on('request', observe);
+  await save();
+  await new Promise(resolve => setTimeout(resolve, result.durationSeconds * 1000));
+  page.off('request', observe);
+  result.finishedIdle = new Date().toISOString();
+  assert.equal(result.requestsDuringIdle.length, 0);
+  const refused = page.waitForResponse(r => r.url().includes('/api/') && r.status() === 401);
+  await page.getByRole('link', { name: '活动管理', exact: true }).click();
+  result.afterIdleHttp = (await refused).status();
+  await page.getByRole('heading', { name: '重新连接工作台' }).waitFor();
+  await page.screenshot({ path: path.join(out, 'idle-expired.png'), fullPage: true });
+  result.expiredOverlay = true;
+  await page.locator('#username').fill(account.LoginName);
+  await page.locator('#password').fill(account.Password);
+  await page.getByRole('button', { name: '登录管理中心', exact: true }).click();
+  await page.getByRole('dialog', { name: '登录状态已失效' }).waitFor({ state: 'hidden' });
+  await page.waitForLoadState('networkidle');
+  await page.screenshot({ path: path.join(out, 'idle-relogin.png'), fullPage: true });
+  result.relogin = true;
+  result.status = 'PASS';
+})().catch(error => {
+  result.status = 'FAIL';
+  result.errorType = error.name;
+  result.reason = String(error.message).replace(/[a-f0-9]{64}/gi, '[REDACTED]').slice(0, 240);
+  process.exitCode = 1;
+}).finally(async () => { await save(); if (browser) await browser.close(); });

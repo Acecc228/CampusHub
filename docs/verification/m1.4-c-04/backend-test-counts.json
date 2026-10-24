@@ -1,0 +1,51 @@
+[
+  {
+    "Suite": "com.campushub.GlobalExceptionHandlerTest",
+    "Tests": 2,
+    "Failures": 0,
+    "Errors": 0,
+    "Skipped": 0
+  },
+  {
+    "Suite": "com.campushub.ActivityIT",
+    "Tests": 16,
+    "Failures": 0,
+    "Errors": 0,
+    "Skipped": 0
+  },
+  {
+    "Suite": "com.campushub.AuthenticationIT",
+    "Tests": 9,
+    "Failures": 0,
+    "Errors": 0,
+    "Skipped": 0
+  },
+  {
+    "Suite": "com.campushub.BackendIT",
+    "Tests": 11,
+    "Failures": 0,
+    "Errors": 0,
+    "Skipped": 0
+  },
+  {
+    "Suite": "com.campushub.DemoEnvironmentIT",
+    "Tests": 1,
+    "Failures": 0,
+    "Errors": 0,
+    "Skipped": 0
+  },
+  {
+    "Suite": "com.campushub.ProductionConfigurationIT",
+    "Tests": 3,
+    "Failures": 0,
+    "Errors": 0,
+    "Skipped": 0
+  },
+  {
+    "Suite": "com.campushub.RegistrationIT",
+    "Tests": 28,
+    "Failures": 0,
+    "Errors": 0,
+    "Skipped": 0
+  }
+]

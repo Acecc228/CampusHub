@@ -1,0 +1,36 @@
+npm notice run campushub-miniprogram@0.1.0 test
+npm notice run npm run build && node --test tests/*.test.cjs
+npm notice run campushub-miniprogram@0.1.0 build
+npm notice run tsc && node scripts/build.cjs
+PASS: TypeScript emitted and native assets copied. This is not a DevTools compile.
+✔ explicit JSESSIONID from cookies, rotate after login and fetch fresh CSRF (3.36ms)
+✔ case insensitive Set-Cookie fallback, only session forwarded, deletion respected (0.7015ms)
+✔ 401 clears credentials and signals invalidation, 403 does not logout (2.2393ms)
+✔ POST network timeout is unknown and never automatically retried (0.3245ms)
+✔ reject absolute or traversing URL before sending credentials (0.3361ms)
+✔ clearing session invalidates an in-flight response (7.4072ms)
+✔ encoded search preserves legitimate punctuation: O'Reilly (0.8232ms)
+✔ encoded search preserves legitimate punctuation: 活动 (线上) (0.7528ms)
+✔ encoded search preserves legitimate punctuation: 你好! (0.4027ms)
+✔ encoded search preserves legitimate punctuation: 活动.. (0.3687ms)
+✔ mobile semantic palette remains aligned with accepted Indigo brand (4.3408ms)
+✔ Beijing time does not use host timezone (1.5986ms)
+✔ half-open registration window, full and ended states (0.3051ms)
+✔ detail.act cannot restore feedback after refresh expires the session (2.7889ms)
+✔ detail.verify cannot restore feedback after refresh expires the session (1.7269ms)
+✔ registrations.cancel cannot restore feedback after refresh expires the session (2.6062ms)
+✔ double click sends one mutation; timeout resolved by server read (1.3417ms)
+✔ uncertain result locks writes until explicit successful status check (0.3765ms)
+✔ timeout before commit plus old snapshot is still UNKNOWN until target or version advances (0.2646ms)
+✔ identity reset prevents old read from locking or completing new user state (5.1487ms)
+✔ unpublished activity rejects registration and status with 404 without an unknown-result lock (0.5247ms)
+✔ 5xx mutation followed by 404 status remains unknown and prevents replay (0.2679ms)
+✔ identity reset during rejected mutation read cannot complete the old identity (1.728ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 189.1422

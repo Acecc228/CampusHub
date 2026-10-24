@@ -1,0 +1,58 @@
+.local/
+.superpowers/
+.env
+.env.*
+!.env.example
+*.local.*
+*.cnf
+*.log
+*.err
+*.pid
+*.zip
+*.msi
+*.pem
+*.key
+**/target/
+**/node_modules/
+**/dist/
+miniprogram/project.private.config.json
+.idea/
+.vscode/
+
+# Local credentials and database/build artifacts; keep source templates visible.
+**/secrets/
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.sql.gz
+*.dump
+*.ibd
+ibdata*
+undo_*
+*.sqlite
+*.sqlite3
+*.db
+*.jar
+!**/.mvn/wrapper/maven-wrapper.jar
+*.class
+*.tsbuildinfo
+**/coverage/
+**/playwright-report/
+**/test-results/
+**/.vite/
+**/.cache/
+Thumbs.db
+.DS_Store
+# Preserve an accidental empty shell output locally, outside the delivery set.
+/([{]status
+# Original desktop evidence contains a personal WeChat avatar; retained locally.
+/docs/verification/m1.4-c-04/mini-offline-home-desktop.png
+/docs/verification/m1.4-c-04/mini-offline-unknown-desktop.png
+
+# Frozen local installer baseline: public redacted copy is not executable evidence.
+/docs/verification/install-preflight.json
+
+# Downloaded vendor web pages are research cache, not project source/assets.
+/docs/verification/m1.4-b-wechat-download.html
+/docs/verification/m1.4-b-wx-request.html

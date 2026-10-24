@@ -1,0 +1,12 @@
+<view class="page">
+  <view class="brand"><view class="brand-icon">C</view><text>CampusHub</text><text class="brand-caption">校园生活进行时</text></view>
+  <view class="hero"><view class="eyebrow">MAKE ROOM FOR CAMPUS LIFE</view><view class="hero-title">课表之外，
+遇见更多可能。</view><view class="muted">一场活动，一群同路人。
+把感兴趣的事，加入你的校园日程。</view><button class="primary" bindtap="explore" hover-class="pressed">探索校园活动　↗</button><view class="hero-stamp">CAMPUS
+PASS</view></view>
+  <view wx:if="{{categories.length && state !== 'login'}}" class="categories"><button wx:for="{{categories}}" wx:key="id" class="category-button" data-id="{{item.id}}" bindtap="category" hover-class="pressed">{{item.name}}</button></view>
+  <view class="row section"><view><view class="section-title">发现新活动</view><view class="small">已发布活动 · 按最新创建排序</view></view><button class="ghost" bindtap="explore">全部 →</button></view>
+  <page-state state="{{state}}" message="{{error}}" empty-text="活动即将登场，稍后再来看看" bind:retry="load" bind:login="login"/>
+  <activity-card class="campus-card" wx:for="{{items}}" wx:key="id" activity="{{item}}" bind:open="detail"/>
+  <view wx:if="{{state === 'ready'}}" class="footer-note">每一次参与，让校园生活更丰富。</view>
+</view>

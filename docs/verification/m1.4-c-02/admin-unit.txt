@@ -1,0 +1,11 @@
+npm notice run campushub-admin@0.1.0 test
+npm notice run vitest run
+
+ RUN  v5.0.5 E:/Project/CampusHub/admin-web
+
+
+ Test Files  3 passed (3)
+      Tests  12 passed (12)
+   Start at  01:01:16
+   Duration  20.37s (environment 99%)
+

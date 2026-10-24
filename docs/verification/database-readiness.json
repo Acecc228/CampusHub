@@ -1,0 +1,32 @@
+{
+  "CheckedAt": "2026-10-18T12:41:16.2522401Z",
+  "Stage": "Bootstrap",
+  "Overall": "BLOCKED",
+  "Results": [
+    {
+      "Check": "Legacy service",
+      "Status": "PASS",
+      "Detail": "Running; configuration read only."
+    },
+    {
+      "Check": "CampusHub service",
+      "Status": "BLOCKED",
+      "Detail": "Not installed. This read-only check never installs it."
+    },
+    {
+      "Check": "Legacy SQL",
+      "Status": "BLOCKED",
+      "Detail": "Supply an existing protected client configuration outside Git; do not send passwords in chat."
+    },
+    {
+      "Check": "Restart isolation",
+      "Status": "NOT_RUN",
+      "Detail": "Requires separately approved new-service stop/start and legacy SQL checks at both points."
+    },
+    {
+      "Check": "Backend integration",
+      "Status": "NOT_RUN",
+      "Detail": "M1.0-B owns Flyway validation, transaction rollback, API 200/401/404 and documentation tests."
+    }
+  ]
+}

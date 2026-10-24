@@ -1,0 +1,12 @@
+{
+  "label": "standard",
+  "pages": [],
+  "system": {
+    "width": 390,
+    "height": 671,
+    "platform": "devtools",
+    "SDKVersion": "3.17.5"
+  },
+  "status": "FAIL",
+  "reason": "timeout waiting for automator response"
+}

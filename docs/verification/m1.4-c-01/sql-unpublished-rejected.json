@@ -1,0 +1,27 @@
+{
+  "Status": "PASS",
+  "Checkpoint": "unpublished-rejected",
+  "At": "2026-10-23T11:56:13.0467081Z",
+  "Database": "campushub_test",
+  "Address": "127.0.0.1:3307",
+  "Credential": "test-app",
+  "Activity": {
+    "Id": 470,
+    "Status": "UNPUBLISHED",
+    "Version": 3,
+    "Capacity": 3,
+    "RegisteredCount": 1,
+    "CreatorId": 2
+  },
+  "Registrations": [
+    {
+      "Id": 197,
+      "ActivityId": 470,
+      "UserId": 1,
+      "Status": "CONFIRMED",
+      "Version": 5
+    }
+  ],
+  "ConfirmedRows": 1,
+  "DatabaseMutation": "NONE"
+}

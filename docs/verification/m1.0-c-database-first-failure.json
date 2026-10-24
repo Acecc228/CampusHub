@@ -1,0 +1,50 @@
+{
+  "CheckedAtUtc": "2026-10-19T04:27:51.7465097Z",
+  "Status": "FAIL",
+  "Passed": 3,
+  "Failed": 6,
+  "Results": [
+    {
+      "Check": "Exact grant matrix and identity: app",
+      "Status": "FAIL",
+      "ErrorType": "RuntimeException"
+    },
+    {
+      "Check": "Exact grant matrix and identity: test-app",
+      "Status": "FAIL",
+      "ErrorType": "RuntimeException"
+    },
+    {
+      "Check": "Exact grant matrix and identity: migrator",
+      "Status": "FAIL",
+      "ErrorType": "RuntimeException"
+    },
+    {
+      "Check": "Exact grant matrix and identity: test-migrator",
+      "Status": "FAIL",
+      "ErrorType": "RuntimeException"
+    },
+    {
+      "Check": "Migration history and seeds: campushub",
+      "Status": "FAIL",
+      "ErrorType": "RuntimeException"
+    },
+    {
+      "Check": "Migration history and seeds: campushub_test",
+      "Status": "FAIL",
+      "ErrorType": "RuntimeException"
+    },
+    {
+      "Check": "Original probe definition and Unicode evidence unchanged",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Flyway rejects modified migration checksum without repair",
+      "Status": "PASS"
+    },
+    {
+      "Check": "MySQL80 fingerprint unchanged",
+      "Status": "PASS"
+    }
+  ]
+}

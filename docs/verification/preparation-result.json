@@ -1,0 +1,42 @@
+{
+  "CheckedAt": "2026-10-18T12:41:15.2538443Z",
+  "Overall": "PASS",
+  "Checks": [
+    {
+      "Check": "PowerShell syntax",
+      "Status": "PASS",
+      "Detail": "9 files parsed; no errors."
+    },
+    {
+      "Check": "Dangerous command scan",
+      "Status": "PASS",
+      "Detail": "No deletion, service reset, execution-policy change, shell deletion, elevation launcher or recursive ACL command."
+    },
+    {
+      "Check": "Default preview",
+      "Status": "PASS",
+      "Detail": "All three mutation entrypoints returned PREVIEW without -Apply."
+    },
+    {
+      "Check": "Bootstrap SQL scope",
+      "Status": "PASS",
+      "Detail": "Four SQL/templates checked; no broad grants, destructive statements or literal passwords."
+    },
+    {
+      "Check": "Git exclusions",
+      "Status": "PASS",
+      "Detail": "Local packages, environment files, client credentials and logs are excluded."
+    },
+    {
+      "Check": "Safety guard tests",
+      "Status": "PASS",
+      "Detail": "25 passed; 0 failed. No database access."
+    },
+    {
+      "Check": "Preparation side effects",
+      "Status": "PASS",
+      "Detail": "Legacy fingerprint, new-service existence, new runtime and 3307 listener unchanged."
+    }
+  ],
+  "DatabaseIntegration": "NOT_RUN"
+}

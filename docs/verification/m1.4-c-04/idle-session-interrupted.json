@@ -1,0 +1,7 @@
+{
+  "status": "NOT_RUN",
+  "durationSeconds": 1860,
+  "requestsDuringIdle": [],
+  "started": "2026-10-23T18:08:59.978Z",
+  "limitation": "Session interrupted before final observation; at resume MySQL84CampusHub stopped and app ports absent. Not a PASS."
+}

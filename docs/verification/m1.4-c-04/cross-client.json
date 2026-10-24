@@ -1,0 +1,126 @@
+[
+  {
+    "name": "organizer-login",
+    "at": "2026-10-23T18:04:59.822Z",
+    "status": "PASS"
+  },
+  {
+    "name": "create-draft",
+    "at": "2026-10-23T18:05:50.013Z",
+    "status": "PASS",
+    "activityId": 634,
+    "run": "M14C04-1792778716334"
+  },
+  {
+    "name": "edit-publish",
+    "at": "2026-10-23T18:06:05.065Z",
+    "status": "PASS",
+    "activityId": 634
+  },
+  {
+    "name": "student-login-home",
+    "at": "2026-10-23T18:06:08.935Z",
+    "status": "PASS",
+    "width": 390
+  },
+  {
+    "name": "student-search-detail",
+    "at": "2026-10-23T18:06:54.816Z",
+    "status": "PASS",
+    "activityId": 634,
+    "note": "card tap navigated; automator response timed out after navigation; observed actual detail before continuing"
+  },
+  {
+    "name": "register",
+    "at": "2026-10-23T18:06:57.466Z",
+    "status": "PASS",
+    "registration": {
+      "id": 292,
+      "activityId": 634,
+      "userId": 1,
+      "status": "CONFIRMED",
+      "version": 1,
+      "createdAt": "2026-10-23T18:06:55.123981Z",
+      "updatedAt": "2026-10-23T18:06:55.123981Z"
+    }
+  },
+  {
+    "name": "my-registrations",
+    "at": "2026-10-23T18:07:22.981Z",
+    "status": "PASS",
+    "registration": {
+      "id": 292,
+      "activityId": 634,
+      "userId": 1,
+      "status": "CONFIRMED",
+      "version": 1,
+      "createdAt": "2026-10-23T18:06:55.123981Z",
+      "updatedAt": "2026-10-23T18:06:55.123981Z"
+    }
+  },
+  {
+    "name": "organizer-roster-confirmed",
+    "at": "2026-10-23T18:08:09.944Z",
+    "status": "PASS",
+    "activityId": 634,
+    "count": 1
+  },
+  {
+    "name": "cancel-ui-and-roster",
+    "at": "2026-10-23T18:09:19.062Z",
+    "status": "PASS",
+    "registration": {
+      "id": 292,
+      "activityId": 634,
+      "userId": 1,
+      "status": "CANCELLED",
+      "version": 2,
+      "createdAt": "2026-10-23T18:06:55.123981Z",
+      "updatedAt": "2026-10-23T18:08:54.648784Z"
+    },
+    "count": 0
+  },
+  {
+    "name": "reregister-ui-and-roster",
+    "at": "2026-10-23T18:09:40.128Z",
+    "status": "PASS",
+    "registration": {
+      "id": 292,
+      "activityId": 634,
+      "userId": 1,
+      "status": "CONFIRMED",
+      "version": 3,
+      "createdAt": "2026-10-23T18:06:55.123981Z",
+      "updatedAt": "2026-10-23T18:09:37.372621Z"
+    },
+    "count": 1
+  },
+  {
+    "name": "unpublish",
+    "at": "2026-10-23T18:09:40.562Z",
+    "status": "PASS",
+    "count": 1
+  },
+  {
+    "name": "student-unpublished-list-detail",
+    "at": "2026-10-23T18:09:57.666Z",
+    "status": "PASS",
+    "state": "error"
+  },
+  {
+    "name": "republish-history-preserved",
+    "at": "2026-10-23T18:11:02.974Z",
+    "status": "PASS",
+    "activityVersion": 4,
+    "registration": {
+      "id": 292,
+      "activityId": 634,
+      "userId": 1,
+      "status": "CONFIRMED",
+      "version": 3,
+      "createdAt": "2026-10-23T18:06:55.123981Z",
+      "updatedAt": "2026-10-23T18:09:37.372621Z"
+    },
+    "count": 1
+  }
+]

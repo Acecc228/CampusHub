@@ -1,0 +1,23 @@
+{
+  "Status": "PASS",
+  "VerifiedAtUtc": "2026-10-18T17:38:40.4700821Z",
+  "Version": "8.4.11",
+  "ArchivePath": "E:\\Project\\CampusHub.local\\packages\\mysql-8.4.11-winx64.zip",
+  "Bytes": 281191914,
+  "Md5": "2e833921898a9a030ea6bfe81bd811bc",
+  "Sha256": "A492371D687D2BAB088B0062581144A0044B8964BAEFDF4FAA579292B423D25C",
+  "Sha256Basis": "Locally measured after pinned official GPG verification",
+  "Signature": "VALIDSIG",
+  "SignerFingerprint": "BCA43417C3B485DD128EC6D4B7B3B788A8D3785C",
+  "GpgExitCode": 0,
+  "ValidSigStatus": "[GNUPG:] VALIDSIG BCA43417C3B485DD128EC6D4B7B3B788A8D3785C 2026-07-01 1782929968 0 4 0 1 8 00 BCA43417C3B485DD128EC6D4B7B3B788A8D3785C",
+  "GpgExecutable": "D:\\Git\\usr\\bin\\gpg.exe",
+  "TrustBasis": "Full fingerprint independently checked against official MySQL manual",
+  "SignatureSha256": "A3E8621364225A50EB37B24503D00298B1D0514CB33F489BD239456E2D54DF6B",
+  "KeySha256": "A4BCD9F16A53CC763F87B9955DBCDCED33C7AA90296B157EB6CEEF0F156F4327",
+  "DownloadPage": "https://dev.mysql.com/downloads/mysql/8.4.html",
+  "DownloadUrl": "https://dev.mysql.com/get/Downloads/MySQL-8.4/mysql-8.4.11-winx64.zip",
+  "SignatureUrl": "https://cdn.mysql.com/Downloads/MySQL-8.4/mysql-8.4.11-winx64.zip.asc",
+  "PublicKeyUrl": "https://repo.mysql.com/RPM-GPG-KEY-mysql-2025",
+  "FingerprintSource": "https://dev.mysql.com/doc/refman/8.4/en/checking-gpg-signature.html"
+}

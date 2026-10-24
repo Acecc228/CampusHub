@@ -1,0 +1,30 @@
+[
+  {
+    "Check": "Default preview writes no evidence",
+    "Status": "PASS"
+  },
+  {
+    "Check": "Missing checkpoint",
+    "Status": "PASS"
+  },
+  {
+    "Check": "Invalid activity ID",
+    "Status": "PASS"
+  },
+  {
+    "Check": "Unsafe checkpoint rejected",
+    "Status": "PASS"
+  },
+  {
+    "Check": "Non-M14C01 activity rejected",
+    "Status": "PASS"
+  },
+  {
+    "Check": "Mismatched expected count rejected",
+    "Status": "PASS"
+  },
+  {
+    "Check": "Existing evidence cannot be overwritten",
+    "Status": "PASS"
+  }
+]

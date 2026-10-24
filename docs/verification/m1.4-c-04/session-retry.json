@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "at": "2026-10-24T07:55:16.469Z",
+  "method": "Real second-tab UI logout invalidates shared session; stale first tab returns401; real form relogin; manual reload returns200",
+  "recoveredRows": 10,
+  "note": "Same-identity recovery preserves current page/draft, failed read requires visible retry; no automatic replay"
+}

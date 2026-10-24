@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "critical": 0,
+  "important": 0,
+  "minor": 0,
+  "tests": "NOT_RUN by reviewer; root ran actual tests",
+  "risk": "Existing assumption: explicit 4xx rejects writes; revisit if server contract changes"
+}

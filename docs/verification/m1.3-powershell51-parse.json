@@ -1,0 +1,107 @@
+﻿{
+    "Version":  "5.1.26100.9711",
+    "Files":  25,
+    "Errors":  0,
+    "Results":  [
+                    {
+                        "File":  "E:\\Project\\CampusHub\\scripts\\Grant-ActivityAccess.ps1",
+                        "Errors":  0
+                    },
+                    {
+                        "File":  "E:\\Project\\CampusHub\\scripts\\Grant-ApplicationAccess.ps1",
+                        "Errors":  0
+                    },
+                    {
+                        "File":  "E:\\Project\\CampusHub\\scripts\\Grant-AuthenticationAccess.ps1",
+                        "Errors":  0
+                    },
+                    {
+                        "File":  "E:\\Project\\CampusHub\\scripts\\Grant-RegistrationAccess.ps1",
+                        "Errors":  0
+                    },
+                    {
+                        "File":  "E:\\Project\\CampusHub\\scripts\\Initialize-Database.ps1",
+                        "Errors":  0
+                    },
+                    {
+                        "File":  "E:\\Project\\CampusHub\\scripts\\Install-MySql84.ps1",
+                        "Errors":  0
+                    },
+                    {
+                        "File":  "E:\\Project\\CampusHub\\scripts\\Invoke-Backend.ps1",
+                        "Errors":  0
+                    },
+                    {
+                        "File":  "E:\\Project\\CampusHub\\scripts\\Invoke-BackendMigration.ps1",
+                        "Errors":  0
+                    },
+                    {
+                        "File":  "E:\\Project\\CampusHub\\scripts\\Invoke-ReviewedMySqlInstall.ps1",
+                        "Errors":  0
+                    },
+                    {
+                        "File":  "E:\\Project\\CampusHub\\scripts\\Set-DemoAccounts.ps1",
+                        "Errors":  0
+                    },
+                    {
+                        "File":  "E:\\Project\\CampusHub\\scripts\\Test-BackendDatabase.ps1",
+                        "Errors":  0
+                    },
+                    {
+                        "File":  "E:\\Project\\CampusHub\\scripts\\Test-BackendPackage.ps1",
+                        "Errors":  0
+                    },
+                    {
+                        "File":  "E:\\Project\\CampusHub\\scripts\\Test-DatabaseBootstrap.ps1",
+                        "Errors":  0
+                    },
+                    {
+                        "File":  "E:\\Project\\CampusHub\\scripts\\Test-Environment.ps1",
+                        "Errors":  0
+                    },
+                    {
+                        "File":  "E:\\Project\\CampusHub\\scripts\\Test-MySql84.ps1",
+                        "Errors":  0
+                    },
+                    {
+                        "File":  "E:\\Project\\CampusHub\\scripts\\Test-MySqlPackage.ps1",
+                        "Errors":  0
+                    },
+                    {
+                        "File":  "E:\\Project\\CampusHub\\scripts\\Test-Preparation.ps1",
+                        "Errors":  0
+                    },
+                    {
+                        "File":  "E:\\Project\\CampusHub\\scripts\\lib\\CampusHub.Backend.psm1",
+                        "Errors":  0
+                    },
+                    {
+                        "File":  "E:\\Project\\CampusHub\\scripts\\lib\\CampusHub.MySql.psm1",
+                        "Errors":  0
+                    },
+                    {
+                        "File":  "E:\\Project\\CampusHub\\scripts\\lib\\CampusHub.Package.psm1",
+                        "Errors":  0
+                    },
+                    {
+                        "File":  "E:\\Project\\CampusHub\\scripts\\tests\\Test-BackendSafety.ps1",
+                        "Errors":  0
+                    },
+                    {
+                        "File":  "E:\\Project\\CampusHub\\scripts\\tests\\Test-Bootstrap.ps1",
+                        "Errors":  0
+                    },
+                    {
+                        "File":  "E:\\Project\\CampusHub\\scripts\\tests\\Test-InstallFix.ps1",
+                        "Errors":  0
+                    },
+                    {
+                        "File":  "E:\\Project\\CampusHub\\scripts\\tests\\Test-InstallLauncher.ps1",
+                        "Errors":  0
+                    },
+                    {
+                        "File":  "E:\\Project\\CampusHub\\scripts\\tests\\Test-Safety.ps1",
+                        "Errors":  0
+                    }
+                ]
+}

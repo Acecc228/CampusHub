@@ -1,0 +1,12 @@
+{
+  "Status": "FAIL",
+  "Stage": "Review regression before fixes",
+  "Log": ".local/backend-logs/verify-20261020T085400241.log",
+  "ActivityTests": 15,
+  "Failures": 3,
+  "Findings": [
+    "Numeric text accepted with HTTP 201; expected 400",
+    "Publish waiting on row lock crossed registration deadline and returned 200; expected 400",
+    "Year 1000 round trip returned 0999-12-27; expected 1000-01-01"
+  ]
+}

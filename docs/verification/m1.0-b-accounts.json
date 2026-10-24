@@ -1,0 +1,52 @@
+{
+  "CheckedAt": "2026-10-18T23:16:47.2313803Z",
+  "Stage": "Bootstrap",
+  "Overall": "BLOCKED",
+  "Results": [
+    {
+      "Check": "Legacy service",
+      "Status": "PASS",
+      "Detail": "Running; configuration read only."
+    },
+    {
+      "Check": "Service and legacy baseline",
+      "Status": "PASS",
+      "Detail": "Manual LocalService; explicit new binary/config; loopback port 3307; legacy fingerprint unchanged."
+    },
+    {
+      "Check": "campushub_app",
+      "Status": "PASS",
+      "Detail": "Instance, account and exact privilege matrix verified by read-only SQL."
+    },
+    {
+      "Check": "campushub_migrator",
+      "Status": "PASS",
+      "Detail": "Instance, account and exact privilege matrix verified by read-only SQL."
+    },
+    {
+      "Check": "campushub_test_app",
+      "Status": "PASS",
+      "Detail": "Instance, account and exact privilege matrix verified by read-only SQL."
+    },
+    {
+      "Check": "campushub_test_migrator",
+      "Status": "PASS",
+      "Detail": "Instance, account and exact privilege matrix verified by read-only SQL."
+    },
+    {
+      "Check": "Legacy SQL",
+      "Status": "BLOCKED",
+      "Detail": "Supply an existing protected client configuration outside Git; do not send passwords in chat."
+    },
+    {
+      "Check": "Restart isolation",
+      "Status": "NOT_RUN",
+      "Detail": "Requires separately approved new-service stop/start and legacy SQL checks at both points."
+    },
+    {
+      "Check": "Backend integration",
+      "Status": "NOT_RUN",
+      "Detail": "Flyway, backend API and documentation tests require separate authorization after M1.0-B database/account bootstrap."
+    }
+  ]
+}

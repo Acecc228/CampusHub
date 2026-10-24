@@ -1,0 +1,6 @@
+<view class="page"><view class="eyebrow">MY CAMPUSHUB</view><view class="heading">把校园生活，
+过成喜欢的样子。</view>
+<page-state state="{{state}}" message="{{error}}" bind:retry="load" bind:login="login"/>
+<block wx:if="{{user && state === 'ready'}}"><view class="panel identity"><view class="avatar">C</view><view class="identity-text"><view class="section-title break">{{user.displayName}}</view><view class="muted break">{{user.loginName}}</view><view class="badge">学生 · 已登录</view></view></view><button class="panel entry" bindtap="mine"><view><view class="section-title">我的报名</view><view class="muted">管理参与计划，回看报名记录</view></view><text>→</text></button></block>
+<view class="panel stack"><view class="section-title">关于这个版本</view><view class="muted">CampusHub · M1.4-B 学生端</view><view class="small">本地开发演示，活动与报名使用真实后端数据。时间统一显示为北京时间。暂无正式微信授权登录。</view><view class="small">本次运行内保留登录。重启小程序需重新登录，连续空闲约 30 分钟后由服务端使登录失效。</view></view>
+<view wx:if="{{error && state === 'ready'}}" class="error">{{error}}</view><button wx:if="{{user || state === 'error'}}" class="danger" bindtap="logout" disabled="{{busy}}" loading="{{busy}}">退出登录</button><view class="footer-note">CampusHub · 让参与更简单</view></view>

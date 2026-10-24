@@ -1,0 +1,104 @@
+{
+  "Suite": "Install fix (no installation)",
+  "Passed": 24,
+  "Failed": 0,
+  "TestRoot": "E:\\Project\\CampusHub\\.local\\tests\\install-fix-39f5896e858749149b40a92a690ec900",
+  "Results": [
+    {
+      "Name": "missing archive",
+      "Status": "PASS"
+    },
+    {
+      "Name": "wrong archive filename",
+      "Status": "PASS"
+    },
+    {
+      "Name": "MD5 mismatch",
+      "Status": "PASS"
+    },
+    {
+      "Name": "SHA256 mismatch",
+      "Status": "PASS"
+    },
+    {
+      "Name": "unchanged package digest",
+      "Status": "PASS"
+    },
+    {
+      "Name": "package changed after verification",
+      "Status": "PASS"
+    },
+    {
+      "Name": "read lock prevents replacement or writes",
+      "Status": "PASS"
+    },
+    {
+      "Name": "valid pinned GPG status",
+      "Status": "PASS"
+    },
+    {
+      "Name": "invalid signature status",
+      "Status": "PASS"
+    },
+    {
+      "Name": "signature verification unavailable",
+      "Status": "PASS"
+    },
+    {
+      "Name": "wrong signer",
+      "Status": "PASS"
+    },
+    {
+      "Name": "expired key is rejected",
+      "Status": "PASS"
+    },
+    {
+      "Name": "real GPG rejects data that does not match official signature",
+      "Status": "PASS"
+    },
+    {
+      "Name": "real GPG cannot trust a signature without the pinned public key",
+      "Status": "PASS"
+    },
+    {
+      "Name": "nonzero exit preserves stage and useful classification",
+      "Status": "PASS"
+    },
+    {
+      "Name": "nonzero exit without output",
+      "Status": "PASS"
+    },
+    {
+      "Name": "sensitive output never reaches diagnostics or exception",
+      "Status": "PASS"
+    },
+    {
+      "Name": "diagnostic file creation failure keeps original error",
+      "Status": "PASS"
+    },
+    {
+      "Name": "missing executable is diagnosed before MySQL log exists",
+      "Status": "PASS"
+    },
+    {
+      "Name": "unapproved diagnostic target is rejected without creating resources",
+      "Status": "PASS"
+    },
+    {
+      "Name": "installation gate rejects invalid package before mutation",
+      "Status": "PASS"
+    },
+    {
+      "Name": "restricted diagnostics ACL rejects broad access in memory",
+      "Status": "PASS"
+    },
+    {
+      "Name": "installer revalidates and locks archive before any runtime mutation",
+      "Status": "PASS"
+    },
+    {
+      "Name": "installer routes all native failures to private runtime diagnostics",
+      "Status": "PASS"
+    }
+  ]
+}

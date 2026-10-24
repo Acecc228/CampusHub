@@ -1,0 +1,25 @@
+npm notice run campushub-miniprogram@0.1.0 test
+npm notice run npm run build && node --test tests/*.test.cjs
+npm notice run campushub-miniprogram@0.1.0 build
+npm notice run tsc && node scripts/build.cjs
+PASS: TypeScript emitted and native assets copied. This is not a DevTools compile.
+✔ explicit JSESSIONID from cookies, rotate after login and fetch fresh CSRF (2.4843ms)
+✔ case insensitive Set-Cookie fallback, only session forwarded, deletion respected (0.8853ms)
+✔ 401 clears credentials and signals invalidation, 403 does not logout (3.1778ms)
+✔ POST network timeout is unknown and never automatically retried (0.7883ms)
+✔ reject absolute or traversing URL before sending credentials (0.8482ms)
+✔ clearing session invalidates an in-flight response (9.7456ms)
+✔ Beijing time does not use host timezone (1.6782ms)
+✔ half-open registration window, full and ended states (0.5025ms)
+✔ double click sends one mutation; timeout resolved by server read (2.6247ms)
+✔ uncertain result locks writes until explicit successful status check (0.8092ms)
+✔ timeout before commit plus old snapshot is still UNKNOWN until target or version advances (0.5288ms)
+✔ identity reset prevents old read from locking or completing new user state (7.8054ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 214.7781

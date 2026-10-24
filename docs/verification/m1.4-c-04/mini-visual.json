@@ -1,0 +1,86 @@
+[
+  {
+    "label": "standard-profile",
+    "path": "/pages/profile/index",
+    "width": 390,
+    "state": "ready"
+  },
+  {
+    "label": "standard-registrations",
+    "path": "/pages/registrations/index",
+    "width": 390,
+    "state": "ready"
+  },
+  {
+    "label": "small-home",
+    "path": "/pages/home/index",
+    "width": 360,
+    "state": "ready"
+  },
+  {
+    "label": "small-activities",
+    "path": "/pages/activities/index",
+    "width": 360,
+    "state": "ready"
+  },
+  {
+    "label": "small-detail",
+    "path": "/pages/detail/index?id=634",
+    "width": 360,
+    "state": "ready"
+  },
+  {
+    "label": "small-registrations",
+    "path": "/pages/registrations/index",
+    "width": 360,
+    "state": "ready"
+  },
+  {
+    "label": "small-profile",
+    "path": "/pages/profile/index",
+    "width": 360,
+    "state": "ready"
+  },
+  {
+    "label": "small-login",
+    "path": "pages/login/index",
+    "width": 360,
+    "state": "form"
+  },
+  {
+    "label": "large-login",
+    "path": "pages/login/index",
+    "width": 430,
+    "state": "form"
+  },
+  {
+    "label": "large-home",
+    "path": "pages/home/index",
+    "width": 430,
+    "state": "ready"
+  },
+  {
+    "label": "large-activities",
+    "path": "/pages/activities/index",
+    "width": 430,
+    "state": "ready"
+  },
+  {
+    "label": "large-detail",
+    "path": "/pages/detail/index?id=634",
+    "width": 430,
+    "state": "ready"
+  },
+  {
+    "label": "large-registrations",
+    "path": "/pages/registrations/index",
+    "width": 430,
+    "state": "ready"
+  },
+  {
+    "label": "large-profile",
+    "path": "/pages/profile/index",
+    "width": 430,
+    "state": "ready"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "CheckedAtUtc": "2026-10-18T23:17:14.0437237Z",
+  "Status": "PASS",
+  "AuthenticatedInstance": "8.4.11 / 127.0.0.1:3307 / approved datadir",
+  "MySQL80Fingerprint": "UNCHANGED",
+  "LegacyPortsConnected": false,
+  "FrozenInstallationSourcesMatched": 6,
+  "FrozenInstallRecordHash": "F7067F8C32F2902A54D86441264C113813E1C50EBC811497474A3BA919FC88FC",
+  "DevelopmentTableCount": 0,
+  "TestTables": [
+    "m10b_unicode_probe"
+  ],
+  "RetainedProbeRows": 1,
+  "SensitiveLogAcl": "PASS",
+  "RepositoryCredentialScan": "PASS",
+  "RepositoryFilesScanned": 57,
+  "CredentialMatches": 0,
+  "CurrentPowerShell": "7.6.5",
+  "EffectivePolicy": "RemoteSigned",
+  "Flyway": "NOT_RUN",
+  "ApplicationGrants": "NOT_RUN",
+  "Backend": "NOT_RUN",
+  "CommitPushDeploy": "NOT_RUN"
+}

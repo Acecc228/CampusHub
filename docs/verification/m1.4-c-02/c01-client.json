@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "transport": "Node fetch -> real Spring Boot/MySQL",
+  "checks": [
+    {
+      "name": "explicit 404 and failed status read show error without unknown lock; empty real roster/count",
+      "status": "PASS"
+    },
+    {
+      "name": "refresh after republish and same actions instance can register",
+      "status": "PASS"
+    },
+    {
+      "name": "actual committed cancellation with injected response/read loss blocks replay then recovers via real status",
+      "status": "PASS"
+    },
+    {
+      "name": "student and manager sessions isolated",
+      "status": "PASS"
+    }
+  ],
+  "studentId": 1,
+  "activityId": 556,
+  "at": "2026-10-23T17:05:37.213Z"
+}

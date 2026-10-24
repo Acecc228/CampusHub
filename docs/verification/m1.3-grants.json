@@ -1,0 +1,66 @@
+{
+  "Status": "PASS",
+  "CheckedAtUtc": "2026-10-20T15:18:46.0530535Z",
+  "Accounts": [
+    {
+      "Database": "campushub",
+      "Credential": "app",
+      "Before": [
+        "GRANT USAGE ON *.* TO `campushub_app`@`127.0.0.1`",
+        "GRANT SELECT ON `campushub`.`activity_category` TO `campushub_app`@`127.0.0.1`",
+        "GRANT SELECT, INSERT, UPDATE ON `campushub`.`activity` TO `campushub_app`@`127.0.0.1`",
+        "GRANT SELECT ON `campushub`.`app_role` TO `campushub_app`@`127.0.0.1`",
+        "GRANT SELECT ON `campushub`.`app_user_role` TO `campushub_app`@`127.0.0.1`",
+        "GRANT SELECT ON `campushub`.`app_user` TO `campushub_app`@`127.0.0.1`"
+      ],
+      "Expected": [
+        "GRANT USAGE ON *.* TO `campushub_app`@`127.0.0.1`",
+        "GRANT SELECT ON `campushub`.`activity_category` TO `campushub_app`@`127.0.0.1`",
+        "GRANT SELECT ON `campushub`.`app_user` TO `campushub_app`@`127.0.0.1`",
+        "GRANT SELECT ON `campushub`.`app_role` TO `campushub_app`@`127.0.0.1`",
+        "GRANT SELECT ON `campushub`.`app_user_role` TO `campushub_app`@`127.0.0.1`",
+        "GRANT SELECT, INSERT, UPDATE ON `campushub`.`activity` TO `campushub_app`@`127.0.0.1`",
+        "GRANT SELECT, INSERT, UPDATE ON `campushub`.`activity_registration` TO `campushub_app`@`127.0.0.1`"
+      ],
+      "After": [
+        "GRANT USAGE ON *.* TO `campushub_app`@`127.0.0.1`",
+        "GRANT SELECT ON `campushub`.`activity_category` TO `campushub_app`@`127.0.0.1`",
+        "GRANT SELECT, INSERT, UPDATE ON `campushub`.`activity_registration` TO `campushub_app`@`127.0.0.1`",
+        "GRANT SELECT, INSERT, UPDATE ON `campushub`.`activity` TO `campushub_app`@`127.0.0.1`",
+        "GRANT SELECT ON `campushub`.`app_role` TO `campushub_app`@`127.0.0.1`",
+        "GRANT SELECT ON `campushub`.`app_user_role` TO `campushub_app`@`127.0.0.1`",
+        "GRANT SELECT ON `campushub`.`app_user` TO `campushub_app`@`127.0.0.1`"
+      ]
+    },
+    {
+      "Database": "campushub_test",
+      "Credential": "test-app",
+      "Before": [
+        "GRANT USAGE ON *.* TO `campushub_test_app`@`127.0.0.1`",
+        "GRANT SELECT, INSERT, UPDATE, DELETE ON `campushub_test`.`activity_category` TO `campushub_test_app`@`127.0.0.1`",
+        "GRANT SELECT, INSERT, UPDATE, DELETE ON `campushub_test`.`activity` TO `campushub_test_app`@`127.0.0.1`",
+        "GRANT SELECT ON `campushub_test`.`app_role` TO `campushub_test_app`@`127.0.0.1`",
+        "GRANT SELECT, INSERT, UPDATE, DELETE ON `campushub_test`.`app_user_role` TO `campushub_test_app`@`127.0.0.1`",
+        "GRANT SELECT, INSERT, UPDATE, DELETE ON `campushub_test`.`app_user` TO `campushub_test_app`@`127.0.0.1`"
+      ],
+      "Expected": [
+        "GRANT USAGE ON *.* TO `campushub_test_app`@`127.0.0.1`",
+        "GRANT SELECT, INSERT, UPDATE, DELETE ON `campushub_test`.`activity_category` TO `campushub_test_app`@`127.0.0.1`",
+        "GRANT SELECT, INSERT, UPDATE, DELETE ON `campushub_test`.`app_user` TO `campushub_test_app`@`127.0.0.1`",
+        "GRANT SELECT ON `campushub_test`.`app_role` TO `campushub_test_app`@`127.0.0.1`",
+        "GRANT SELECT, INSERT, UPDATE, DELETE ON `campushub_test`.`app_user_role` TO `campushub_test_app`@`127.0.0.1`",
+        "GRANT SELECT, INSERT, UPDATE, DELETE ON `campushub_test`.`activity` TO `campushub_test_app`@`127.0.0.1`",
+        "GRANT SELECT, INSERT, UPDATE ON `campushub_test`.`activity_registration` TO `campushub_test_app`@`127.0.0.1`"
+      ],
+      "After": [
+        "GRANT USAGE ON *.* TO `campushub_test_app`@`127.0.0.1`",
+        "GRANT SELECT, INSERT, UPDATE, DELETE ON `campushub_test`.`activity_category` TO `campushub_test_app`@`127.0.0.1`",
+        "GRANT SELECT, INSERT, UPDATE ON `campushub_test`.`activity_registration` TO `campushub_test_app`@`127.0.0.1`",
+        "GRANT SELECT, INSERT, UPDATE, DELETE ON `campushub_test`.`activity` TO `campushub_test_app`@`127.0.0.1`",
+        "GRANT SELECT ON `campushub_test`.`app_role` TO `campushub_test_app`@`127.0.0.1`",
+        "GRANT SELECT, INSERT, UPDATE, DELETE ON `campushub_test`.`app_user_role` TO `campushub_test_app`@`127.0.0.1`",
+        "GRANT SELECT, INSERT, UPDATE, DELETE ON `campushub_test`.`app_user` TO `campushub_test_app`@`127.0.0.1`"
+      ]
+    }
+  ]
+}

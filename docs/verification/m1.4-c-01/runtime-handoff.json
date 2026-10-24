@@ -1,0 +1,12 @@
+{
+  "Status": "PASS",
+  "ClientDate": "2026-10-24",
+  "Listeners": [
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 3307,
+      "OwningProcess": 21924
+    }
+  ],
+  "Note": "Read-only continuation check. No service/process stop or restart performed during handoff."
+}

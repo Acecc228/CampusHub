@@ -1,0 +1,15 @@
+{
+  "profile": "product-admin",
+  "sourceRoots": ["miniprogram/src"],
+  "locale": "zh-CN",
+  "canonicalMap": "docs/m1.4-b-design.md",
+  "requiredCapabilities": ["Select/Listbox", "Date", "Form", "Scrollbar", "Toast", "CRUD"],
+  "requiredCommands": ["unit", "typecheck", "build", "e2e"],
+  "commands": {
+    "unit": "npm --prefix miniprogram test",
+    "typecheck": "npm --prefix miniprogram run typecheck",
+    "build": "npm --prefix miniprogram run build",
+    "e2e": "pwsh -NoProfile -File scripts/Test-MiniprogramSimulator.ps1 -Apply"
+  },
+  "evidence": { "crudFullFlow": "miniprogram/tests/simulator.cjs", "failurePaths": "miniprogram/tests/client.test.cjs" }
+}

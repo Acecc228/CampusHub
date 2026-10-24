@@ -1,0 +1,34 @@
+✔ double click sends one mutation; timeout resolved by server read (1.3937ms)
+✔ uncertain result locks writes until explicit successful status check (0.3438ms)
+✔ timeout before commit plus old snapshot is still UNKNOWN until target or version advances (0.2481ms)
+✔ identity reset prevents old read from locking or completing new user state (4.4578ms)
+✖ unpublished activity rejects registration and status with 404 without an unknown-result lock (1.928ms)
+✔ 5xx mutation followed by 404 status remains unknown and prevents replay (0.2536ms)
+✔ identity reset during rejected mutation read cannot complete the old identity (2.9236ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 6
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 116.3806
+
+✖ failing tests:
+
+test at miniprogram\tests\registration.test.cjs:80:1
+✖ unpublished activity rejects registration and status with 404 without an unknown-result lock (1.928ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  false !== true
+  
+      at TestContext.<anonymous> (E:\Project\CampusHub\miniprogram\tests\registration.test.cjs:94:10)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

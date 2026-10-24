@@ -1,0 +1,52 @@
+{
+  "CheckedAtUtc": "2026-10-23T18:03:19.8831414Z",
+  "Status": "PASS",
+  "Passed": 11,
+  "Failed": 0,
+  "Results": [
+    {
+      "Check": "Exact grant matrix and identity: app",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Exact grant matrix and identity: test-app",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Exact grant matrix and identity: migrator",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Exact grant matrix and identity: test-migrator",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Migration history and seeds: campushub",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Migration history and seeds: campushub_test",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Registration SELECT works and DELETE ALTER cross-database are denied: app",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Registration SELECT works and DELETE ALTER cross-database are denied: test-app",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Original probe definition and Unicode evidence unchanged",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Flyway rejects modified migration checksum without repair",
+      "Status": "PASS"
+    },
+    {
+      "Check": "MySQL80 fingerprint unchanged",
+      "Status": "PASS"
+    }
+  ]
+}

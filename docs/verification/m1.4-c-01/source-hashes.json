@@ -1,0 +1,14 @@
+[
+  {
+    "File": "miniprogram/src/domain/registration.ts",
+    "SHA256": "E541CA2D8FE242BCD8AFE563878A8702B4C3AD939EF6C596A92E05529614BBAD"
+  },
+  {
+    "File": "miniprogram/tests/registration.test.cjs",
+    "SHA256": "69B99999EAE30595580608D889C4F429D031E8C5DC76E9DDBDECCA8C5F8024E7"
+  },
+  {
+    "File": "scripts/Test-CrossClientDatabase.ps1",
+    "SHA256": "F8D52C285373C4BF27C60CC22BB1D7311C4538C6F56CD9DB264DA555012D4328"
+  }
+]

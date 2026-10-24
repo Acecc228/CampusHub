@@ -1,0 +1,2 @@
+miniprogram/tests/visual.cjs 59ms
+miniprogram/tests/resilience.cjs 16ms

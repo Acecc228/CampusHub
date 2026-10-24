@@ -1,0 +1,5 @@
+{
+  "started": "2026-10-23T18:04:43.538Z",
+  "timeoutSeconds": 1800,
+  "note": "isolated real browser UI login; no background requests permitted"
+}

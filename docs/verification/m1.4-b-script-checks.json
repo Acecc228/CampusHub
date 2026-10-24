@@ -1,0 +1,17 @@
+[
+  {
+    "File": "scripts/Test-Miniprogram.ps1",
+    "PowerShell": "7.6.5",
+    "ParseErrors": 0
+  },
+  {
+    "File": "scripts/Test-MiniprogramSimulator.ps1",
+    "PowerShell": "7.6.5",
+    "ParseErrors": 0
+  },
+  {
+    "File": "scripts/Test-MiniprogramDatabase.ps1",
+    "PowerShell": "7.6.5",
+    "ParseErrors": 0
+  }
+]

@@ -1,0 +1,336 @@
+{
+  "auditReportVersion": 2,
+  "vulnerabilities": {
+    "@jimp/core": {
+      "name": "@jimp/core",
+      "severity": "critical",
+      "isDirect": false,
+      "via": [
+        "mkdirp",
+        "phin"
+      ],
+      "effects": [
+        "@jimp/custom"
+      ],
+      "range": "<=0.21.4--canary.1163.d07ed6254d130e2995d24101e93427ec091016e6.0",
+      "nodes": [
+        "node_modules/@jimp/core"
+      ],
+      "fixAvailable": {
+        "name": "miniprogram-automator",
+        "version": "0.12.1",
+        "isSemVerMajor": true
+      }
+    },
+    "@jimp/custom": {
+      "name": "@jimp/custom",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@jimp/core"
+      ],
+      "effects": [
+        "jimp"
+      ],
+      "range": "<=0.21.4--canary.1163.d07ed6254d130e2995d24101e93427ec091016e6.0",
+      "nodes": [
+        "node_modules/@jimp/custom"
+      ],
+      "fixAvailable": {
+        "name": "miniprogram-automator",
+        "version": "0.12.1",
+        "isSemVerMajor": true
+      }
+    },
+    "@jimp/jpeg": {
+      "name": "@jimp/jpeg",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "jpeg-js"
+      ],
+      "effects": [
+        "@jimp/types"
+      ],
+      "range": "<=0.12.0",
+      "nodes": [
+        "node_modules/@jimp/jpeg"
+      ],
+      "fixAvailable": {
+        "name": "miniprogram-automator",
+        "version": "0.12.1",
+        "isSemVerMajor": true
+      }
+    },
+    "@jimp/types": {
+      "name": "@jimp/types",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@jimp/jpeg"
+      ],
+      "effects": [
+        "jimp"
+      ],
+      "range": "<=0.11.1-canary.891.908.0",
+      "nodes": [
+        "node_modules/@jimp/types"
+      ],
+      "fixAvailable": {
+        "name": "miniprogram-automator",
+        "version": "0.12.1",
+        "isSemVerMajor": true
+      }
+    },
+    "debug": {
+      "name": "debug",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1096792,
+          "name": "debug",
+          "dependency": "debug",
+          "title": "Regular Expression Denial of Service in debug",
+          "url": "https://github.com/advisories/GHSA-gxpj-cx7g-858c",
+          "severity": "low",
+          "cwe": [
+            "CWE-400"
+          ],
+          "cvss": {
+            "score": 3.7,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+          },
+          "range": ">=4.0.0 <4.3.1"
+        }
+      ],
+      "effects": [
+        "miniprogram-automator"
+      ],
+      "range": "4.0.0 - 4.3.0",
+      "nodes": [
+        "node_modules/debug"
+      ],
+      "fixAvailable": {
+        "name": "miniprogram-automator",
+        "version": "0.12.1",
+        "isSemVerMajor": true
+      }
+    },
+    "jimp": {
+      "name": "jimp",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@jimp/custom",
+        "@jimp/types"
+      ],
+      "effects": [
+        "miniprogram-automator"
+      ],
+      "range": "0.3.6-alpha.5 - 0.21.4--canary.1163.d07ed6254d130e2995d24101e93427ec091016e6.0",
+      "nodes": [
+        "node_modules/jimp"
+      ],
+      "fixAvailable": {
+        "name": "miniprogram-automator",
+        "version": "0.12.1",
+        "isSemVerMajor": true
+      }
+    },
+    "jpeg-js": {
+      "name": "jpeg-js",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1088964,
+          "name": "jpeg-js",
+          "dependency": "jpeg-js",
+          "title": "Infinite loop in jpeg-js",
+          "url": "https://github.com/advisories/GHSA-xvf7-4v9q-58w6",
+          "severity": "high",
+          "cwe": [
+            "CWE-835"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<0.4.4"
+        },
+        {
+          "source": 1093580,
+          "name": "jpeg-js",
+          "dependency": "jpeg-js",
+          "title": "Uncontrolled resource consumption in jpeg-js",
+          "url": "https://github.com/advisories/GHSA-w7q9-p3jq-fmhm",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-400"
+          ],
+          "cvss": {
+            "score": 5.5,
+            "vectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+          },
+          "range": "<0.4.0"
+        }
+      ],
+      "effects": [
+        "@jimp/jpeg"
+      ],
+      "range": "<=0.4.3",
+      "nodes": [
+        "node_modules/jpeg-js"
+      ],
+      "fixAvailable": {
+        "name": "miniprogram-automator",
+        "version": "0.12.1",
+        "isSemVerMajor": true
+      }
+    },
+    "minimist": {
+      "name": "minimist",
+      "severity": "critical",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1096466,
+          "name": "minimist",
+          "dependency": "minimist",
+          "title": "Prototype Pollution in minimist",
+          "url": "https://github.com/advisories/GHSA-vh95-rmgr-6w4m",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-1321"
+          ],
+          "cvss": {
+            "score": 5.6,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L"
+          },
+          "range": "<0.2.1"
+        },
+        {
+          "source": 1097677,
+          "name": "minimist",
+          "dependency": "minimist",
+          "title": "Prototype Pollution in minimist",
+          "url": "https://github.com/advisories/GHSA-xvch-5gv4-984h",
+          "severity": "critical",
+          "cwe": [
+            "CWE-1321"
+          ],
+          "cvss": {
+            "score": 9.8,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+          },
+          "range": "<0.2.4"
+        }
+      ],
+      "effects": [
+        "mkdirp"
+      ],
+      "range": "<=0.2.3",
+      "nodes": [
+        "node_modules/minimist"
+      ],
+      "fixAvailable": {
+        "name": "miniprogram-automator",
+        "version": "0.12.1",
+        "isSemVerMajor": true
+      }
+    },
+    "miniprogram-automator": {
+      "name": "miniprogram-automator",
+      "severity": "moderate",
+      "isDirect": true,
+      "via": [
+        "debug",
+        "jimp"
+      ],
+      "effects": [],
+      "range": ">=0.5.2",
+      "nodes": [
+        "node_modules/miniprogram-automator"
+      ],
+      "fixAvailable": {
+        "name": "miniprogram-automator",
+        "version": "0.12.1",
+        "isSemVerMajor": true
+      }
+    },
+    "mkdirp": {
+      "name": "mkdirp",
+      "severity": "critical",
+      "isDirect": false,
+      "via": [
+        "minimist"
+      ],
+      "effects": [
+        "@jimp/core"
+      ],
+      "range": "0.4.1 - 0.5.1",
+      "nodes": [
+        "node_modules/mkdirp"
+      ],
+      "fixAvailable": {
+        "name": "miniprogram-automator",
+        "version": "0.12.1",
+        "isSemVerMajor": true
+      }
+    },
+    "phin": {
+      "name": "phin",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1096967,
+          "name": "phin",
+          "dependency": "phin",
+          "title": "phin may include sensitive headers in subsequent requests after redirect",
+          "url": "https://github.com/advisories/GHSA-x565-32qp-m3vf",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-200"
+          ],
+          "cvss": {
+            "score": 4.3,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N"
+          },
+          "range": "<3.7.1"
+        }
+      ],
+      "effects": [
+        "@jimp/core"
+      ],
+      "range": "<3.7.1",
+      "nodes": [
+        "node_modules/phin"
+      ],
+      "fixAvailable": {
+        "name": "miniprogram-automator",
+        "version": "0.12.1",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 1,
+      "moderate": 6,
+      "high": 1,
+      "critical": 3,
+      "total": 11
+    },
+    "dependencies": {
+      "prod": 1,
+      "dev": 79,
+      "optional": 0,
+      "peer": 0,
+      "peerOptional": 0,
+      "total": 79
+    }
+  }
+}

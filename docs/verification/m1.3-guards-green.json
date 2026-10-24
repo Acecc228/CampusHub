@@ -1,0 +1,107 @@
+{
+  "Suite": "M1.0-C protection conditions (no database writes)",
+  "Passed": 25,
+  "Failed": 0,
+  "Results": [
+    {
+      "Check": "Empty development database requires no baseline",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Existing test probe requires explicit baseline option",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Explicit baseline only admits known test inventory",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Existing valid history migrates without baseline",
+      "Status": "PASS"
+    },
+    {
+      "Check": "M1.1 inventory permits incremental validation with history",
+      "Status": "PASS"
+    },
+    {
+      "Check": "M1.1 tables without history cannot be adopted",
+      "Status": "PASS"
+    },
+    {
+      "Check": "M1.2 inventory permits migration and rejects historyless activity",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Activity grants default to preview",
+      "Status": "PASS"
+    },
+    {
+      "Check": "M1.3 inventory requires history and permits incremental migration",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Registration grants default to preview and only grant three table privileges",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Reject conflicting inventory: mysql/",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Reject conflicting inventory: campushub/activity_category",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Reject conflicting inventory: campushub_test/m10b_unicode_probe,unexpected",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Reject conflicting inventory: campushub_test/",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Reject conflicting inventory: campushub/m10b_unicode_probe",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Credential parser requires exact user and generated secret format",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Child environment removes inherited migration and datasource secrets",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Default preview: Invoke-BackendMigration.ps1",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Default preview: Invoke-Backend.ps1",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Demo configuration rejects incomplete or unexpected role inventory",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Default preview: Set-DemoAccounts.ps1",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Default preview: Grant-AuthenticationAccess.ps1",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Default preview: Test-BackendDatabase.ps1",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Default preview: Test-BackendPackage.ps1",
+      "Status": "PASS"
+    },
+    {
+      "Check": "Production launcher refuses demo switch before any writes",
+      "Status": "PASS"
+    }
+  ]
+}

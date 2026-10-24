@@ -1,0 +1,6 @@
+{
+  "mode": "punctuation",
+  "status": "PASS",
+  "transport": "actual wx.request, no mocked responses",
+  "searches": 4
+}

@@ -1,0 +1,10 @@
+.brand { display: flex; align-items: center; gap: 14rpx; font-size: 19px; font-weight: 750; margin-bottom: 34rpx; }
+.brand-icon { width: 60rpx; height: 60rpx; border-radius: 18rpx; background: var(--ch-primary); color: var(--ch-surface); text-align: center; line-height: 60rpx; }
+.brand-caption { margin-left: auto; font-size: 11px; font-weight: 400; color: var(--ch-muted); }
+.hero { position: relative; padding: 36rpx; background: var(--ch-surface); border: 1px solid var(--ch-border); border-radius: var(--ch-radius); overflow: hidden; }
+.hero-title { font-size: 32px; line-height: 1.35; font-weight: 750; letter-spacing: -1px; margin: 22rpx 0; white-space: pre-line; }
+.hero button { margin-top: 30rpx; width: fit-content; }
+.hero-stamp { position: absolute; right: 26rpx; top: 115rpx; padding: 18rpx 12rpx; border: 1px dashed var(--ch-primary); border-radius: 50%; color: var(--ch-primary); font-size: 10px; line-height: 1.2; text-align: center; transform: rotate(12deg); opacity: .45; }
+.categories { display: flex; flex-wrap: wrap; gap: 16rpx; margin-top: 24rpx; }
+.category-button { flex: 1 1 40%; color: var(--ch-primary); background: var(--ch-tint); font-size: 14px; }
+@media (max-width: 350px) { .hero-stamp { display: none; } .hero-title { font-size: 28px; } .brand-caption { display: none; } }

@@ -1,0 +1,9 @@
+{
+  "Status": "PASS",
+  "ArtifactHashMatches": true,
+  "EvidenceJsonParses": true,
+  "DocumentationLinksExist": true,
+  "MySQL80Unchanged": true,
+  "ProbeUnchanged": true,
+  "NoCommitOrPush": true
+}

@@ -1,0 +1,84 @@
+{
+  "Status": "PASS",
+  "CheckedAtUtc": "2026-10-20T08:56:36.4024683Z",
+  "Results": [
+    {
+      "Profile": "dev",
+      "Status": "PASS",
+      "JarSha256": "92D4258D50E927400B06660B229AF1840F0BAFC7D607B82A36AE3FB13D5D6BF6",
+      "Health": 200,
+      "Categories": [
+        {
+          "id": 1,
+          "code": "ACADEMIC",
+          "name": "学术科技",
+          "sortOrder": 10
+        },
+        {
+          "id": 2,
+          "code": "CULTURE_SPORTS",
+          "name": "文体活动",
+          "sortOrder": 20
+        },
+        {
+          "id": 3,
+          "code": "VOLUNTEER",
+          "name": "志愿公益",
+          "sortOrder": 30
+        },
+        {
+          "id": 4,
+          "code": "CAREER",
+          "name": "就业实践",
+          "sortOrder": 40
+        }
+      ],
+      "Protected": 401,
+      "OpenApi": 200,
+      "Authentication": "PASS: 3 logins, 3 identities, 9 role checks, 3 logouts and anonymous 401 checks",
+      "ActivityChecks": "Anonymous 401; dev authenticated lists and management role matrix",
+      "Credential": "campushub_app only",
+      "FlywayEnvironmentPresent": false
+    },
+    {
+      "Profile": "prod",
+      "Status": "PASS",
+      "JarSha256": "92D4258D50E927400B06660B229AF1840F0BAFC7D607B82A36AE3FB13D5D6BF6",
+      "Health": 200,
+      "Categories": [
+        {
+          "id": 1,
+          "code": "ACADEMIC",
+          "name": "学术科技",
+          "sortOrder": 10
+        },
+        {
+          "id": 2,
+          "code": "CULTURE_SPORTS",
+          "name": "文体活动",
+          "sortOrder": 20
+        },
+        {
+          "id": 3,
+          "code": "VOLUNTEER",
+          "name": "志愿公益",
+          "sortOrder": 30
+        },
+        {
+          "id": 4,
+          "code": "CAREER",
+          "name": "就业实践",
+          "sortOrder": 40
+        }
+      ],
+      "Protected": 401,
+      "OpenApi": 401,
+      "Authentication": "DISABLED: demo authentication; authenticated mapping absence covered in integration tests",
+      "ActivityChecks": "Anonymous 401; dev authenticated lists and management role matrix",
+      "Credential": "campushub_app only",
+      "FlywayEnvironmentPresent": false
+    }
+  ],
+  "LegacyUnchanged": true,
+  "ProductionMappingAbsence": "Verified separately by authenticated integration tests"
+}

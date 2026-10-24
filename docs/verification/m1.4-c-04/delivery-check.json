@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "at": "2026-10-24T08:02:57.393Z",
+  "documentCount": 9,
+  "missingLinks": [],
+  "textFilesScanned": 84,
+  "jsonParsed": 36,
+  "credentialValueMatches": [],
+  "note": "Known local secret values only; not complete external security audit"
+}

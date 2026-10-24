@@ -1,0 +1,13 @@
+{
+  "Status": "PASS",
+  "StoppedOwnedJavaPid": 98472,
+  "TestCounts": "233\t216\t263",
+  "LegacyUnchanged": true,
+  "Probe": "PASS",
+  "Listeners": [
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 3307
+    }
+  ]
+}

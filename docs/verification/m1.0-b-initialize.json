@@ -1,0 +1,11 @@
+{
+  "ExecutedAtUtc": "2026-10-18T23:11:05.3836375Z",
+  "Status": "PASS",
+  "Result": {
+    "Status": "PASS",
+    "Stage": "M1.0-B Database/account bootstrap",
+    "BusinessTables": "NOT_RUN: require separately authorized Flyway migration",
+    "AppGrants": "NOT_RUN: after migration",
+    "LegacySql": "NOT_RUN"
+  }
+}

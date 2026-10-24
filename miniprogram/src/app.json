@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/activities/index",
+    "pages/registrations/index",
+    "pages/profile/index",
+    "pages/detail/index",
+    "pages/login/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "CampusHub",
+    "navigationBarBackgroundColor": "#f6f7fb",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f6f7fb",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "color": "#606b80",
+    "selectedColor": "#4f46e5",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "assets/home.png",
+        "selectedIconPath": "assets/home-active.png"
+      },
+      {
+        "pagePath": "pages/activities/index",
+        "text": "活动",
+        "iconPath": "assets/activities.png",
+        "selectedIconPath": "assets/activities-active.png"
+      },
+      {
+        "pagePath": "pages/registrations/index",
+        "text": "我的报名",
+        "iconPath": "assets/ticket.png",
+        "selectedIconPath": "assets/ticket-active.png"
+      },
+      {
+        "pagePath": "pages/profile/index",
+        "text": "我的",
+        "iconPath": "assets/profile.png",
+        "selectedIconPath": "assets/profile-active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

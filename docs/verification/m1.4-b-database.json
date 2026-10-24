@@ -1,0 +1,15 @@
+{
+  "Status": "PASS",
+  "Database": "campushub_test",
+  "Address": "127.0.0.1:3307",
+  "CountMismatches": 0,
+  "DuplicateRegistrations": 0,
+  "RetainedM14BActivities": 22,
+  "DevActivityCount": 0,
+  "DevRegistrationCount": 0,
+  "DevOriginalUsers": 3,
+  "OriginalProbe": "PASS",
+  "FixtureState": "463\tUNPUBLISHED\t1\t0\tCANCELLED\t4\r\n464\tDRAFT\t5\t0\tNULL\tNULL\r\n465\tPUBLISHED\t5\t0\tNULL\tNULL\r\n466\tPUBLISHED\t5\t1\tCONFIRMED\t1\r\n467\tPUBLISHED\t30\t0\tNULL\tNULL\r\n468\tPUBLISHED\t30\t0\tNULL\tNULL\r\n469\tPUBLISHED\t30\t1\tCONFIRMED\t3\r\n",
+  "DatabaseMutation": "NONE",
+  "MySQL80": "No connection or mutation"
+}

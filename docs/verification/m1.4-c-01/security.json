@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "native": {
+    "transport": "actual wx.request (supplemental security probe; not UI E2E)",
+    "login": 200,
+    "rotated": true,
+    "identity": {
+      "id": 1,
+      "loginName": "demo_student",
+      "displayName": "Demo student",
+      "roles": [
+        "STUDENT"
+      ]
+    },
+    "studentManageDenied": 403,
+    "missingCsrfDenied": 403,
+    "sessionSurvivesDeniedLogout": 200,
+    "logout": 204,
+    "anonymous": 401
+  },
+  "vue": {
+    "identity": {
+      "id": 2,
+      "loginName": "demo_organizer",
+      "displayName": "Demo organizer",
+      "roles": [
+        "ORGANIZER"
+      ]
+    },
+    "organizerStudentDenied": 403,
+    "foreignActivity398Denied": 403,
+    "missingCsrfDenied": 403,
+    "sessionSurvives": 2
+  }
+}

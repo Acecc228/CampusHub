@@ -1,0 +1,35 @@
+miniprogram/src/app.ts 260ms (unchanged)
+miniprogram/src/components/activity-card/index.ts 10ms
+miniprogram/src/components/page-state/index.ts 6ms
+miniprogram/src/domain/activity.ts 32ms
+miniprogram/src/domain/registration.ts 28ms
+miniprogram/src/pages/activities/index.ts 23ms
+miniprogram/src/pages/detail/index.ts 19ms
+miniprogram/src/pages/home/index.ts 8ms
+miniprogram/src/pages/login/index.ts 4ms
+miniprogram/src/pages/profile/index.ts 5ms
+miniprogram/src/pages/registrations/index.ts 21ms
+miniprogram/src/services/api.ts 6ms
+miniprogram/src/services/client.ts 22ms
+miniprogram/src/services/session.ts 7ms
+miniprogram/src/services/transport.ts 3ms
+miniprogram/src/services/types.ts 3ms
+miniprogram/src/ui/navigation.ts 4ms
+miniprogram/src/app.json 109ms
+miniprogram/src/components/activity-card/index.json 2ms (unchanged)
+miniprogram/src/components/page-state/index.json 1ms (unchanged)
+miniprogram/src/pages/activities/index.json 1ms
+miniprogram/src/pages/detail/index.json 1ms
+miniprogram/src/pages/home/index.json 2ms
+miniprogram/src/pages/login/index.json 1ms
+miniprogram/src/pages/profile/index.json 1ms
+miniprogram/src/pages/registrations/index.json 1ms
+miniprogram/src/sitemap.json 1ms
+miniprogram/tests/client.test.cjs 23ms
+miniprogram/tests/design.test.cjs 6ms
+miniprogram/tests/domain.test.cjs 3ms
+miniprogram/tests/page-session.test.cjs 7ms
+miniprogram/tests/real-api.cjs 39ms
+miniprogram/tests/registration.test.cjs 10ms
+miniprogram/tests/simulator.cjs 35ms
+miniprogram/scripts/build.cjs 4ms

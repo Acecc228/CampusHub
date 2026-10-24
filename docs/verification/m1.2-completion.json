@@ -1,0 +1,20 @@
+{
+  "Status": "PASS",
+  "CheckedAtUtc": "2026-10-20T15:04:52.6726147Z",
+  "MavenTests": 41,
+  "Failures": 0,
+  "Errors": 0,
+  "Skipped": 0,
+  "DatabaseChecks": 9,
+  "ProtectionChecks": 23,
+  "PowerShellFiles": 24,
+  "PowerShellVersions": [
+    "7.6.5",
+    "5.1.26100.9711"
+  ],
+  "Package": "PASS",
+  "MigrationFilesUnchangedSinceVerification": true,
+  "DocumentLinksChecked": 34,
+  "PackagedJavaProcessesRemaining": 0,
+  "NextStage": "M1.3 NOT_RUN; requires separate authorization"
+}

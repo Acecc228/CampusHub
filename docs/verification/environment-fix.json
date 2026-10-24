@@ -1,0 +1,37 @@
+{
+  "CheckedAt": "2026-10-18T17:38:35.2644571Z",
+  "IsAdministrator": false,
+  "Services": [
+    {
+      "Name": "MySQL80",
+      "State": "Running",
+      "StartMode": "Auto",
+      "StartName": "NT AUTHORITY\\NetworkService",
+      "PathName": "\"C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\mysqld.exe\" --defaults-file=\"C:\\ProgramData\\MySQL\\MySQL Server 8.0\\my.ini\" MySQL80"
+    }
+  ],
+  "Listeners": [
+    {
+      "LocalAddress": "::",
+      "LocalPort": 33060,
+      "OwningProcess": 7092
+    },
+    {
+      "LocalAddress": "::",
+      "LocalPort": 3306,
+      "OwningProcess": 7092
+    }
+  ],
+  "RuntimeExists": false,
+  "LegacyFingerprint": {
+    "Name": "MySQL80",
+    "State": "Running",
+    "StartMode": "Auto",
+    "StartName": "NT AUTHORITY\\NetworkService",
+    "PathName": "\"C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\mysqld.exe\" --defaults-file=\"C:\\ProgramData\\MySQL\\MySQL Server 8.0\\my.ini\" MySQL80",
+    "ConfigHash": "1253B6E07E8CF0323D093EE21C50A02FF5B06585B4060C6F18C9C65F91F7263F"
+  },
+  "Java21ExecutableExists": true,
+  "MavenOnPath": false,
+  "DatabaseSqlChecks": "NOT_RUN (this script never authenticates or writes to MySQL)"
+}

@@ -1,0 +1,32 @@
+{
+  "Status": "PASS",
+  "At": "2026-10-24T07:54:34.8038077Z",
+  "Address": "127.0.0.1:3307",
+  "Database": "campushub_test",
+  "Mutation": "NONE",
+  "Queries": {
+    "Identity": "SELECT @@port,DATABASE(),CURRENT_USER();",
+    "Inventory": "SELECT (SELECT COUNT(*) FROM activity),(SELECT COUNT(*) FROM activity_registration),(SELECT COUNT(*) FROM activity_registration WHERE status='CONFIRMED'),(SELECT COUNT(*) FROM app_user);",
+    "CountMismatch": "SELECT COUNT(*) FROM activity a WHERE registered_count<>(SELECT COUNT(*) FROM activity_registration r WHERE r.activity_id=a.id AND r.status='CONFIRMED');",
+    "OverCapacity": "SELECT COUNT(*) FROM activity WHERE registered_count>capacity OR registered_count<0;",
+    "Duplicate": "SELECT COUNT(*) FROM (SELECT activity_id,user_id FROM activity_registration GROUP BY activity_id,user_id HAVING COUNT(*)>1) d;",
+    "Orphan": "SELECT COUNT(*) FROM activity_registration r LEFT JOIN activity a ON a.id=r.activity_id LEFT JOIN app_user u ON u.id=r.user_id WHERE a.id IS NULL OR u.id IS NULL;",
+    "Fixtures": "SELECT a.id,a.status,a.version,a.capacity,a.registered_count,r.id,r.user_id,r.status,r.version FROM activity a LEFT JOIN activity_registration r ON r.activity_id=a.id WHERE a.id IN(470,634,642) ORDER BY a.id,r.id;"
+  },
+  "Results": {
+    "Identity": "3307\tcampushub_test\tcampushub_test_app@127.0.0.1",
+    "Inventory": "293\t270\t207\t335",
+    "CountMismatch": "0",
+    "OverCapacity": "0",
+    "Duplicate": "0",
+    "Orphan": "0",
+    "Fixtures": "470\tPUBLISHED\t8\t3\t1\t197\t1\tCONFIRMED\t5\r\n634\tPUBLISHED\t4\t2\t1\t292\t1\tCONFIRMED\t3\r\n642\tPUBLISHED\t3\t1\t1\t295\t1\tCONFIRMED\t1"
+  },
+  "DevInventory": "0\t0\t3",
+  "History": {
+    "campushub": "1\t1160888031\t1\r\n2\t436036048\t1\r\n3\t-852546724\t1\r\n4\t653386617\t1",
+    "campushub_test": "0\tNULL\t1\r\n1\t1160888031\t1\r\n2\t436036048\t1\r\n3\t-852546724\t1\r\n4\t653386617\t1"
+  },
+  "ProtectedProbe": "PASS",
+  "MySQL80": "No connection or mutation; fingerprint unchanged across final read-only check"
+}

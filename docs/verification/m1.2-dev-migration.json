@@ -1,0 +1,14 @@
+[
+  {
+    "Status": "PASS",
+    "Stage": "campushub-migrate",
+    "ExitCode": 0,
+    "Log": "E:\\Project\\CampusHub\\.local\\backend-logs\\campushub-migrate-20261020T084814142.log"
+  },
+  {
+    "Status": "PASS",
+    "Stage": "campushub-validate",
+    "ExitCode": 0,
+    "Log": "E:\\Project\\CampusHub\\.local\\backend-logs\\campushub-validate-20261020T084820439.log"
+  }
+]

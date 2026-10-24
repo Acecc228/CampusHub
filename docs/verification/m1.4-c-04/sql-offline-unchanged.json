@@ -1,0 +1,9 @@
+{
+  "Status": "PASS",
+  "At": "2026-10-24T03:02:20.5246779Z",
+  "Database": "campushub_test",
+  "Address": "127.0.0.1:3307",
+  "Sql": "SELECT a.id,a.registered_count,r.id,r.status,r.version FROM activity a JOIN activity_registration r ON r.activity_id=a.id WHERE a.id=642;",
+  "Rows": "642\t1\t295\tCONFIRMED\t1",
+  "Meaning": "Offline cancel and verify did not mutate persisted registration"
+}

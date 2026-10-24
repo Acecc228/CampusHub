@@ -1,0 +1,581 @@
+{
+  "at": "2026-10-24T08:02:34.422Z",
+  "files": [
+    {
+      "file": "01-organizer-dashboard.png",
+      "sha256": "6be3b54865b40188170674a3bb26c3f77a082a78992f64fcd9bfc2ecce17deac"
+    },
+    {
+      "file": "02-create-form.png",
+      "sha256": "d1174599f684c0d7875ec85e575e1aa2a34ebfaec52dd1771d929595d30081b4"
+    },
+    {
+      "file": "03-edit-form.png",
+      "sha256": "cca9c865a9dec24c3ef4dfd7b8e204b5f004e42afc638a21d2d197fdfdb03341"
+    },
+    {
+      "file": "04-published.png",
+      "sha256": "4da265f6d7686743f6cbb213061a615f5e613941a797796b53a2bd1c79438288"
+    },
+    {
+      "file": "05-mini-login.png",
+      "sha256": "4d556df56ba5ddc638241c18e9835f2e2d77941ae38eda72bb4155d7de73b63f"
+    },
+    {
+      "file": "06-mini-home.png",
+      "sha256": "057b9b885277e5270f194f8f94e06e917e98288c8f8ad13cdfcc16bb03eef7fe"
+    },
+    {
+      "file": "07-mini-search.png",
+      "sha256": "febb3e61d2f289e3b3cbab2e83b66d809ceea09b90d69800e924ab095f26cf70"
+    },
+    {
+      "file": "08-mini-detail.png",
+      "sha256": "4dd44d50350c4194f1b20d0e156fb804c75c1475a37cd923687327e172aaae74"
+    },
+    {
+      "file": "09-mini-registered.png",
+      "sha256": "40d16d70fcc3ec6c8114a720e35b7f86da091cf19263ed5547083ec8fc04fc5b"
+    },
+    {
+      "file": "10-mini-my-registrations.png",
+      "sha256": "0df5c02301851192808d1a2c838975d1782a4560dc63ce6d69ba6fce0bd806fe"
+    },
+    {
+      "file": "11-organizer-roster.png",
+      "sha256": "f1cb81e8f6c59ed15c819817dfa447aee48a6c6e3bf5f11afeb58c715307b062"
+    },
+    {
+      "file": "12-mini-cancelled.png",
+      "sha256": "9582bff9d997b257106d61f6854805016a064d90b6fd4b792d4c0c25a193f456"
+    },
+    {
+      "file": "13-organizer-cancelled.png",
+      "sha256": "4045acfe986dc35646dd656ea02eba9cdddfea10f4f6a9442e73b0ac226dc6b8"
+    },
+    {
+      "file": "14-mini-reregistered.png",
+      "sha256": "76698de47210dd5e40b021b29c96a6e4f07998e326955bf297275a6a05155e79"
+    },
+    {
+      "file": "15-organizer-reregistered.png",
+      "sha256": "73dbced4f337bafc605e44fbd52153ce5f9b5b61d13cafd1a75630648ba198d1"
+    },
+    {
+      "file": "16-organizer-unpublished.png",
+      "sha256": "1459a4c7d5c4f586a8f02382d84e2b89871e767dd8ac2a159d4b19829c3c8eed"
+    },
+    {
+      "file": "17-mini-hidden.png",
+      "sha256": "6cc1a4668e971d5e930c4095d9fbcd8bcf3791663e10d94b271f0273aebfb7b2"
+    },
+    {
+      "file": "18-mini-unpublished.png",
+      "sha256": "ce42f0b90eaa1ac90a3c3aa8224d0de10948e1af2a74c590eea23adcfcb3cdf0"
+    },
+    {
+      "file": "19-organizer-republished.png",
+      "sha256": "d3b969246f8589440dede2ae888e93451265a9834055aa3b51b0325b7462e62a"
+    },
+    {
+      "file": "20-mini-republished.png",
+      "sha256": "81b30e5ef7ef5ba15fe34745f6d5849e855fe9b9da1f33c15609d20159d769c4"
+    },
+    {
+      "file": "abnormal-ui.json",
+      "sha256": "c11b61f0b030b560c0ddb806a079a58512a655cf8bf9c311dc3b144bad8d5974"
+    },
+    {
+      "file": "admin-404.png",
+      "sha256": "9823aaae1b14be9daba597782955ea7ae0a7f034b22afd1255cb92e6c15cad37"
+    },
+    {
+      "file": "admin-700-form.png",
+      "sha256": "8b5184cf723236fd5f75537df4f0592fb60583bec9b5d84eeb1cda2a3169b21e"
+    },
+    {
+      "file": "admin-700-roster.png",
+      "sha256": "4ad6a3cc51ffd6104c06d273486f5ff993efaddb03a269b58344df16d70b7b8d"
+    },
+    {
+      "file": "admin-700.json",
+      "sha256": "e7fe1e5a2aa563e9c40bd7386c4d31c42e2eeb7a639a0fc540d9911168851efe"
+    },
+    {
+      "file": "admin-900-form-popup.png",
+      "sha256": "c6cf7027e68d590ee57fccf2304612411f8eec4154ba6350de74cd3cee054ae5"
+    },
+    {
+      "file": "admin-fixture.json",
+      "sha256": "c705121f38c9ff129b158652741df6bad48e6ea249f766cfaac26070cbff03d0"
+    },
+    {
+      "file": "admin-format.log",
+      "sha256": "e4975f94372a5aa73cccdebf1907e5a9788ddcf40a582f2af306f4c09cce05d0"
+    },
+    {
+      "file": "admin-loading.json",
+      "sha256": "280766e5b14c7b2718c9e71ab0eebbbb5769ccde0da7e89ff305ca27c4f96f65"
+    },
+    {
+      "file": "admin-loading.png",
+      "sha256": "ac1ccf04e69e5e062e97367af7976800765c69f1023e2ccd2ce9859cfa673f6d"
+    },
+    {
+      "file": "admin-login-current.png",
+      "sha256": "084edacefb9619693220b24df2afdc6316026fcbafcafd79b25ae2f832bde10d"
+    },
+    {
+      "file": "admin-safety.log",
+      "sha256": "f9c899ce307ab42212d418119388dc775eb172e2fa472ce96c31fa1dd713af3b"
+    },
+    {
+      "file": "admin-screenshots/activities-1280.png",
+      "sha256": "d54aa47a99ec096ba0fe351337c0d2d58b3f5d42e9732d30810010230a09b2ba"
+    },
+    {
+      "file": "admin-screenshots/activities-1440.png",
+      "sha256": "490f66b1c2ddff368b8f665d0409d5e28700889be46b03ce8188f300884c45c9"
+    },
+    {
+      "file": "admin-screenshots/activities-900.png",
+      "sha256": "2da79358c7155003ebaefe599548f7fd75c237d362d22d40be5edadc5bad85c7"
+    },
+    {
+      "file": "admin-screenshots/dashboard-1280.png",
+      "sha256": "f681f03002811c6f77c3399ff724bda31dd88f0b17a333651b9d52ec710fd7e9"
+    },
+    {
+      "file": "admin-screenshots/dashboard-1440.png",
+      "sha256": "b216b388cf020b19f0b43f28463b4c3cc95effa813705d9d7606b8ac258a4085"
+    },
+    {
+      "file": "admin-screenshots/dashboard-900.png",
+      "sha256": "2c7155b9313293ca028eaca3db00af01923f64a8b86d154fb0c700a9a921e120"
+    },
+    {
+      "file": "admin-screenshots/detail-900.png",
+      "sha256": "2f6401590aa559da5a72a49b4f93d70bdf3179422f79cc1fe077dd5be656a1d9"
+    },
+    {
+      "file": "admin-screenshots/empty-state.png",
+      "sha256": "1876307c2ecd08a39619c75a7faa86bceb5bc02a15c5f0686e66796fc17f8789"
+    },
+    {
+      "file": "admin-screenshots/filter-popup.png",
+      "sha256": "73cd3df8335b4562fdb00ac86be8a897a5a2240149d6278d32ee0a8148e17057"
+    },
+    {
+      "file": "admin-screenshots/form-1440.png",
+      "sha256": "b6207fc8cf58adc35d57e04bd2cbb943aca3c7459bac9914c8317a995d9ca73e"
+    },
+    {
+      "file": "admin-screenshots/form-before-select.png",
+      "sha256": "07d6589f662e7efbdc128e6103b35a71b150509d375be23e613e495423185f43"
+    },
+    {
+      "file": "admin-screenshots/network-error.png",
+      "sha256": "56109f41a9e8a2e81c511aeb4012d09e8ec94afcb9ba23f8457030faafedb7f1"
+    },
+    {
+      "file": "admin-screenshots/publish-dialog.png",
+      "sha256": "640f3979094ffc170e0d9960a4d839add2da5060399d8afd071dc5fb70beebe5"
+    },
+    {
+      "file": "admin-screenshots/registrations-1440.png",
+      "sha256": "8a00a00d862babd3e0a1a9ef1e502679744494d909436d863db03af842a35fa2"
+    },
+    {
+      "file": "admin-student-403.png",
+      "sha256": "b5fe75244191f819e2f6379fbd8c9f5006e6fd8d6eaa40dddb10855530eedc22"
+    },
+    {
+      "file": "admin-web-audit-all.json",
+      "sha256": "1c9e4493707afa828b1ac8b7d5ef994a72848038f5895b8249bb17ad54911575"
+    },
+    {
+      "file": "admin-web-audit-runtime.json",
+      "sha256": "1c9e4493707afa828b1ac8b7d5ef994a72848038f5895b8249bb17ad54911575"
+    },
+    {
+      "file": "admin-web-ci.log",
+      "sha256": "2006e2eec055c1d458914a0921b8ee2df4480a57e0d4a9327791637886923c86"
+    },
+    {
+      "file": "admin-web-run-build.log",
+      "sha256": "4ee37f48f6d4eaa995b4015b57d87d34ebfb7ee3c42cb8e894d10d90c7400fe0"
+    },
+    {
+      "file": "admin-web-run-lint.log",
+      "sha256": "de2f4bd06508bd5fd183c3719e4c7c5d892e7ce80c4e6f9c1f5b9fb7b49a2f3d"
+    },
+    {
+      "file": "admin-web-run-typecheck.log",
+      "sha256": "38146b7f49f94ac463c97b8ec35088691ac5cb68d8cbf892a15085636516aa12"
+    },
+    {
+      "file": "admin-web-test.log",
+      "sha256": "401ceea513acde4e5fd77ea3e2ed3e24a5b6238e4c5218529fefe6a150ce7840"
+    },
+    {
+      "file": "backend-final-check.log",
+      "sha256": "d730dae936943a77c96783878706ddf0fe68c7a82447a5edd661e7e16fa073f5"
+    },
+    {
+      "file": "backend-safety.json",
+      "sha256": "f01dc1bc946b8df28d576669aa4d0bef613a1c9cd7e4bd4d5dc21df1c31943bd"
+    },
+    {
+      "file": "backend-server-resume.log",
+      "sha256": "ec89befa76b67f540213cf9dbbf7a4bc2d6e519eb642b0fffe260770f2ed5960"
+    },
+    {
+      "file": "backend-server.log",
+      "sha256": "4dff218a246fc0895f523cacb51c716f7da391da160242f1e9748f94996ffc61"
+    },
+    {
+      "file": "backend-test-counts.json",
+      "sha256": "d5c61d0fbe0876e5dc23f4731b535751cd01752bda7b06c68688de044708d765"
+    },
+    {
+      "file": "backend-verify.log",
+      "sha256": "886cd0e87e54101c23fafa84c9267c44037c813e3eda224e74466eaec9dd9c3a"
+    },
+    {
+      "file": "browser-e2e.json",
+      "sha256": "a753886b54cb3d859a81f0122d63ad5cc3cf4a569564c3ec5e6908fe3152ec1c"
+    },
+    {
+      "file": "browser-e2e.log",
+      "sha256": "364aabfb6d27a53ab478e0c6d90889bf7c3c1087177cb844c94443697f4ec070"
+    },
+    {
+      "file": "campushub-flyway-full.log",
+      "sha256": "a518331b81fb2377ec76c7263d63941d8282fe185873e386e4e14cda1a675eb0"
+    },
+    {
+      "file": "campushub-flyway.log",
+      "sha256": "4d9f337186d0accfee40f5729f3076a3ead9f1d8d7f2cdbac678ab26e472fd25"
+    },
+    {
+      "file": "campushub_test-flyway-full.log",
+      "sha256": "552fb64eb26d82ca1630f50a9f618d2570a7db2578bd3bfa9dd70019821ddd1d"
+    },
+    {
+      "file": "campushub_test-flyway.log",
+      "sha256": "bc50f84fb783b3342d70269ad1de9ea02168e4e956b45d344853d33f48cac6bb"
+    },
+    {
+      "file": "cleanup.json",
+      "sha256": "d8a113d6c9f9627ecbbd8cf64a793daa5cffd122a587ca78b8ccbc8d2b1351ae"
+    },
+    {
+      "file": "completion.json",
+      "sha256": "e8eab0dfb7a43f25681609ac1447d3de4ee9c9c9c29d31d6b8b5767a817d9abb"
+    },
+    {
+      "file": "cross-client.json",
+      "sha256": "e87d7613671339500f9baeb7c129aef03b4da9a4941b9211fdc9f91a44c84614"
+    },
+    {
+      "file": "database-check.json",
+      "sha256": "28272d62d5032ca5b898c62251474f557a059d539b437332f5d91faf3da8663e"
+    },
+    {
+      "file": "database-check.log",
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    },
+    {
+      "file": "delivery-check.json",
+      "sha256": "8c4b69415b40745c46a2c383dd2718e6a1a4cb7f68e1b02fa9fe38e028d3fb51"
+    },
+    {
+      "file": "engineering.jsonl",
+      "sha256": "e89f8ab038b5ce38984685aa6d98839c23dfe94ebf4780833093bfbe1d5f5abb"
+    },
+    {
+      "file": "historical-evidence-preserved.json",
+      "sha256": "56493af1ff2398240deeaa29b0c18b001d0001d04e1463ac7fa91b27fada76c1"
+    },
+    {
+      "file": "idle-expired.png",
+      "sha256": "6eab02f94dc4d9e174a1c18c2b6fefabd3180fbe922e9d9f4021858f7d04b349"
+    },
+    {
+      "file": "idle-relogin.png",
+      "sha256": "f8fb2a19d37ddade5d59688df6a951042573d5caa17703d980563f789eb16f23"
+    },
+    {
+      "file": "idle-session-interrupted.json",
+      "sha256": "426012dccfa37382f5301a8c164eae2653dcd449cd268e4594a6c3cfb4c244bc"
+    },
+    {
+      "file": "idle-session-resume.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "idle-session.cjs",
+      "sha256": "82e329c16c1c048a278c593f8c5b07b7e63eeb0e89d074bd9deb99caddd20da6"
+    },
+    {
+      "file": "idle-session.json",
+      "sha256": "54cac196d083b3660f674e827f5998d4beeda06a60c36aa55a1d3557aff0418b"
+    },
+    {
+      "file": "idle-session.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "idle-start.json",
+      "sha256": "6348a980edf7d77077527bf86cbee979d0f047dce94e28310c934f306a45ab3e"
+    },
+    {
+      "file": "large-activities.png",
+      "sha256": "f07a9a44d0a033a4887ccacb15931151a673d48f7b9a8de9e8717fef658a493f"
+    },
+    {
+      "file": "large-detail-bottom.png",
+      "sha256": "e47c197cf1ae68d282d8b207822d405740d88ea59ba44e4a96cc7a42238dfd48"
+    },
+    {
+      "file": "large-detail.png",
+      "sha256": "00994096cfe8f5882953ad94455cd9185da79d8cd107fff7375e00bcefa4b58b"
+    },
+    {
+      "file": "large-home.png",
+      "sha256": "799710c43040e7ab7189343c222b6694b32289853994db0142b5fc19fa157829"
+    },
+    {
+      "file": "large-login.png",
+      "sha256": "381472f184bdbe8044132cf49a711b20545a882c7b00c35a093af412a2ad9bbd"
+    },
+    {
+      "file": "large-profile.png",
+      "sha256": "7c16f7089d12671a992fae502e2331c76f773ed97534b6e7c2e2d34891cd6732"
+    },
+    {
+      "file": "large-refresh.png",
+      "sha256": "81a72a9159ffc13d7ccdc6b0fe8aea96e2fb669dbbdc300c9a19a01f5d37789e"
+    },
+    {
+      "file": "large-registrations.png",
+      "sha256": "f91fffe546ce8ca3e24043a305f3b49212a65aa9567f400245cf7550c46212c7"
+    },
+    {
+      "file": "m1.4-b-real-api.json",
+      "sha256": "9f595d6c33e696b9c38d14c66b0be6c1bd3bd2faab61add410af773663515d38"
+    },
+    {
+      "file": "m1.4-b-sql-state.txt",
+      "sha256": "b02f8e544a762f78594ffd7b6c3fed1b11bebc97c012ab07c19d6b09f1d70703"
+    },
+    {
+      "file": "maven-verify.log",
+      "sha256": "7829d40f67131bbe1893c7a164fb4d1eeb6661b7fae685394c30d150bba0343b"
+    },
+    {
+      "file": "mini-double-tap-registered.png",
+      "sha256": "d347f2fe306024ac902e66defd3cf2d8c342a4765aeebf895afa87d0e210f81d"
+    },
+    {
+      "file": "mini-full.png",
+      "sha256": "77e3672059fc3a93854ce05dfb1c929f05e42e3e8eb3dac9f99c0d4d3f3b14dc"
+    },
+    {
+      "file": "mini-logout.png",
+      "sha256": "b4c88448d77f73d80a903a607a20ac33cd404c43d9a9c3635a04c15c1c8d5033"
+    },
+    {
+      "file": "mini-network-restored-home.png",
+      "sha256": "c27848cd1895ddf2d9c1293bb6b9252f354da578a33a292fb4441c8636a082aa"
+    },
+    {
+      "file": "mini-offline-home-desktop.png",
+      "sha256": "ac2d0a975c346b004ece2142d92c395cbbf42503bd695ab655b72ccc3cee29c6"
+    },
+    {
+      "file": "mini-offline-unknown-desktop.png",
+      "sha256": "d766e99c3d55a34f088bfb7cc6b2705e348901ae0da9ceb7a4b5c605605a5ded"
+    },
+    {
+      "file": "mini-real-api.log",
+      "sha256": "09bedb0a7dca12d8cda6a834f62df86a13636dbddf62cc5f3b7c1f74441ec51c"
+    },
+    {
+      "file": "mini-restored-still-unknown.png",
+      "sha256": "8bff3555c8a2d6dc1f1b5e5d0a6f646250ca71c41855c02de5ad103fc7d6914b"
+    },
+    {
+      "file": "mini-scroll-refresh.json",
+      "sha256": "385c6f8e82477aaf1d70eefa389acaffd2ffe34d0a855c6f00bd19f17391d2c4"
+    },
+    {
+      "file": "mini-stale-unpublished-rejected.png",
+      "sha256": "da46b8f2ef995c8b7595ffc66c28bf67d6510ac6d7d3216d3a9b7ab95ef4d5c9"
+    },
+    {
+      "file": "mini-visual.json",
+      "sha256": "7b4d1d30e62027e68d41dc5575f7b40c66259ef8d0fce491ba6201184dc616b9"
+    },
+    {
+      "file": "miniprogram-audit-all.json",
+      "sha256": "3897cc178094ad4311c802a5a302e28c1258d560a44b4b4b02fd8994a8ed03d6"
+    },
+    {
+      "file": "miniprogram-audit-runtime.json",
+      "sha256": "846f4cc3d99b43160a6ba66229fa80ba9fccfd53c892f91463e0b75f396a0c03"
+    },
+    {
+      "file": "miniprogram-ci.log",
+      "sha256": "521944e8c33aeb0140d48ebb5a6b8993ed0d2548fd8acd1ec7bcd18dfb71079e"
+    },
+    {
+      "file": "miniprogram-run-build.log",
+      "sha256": "ce00a93890bcc4ba6d99a715ea56ef13c4e86708679f9e117681d3fab41ddb23"
+    },
+    {
+      "file": "miniprogram-run-lint.log",
+      "sha256": "5878ca4bce03d53885d84f3a1b6695f0df80cba60ffb02f3847e12f6e426220d"
+    },
+    {
+      "file": "miniprogram-run-typecheck.log",
+      "sha256": "0418d1865d923f7a571aa12bfc6386d5b1eb30f9d7fe0abac393898ff5119a54"
+    },
+    {
+      "file": "miniprogram-test.log",
+      "sha256": "eba3efd2721e916aaa1f79e774f917b1dd6273f437953f5386880b5c49c663b9"
+    },
+    {
+      "file": "native-compile.json",
+      "sha256": "d6bd0a4e5f4ecfc55a200dbd5a93c722599567a59a97ac4b4f74c96638544938"
+    },
+    {
+      "file": "package-check.json",
+      "sha256": "645ee00412004e2f3cd5306d93874c08adb0ee474bef9deec106543cba171ba5"
+    },
+    {
+      "file": "package-check.log",
+      "sha256": "895ab998b5d58d3ce7a9f8b1f9d6279bdbe80cda36244ec0b9ce943a3ffb889f"
+    },
+    {
+      "file": "premium-admin.json",
+      "sha256": "688ead8a59e0324056d8ebf4b0ec5436b849095595e2ff00c7a3b6796a909b2a"
+    },
+    {
+      "file": "premium-admin.log",
+      "sha256": "688ead8a59e0324056d8ebf4b0ec5436b849095595e2ff00c7a3b6796a909b2a"
+    },
+    {
+      "file": "premium-mini.json",
+      "sha256": "688ead8a59e0324056d8ebf4b0ec5436b849095595e2ff00c7a3b6796a909b2a"
+    },
+    {
+      "file": "premium-mini.log",
+      "sha256": "688ead8a59e0324056d8ebf4b0ec5436b849095595e2ff00c7a3b6796a909b2a"
+    },
+    {
+      "file": "session-retry-recovered.png",
+      "sha256": "c0f0e506656bc87558745eb4da0cb6f2af37fc0f5277fe3a8ae4db8992c32c3f"
+    },
+    {
+      "file": "session-retry.json",
+      "sha256": "9bc0bf2ae9b6df6a145f60976689868c4eb6ca52c54c685171b980732cb4499c"
+    },
+    {
+      "file": "small-activities.png",
+      "sha256": "76e786d246a3927ae74a74382aeef1b126aa5eabe446114eea35011022a205e3"
+    },
+    {
+      "file": "small-cold-session.png",
+      "sha256": "3493d1befb437de5173438227dd6ed223ba820a7c8e36e2d96734f2a142deaac"
+    },
+    {
+      "file": "small-detail-bottom.png",
+      "sha256": "f033fcd827061a420ba716a92e6c40b6c8d4efb4ea6082b18e9d365460bfeb7d"
+    },
+    {
+      "file": "small-detail.png",
+      "sha256": "55c447a4e707f833d2779353943bf9b5d6eee986a77f5a07ee519edf4f0405cd"
+    },
+    {
+      "file": "small-home.png",
+      "sha256": "07179b3caea26170914e8de3fe30b8dbf3e792794e8c4be5c8c6f6ab540298ae"
+    },
+    {
+      "file": "small-login.png",
+      "sha256": "af5558b944ea28afc84af0042220dd7ef9ad0f01a5aed1099559a11d5b9ffbdd"
+    },
+    {
+      "file": "small-profile.png",
+      "sha256": "005c7715b17b48b8e847328f60cdcb630bf4f3308ab3824c6b0529a2ad7fc0f9"
+    },
+    {
+      "file": "small-registrations.png",
+      "sha256": "bc7333ca112dcd9f01f8a979c0ce82a39514f5c39cf416793587f3ed42e2f350"
+    },
+    {
+      "file": "sql-abnormal.json",
+      "sha256": "066327e449ed207a5a05f2bf791fe9b47a49cc948e30418b2e8eec278c0225c5"
+    },
+    {
+      "file": "sql-cancelled.json",
+      "sha256": "f14609dbb126a435abc609f0604e412636577cac67e65ab1027319e1d745a80b"
+    },
+    {
+      "file": "sql-final.json",
+      "sha256": "8c2831ad6eb8c85d64f49e66f9744fb40a4c568cf258b1cd8874e13be7574627"
+    },
+    {
+      "file": "sql-offline-unchanged.json",
+      "sha256": "95aa2d0930a1666b78759e7a8c31ad9d982a91259ac5513031ec79c905092b09"
+    },
+    {
+      "file": "sql-registered.json",
+      "sha256": "97cc40b3e12ac89923376c8dd9875af947e236eeff77a88b3b1bb0bafa65fc43"
+    },
+    {
+      "file": "sql-republished.json",
+      "sha256": "f703568ccf23a12ee730e2b65b1a71d8fd5aaf1857f0dbf441f71f2847140916"
+    },
+    {
+      "file": "sql-unpublished.json",
+      "sha256": "c067cc24352e9048fb23817d8ab042c35bb73a65fc22de3ed8b898111f40a361"
+    },
+    {
+      "file": "standard-profile.png",
+      "sha256": "dbcc4cad46bc1ee808bbb72f571504b931451d88545ce1a9f633d951e424dfae"
+    },
+    {
+      "file": "standard-registrations.png",
+      "sha256": "c3881d517649ee91aa757f731694d37f462098afe79620d442196a15851bfed0"
+    },
+    {
+      "file": "vite-final-check.log",
+      "sha256": "50f6d712658cf460da3341bc854c98aecff1ddf2caf53cba15161a5c7549a671"
+    },
+    {
+      "file": "vite-server-resume.log",
+      "sha256": "c8c41d53656d88ddb15a6c62d668fc843c092aee5208586d6551781c56a275aa"
+    },
+    {
+      "file": "vite-server.log",
+      "sha256": "fea33149d7fa5770de7e4adcc2e647cf198cdb0b82f2f277b857a05303e79a41"
+    },
+    {
+      "file": "wechat-launch-resume.log",
+      "sha256": "39563c705669d5ba890e1d3769b088d79b8ff4eccd01e1acae04d4c693cd8bcf"
+    },
+    {
+      "file": "wechat-launch.log",
+      "sha256": "58ca3c516e7f825c7db5ea74ffeecb321ce8c8d2956643e6778e2d2a807ffa78"
+    },
+    {
+      "file": "wxml.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "wxss.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

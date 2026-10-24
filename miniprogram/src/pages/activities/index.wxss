@@ -1,0 +1,6 @@
+.search { display: flex; gap: 16rpx; margin: 30rpx 0 20rpx; }
+.search input { flex: 1; min-width: 0; }
+.filters { display: flex; width: max-content; gap: 14rpx; padding-bottom: 18rpx; }
+.filter { font-size: 14px; white-space: nowrap; background: transparent; color: var(--ch-muted); }
+.filter.selected { background: var(--ch-primary); color: var(--ch-surface); }
+.filter-strip { margin-bottom: 20rpx; }

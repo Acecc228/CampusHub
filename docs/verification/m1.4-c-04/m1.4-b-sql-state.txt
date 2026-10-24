@@ -1,0 +1,5 @@
+count_consistency	0
+duplicates	0
+M14B_activities	23
+probe	1
+

@@ -1,0 +1,11 @@
+CHECK actual wx.request Cookie, Set-Cookie, session rotation, CSRF and logout
+CHECK native login page validates empty fields
+CHECK student login via actual input and button
+CHECK activity plaza keyword search, category and native card navigation
+CHECK register with repeated taps commits once and displays confirmed
+CHECK my registrations contain actual current user record
+CHECK native cancellation confirmation then re-registration
+ACTION: confirm the actual simulator cancellation dialog within 120 seconds (desktop UI automation or manual click).
+CHECK search empty state and reset
+CHECK profile server identity, logout and hidden private data
+{"PASS":9,"FAIL":0,"exceptions":0}

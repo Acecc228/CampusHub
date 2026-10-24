@@ -1,0 +1,25 @@
+{
+  "Suite": "com.campushub.ActivityIT",
+  "Tests": 16,
+  "Failures": 0,
+  "Errors": 0,
+  "Skipped": 0,
+  "Cases": [
+    "publishRechecksDeadlineAfterWaitingForRowLock",
+    "keywordUsesLiteralWildcardsAndBoundParameters",
+    "timeOrderingExpiryAndTimezoneRoundTrip",
+    "ownershipIsEnforcedAndAdminCanManageOtherOrganizers",
+    "publishedFieldsFreezeAndInvalidOrStaleTransitionsConflict",
+    "managementRequiresAuthenticationAndRoleAndCsrf",
+    "databaseConstraintsAndUtcStorageAreReal",
+    "listsFilterPaginateAndNeverRevealUnpublishedContent",
+    "lifecycleAndPublicVisibility",
+    "expiredManagerSessionCannotCreateEditPublishOrUnpublish",
+    "invalidInputsAndQueryBoundsAre400",
+    "studentCannotReadOrMutateManagementDetails",
+    "csrfAndLogoutProtectEveryMutation",
+    "simultaneousTransitionsAndEditPublishHaveExactlyOneWinner",
+    "supportedDateExtremesRoundTripWithoutCalendarDrift",
+    "jsonTextAndTimesMustHaveTheirDeclaredTypes"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "Status": "PASS",
+  "CheckedAtUtc": "2026-10-19T10:10:24.1823399Z",
+  "Results": [
+    {
+      "Profile": "dev",
+      "Status": "PASS",
+      "JarSha256": "87CE073C73CAF589B70083CE78B9CE198DE7D45D87D5E016717813DC6D0DBFBE",
+      "Health": 200,
+      "Categories": [
+        {
+          "id": 1,
+          "code": "ACADEMIC",
+          "name": "学术科技",
+          "sortOrder": 10
+        },
+        {
+          "id": 2,
+          "code": "CULTURE_SPORTS",
+          "name": "文体活动",
+          "sortOrder": 20
+        },
+        {
+          "id": 3,
+          "code": "VOLUNTEER",
+          "name": "志愿公益",
+          "sortOrder": 30
+        },
+        {
+          "id": 4,
+          "code": "CAREER",
+          "name": "就业实践",
+          "sortOrder": 40
+        }
+      ],
+      "Protected": 401,
+      "OpenApi": 200,
+      "Authentication": "PASS: 3 logins, 3 identities, 9 role checks, 3 logouts and anonymous 401 checks",
+      "Credential": "campushub_app only",
+      "FlywayEnvironmentPresent": false
+    },
+    {
+      "Profile": "prod",
+      "Status": "PASS",
+      "JarSha256": "87CE073C73CAF589B70083CE78B9CE198DE7D45D87D5E016717813DC6D0DBFBE",
+      "Health": 200,
+      "Categories": [
+        {
+          "id": 1,
+          "code": "ACADEMIC",
+          "name": "学术科技",
+          "sortOrder": 10
+        },
+        {
+          "id": 2,
+          "code": "CULTURE_SPORTS",
+          "name": "文体活动",
+          "sortOrder": 20
+        },
+        {
+          "id": 3,
+          "code": "VOLUNTEER",
+          "name": "志愿公益",
+          "sortOrder": 30
+        },
+        {
+          "id": 4,
+          "code": "CAREER",
+          "name": "就业实践",
+          "sortOrder": 40
+        }
+      ],
+      "Protected": 401,
+      "OpenApi": 401,
+      "Authentication": "DISABLED: demo authentication; authenticated mapping absence covered in integration tests",
+      "Credential": "campushub_app only",
+      "FlywayEnvironmentPresent": false
+    }
+  ],
+  "LegacyUnchanged": true,
+  "ProductionMappingAbsence": "Verified separately by authenticated integration tests"
+}

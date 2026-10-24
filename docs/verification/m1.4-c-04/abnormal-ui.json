@@ -1,0 +1,109 @@
+{
+  "activityId": 642,
+  "title": "M14C04-异常回归-1792810716829",
+  "steps": [
+    {
+      "name": "stale-page-registration-rejected",
+      "at": "2026-10-24T02:59:01.140Z",
+      "status": "PASS",
+      "state": "error",
+      "uncertain": false,
+      "busy": false,
+      "error": "活动不存在"
+    },
+    {
+      "name": "repeat-taps",
+      "at": "2026-10-24T02:59:07.372Z",
+      "status": "PASS",
+      "registration": {
+        "id": 295,
+        "activityId": 642,
+        "userId": 1,
+        "status": "CONFIRMED",
+        "version": 1,
+        "createdAt": "2026-10-24T02:59:06.318392Z",
+        "updatedAt": "2026-10-24T02:59:06.318392Z"
+      },
+      "count": 1
+    },
+    {
+      "name": "logout-private-data-cleared",
+      "at": "2026-10-24T02:59:37.121Z",
+      "status": "PASS",
+      "state": "login",
+      "rows": 0
+    },
+    {
+      "name": "full-before-submit",
+      "at": "2026-10-24T02:59:50.097Z",
+      "status": "PASS",
+      "remaining": 0,
+      "availability": {
+        "label": "名额已满",
+        "enabled": false
+      },
+      "disabled": "true"
+    },
+    {
+      "name": "native-offline-cancel-unknown",
+      "at": "2026-10-24T03:02:33.551Z",
+      "status": "PASS",
+      "mode": "DevTools Network Offline, actual wx.request; SDK screenshot readFile failed while offline",
+      "uncertain": true,
+      "busy": false,
+      "error": "操作结果尚未确认，请先核实报名状态，不要重复提交。"
+    },
+    {
+      "name": "offline-verify-no-replay",
+      "at": "2026-10-24T03:02:33.615Z",
+      "status": "PASS",
+      "uncertain": true,
+      "error": "仍无法核实，请恢复网络后重试。"
+    },
+    {
+      "name": "offline-read-error",
+      "at": "2026-10-24T03:02:37.496Z",
+      "status": "PASS",
+      "state": "error",
+      "items": 0,
+      "error": "无法连接本地服务，请检查后端和模拟器设置。"
+    },
+    {
+      "name": "network-restored-read",
+      "at": "2026-10-24T03:03:17.979Z",
+      "status": "PASS",
+      "state": "ready"
+    },
+    {
+      "name": "old-version-read-keeps-unknown",
+      "at": "2026-10-24T03:03:26.927Z",
+      "status": "PASS",
+      "uncertain": true,
+      "registration": {
+        "id": 295,
+        "activityId": 642,
+        "userId": 1,
+        "status": "CONFIRMED",
+        "version": 1,
+        "createdAt": "2026-10-24T02:59:06.318392Z",
+        "updatedAt": "2026-10-24T02:59:06.318392Z"
+      },
+      "error": "仍无法核实，请恢复网络后重试。"
+    },
+    {
+      "name": "explicit-reauth-recovery",
+      "at": "2026-10-24T03:04:09.258Z",
+      "status": "PASS",
+      "uncertain": false,
+      "registration": {
+        "id": 295,
+        "activityId": 642,
+        "userId": 1,
+        "status": "CONFIRMED",
+        "version": 1,
+        "createdAt": "2026-10-24T02:59:06.318392Z",
+        "updatedAt": "2026-10-24T02:59:06.318392Z"
+      }
+    }
+  ]
+}

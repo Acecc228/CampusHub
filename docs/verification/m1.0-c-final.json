@@ -1,0 +1,60 @@
+{
+  "CheckedAtUtc": "2026-10-19T04:34:04.0817404Z",
+  "Status": "PASS",
+  "Build": "Maven Wrapper verify",
+  "BuildLog": "E:\\Project\\CampusHub\\.local\\backend-logs\\verify-20261019T043054021.log",
+  "Tests": [
+    {
+      "Tests": 2,
+      "Name": "com.campushub.GlobalExceptionHandlerTest",
+      "Failures": 0,
+      "Skipped": 0,
+      "Errors": 0
+    },
+    {
+      "Tests": 10,
+      "Name": "com.campushub.BackendIT",
+      "Failures": 0,
+      "Skipped": 0,
+      "Errors": 0
+    },
+    {
+      "Tests": 2,
+      "Name": "com.campushub.ProductionConfigurationIT",
+      "Failures": 0,
+      "Skipped": 0,
+      "Errors": 0
+    }
+  ],
+  "JarSha256": "0935C1AE6046CA706915CF6F30B2E798CEA72CF6DB93FD6F0927FA77C5C5EB15",
+  "FlywayAndCredentialFilesInJar": 0,
+  "RepositoryCredentialMatches": 0,
+  "RepositoryFilesScanned": 104,
+  "ProbeUnchanged": true,
+  "LegacyMatchesInitialFingerprint": true,
+  "LegacyAfter": {
+    "Name": "MySQL80",
+    "State": "Running",
+    "StartMode": "Auto",
+    "StartName": "NT AUTHORITY\\NetworkService",
+    "PathName": "\"C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\mysqld.exe\" --defaults-file=\"C:\\ProgramData\\MySQL\\MySQL Server 8.0\\my.ini\" MySQL80",
+    "ConfigHash": "1253B6E07E8CF0323D093EE21C50A02FF5B06585B4060C6F18C9C65F91F7263F"
+  },
+  "JavaHomeProcess": "D:\\Android\\androidstudio\\android-studio\\jbr",
+  "JavaHomeUser": "D:\\Android\\androidstudio\\android-studio\\jbr",
+  "JavaHomeMachine": null,
+  "Services": [
+    {
+      "Name": "MySQL80",
+      "State": "Running",
+      "StartMode": "Auto",
+      "StartName": "NT AUTHORITY\\NetworkService"
+    },
+    {
+      "Name": "MySQL84CampusHub",
+      "State": "Running",
+      "StartMode": "Manual",
+      "StartName": "NT AUTHORITY\\LocalService"
+    }
+  ]
+}

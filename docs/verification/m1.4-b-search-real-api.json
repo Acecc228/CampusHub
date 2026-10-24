@@ -1,0 +1,25 @@
+{
+  "adapter": "real Node HTTP using final client",
+  "results": [
+    {
+      "keyword": "O'Reilly",
+      "status": "PASS",
+      "total": 0
+    },
+    {
+      "keyword": "活动 (线上)",
+      "status": "PASS",
+      "total": 0
+    },
+    {
+      "keyword": "你好!",
+      "status": "PASS",
+      "total": 0
+    },
+    {
+      "keyword": "活动..",
+      "status": "PASS",
+      "total": 0
+    }
+  ]
+}

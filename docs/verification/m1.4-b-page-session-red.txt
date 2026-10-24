@@ -1,0 +1,68 @@
+✖ detail.act cannot restore feedback after refresh expires the session (3.3509ms)
+✖ detail.verify cannot restore feedback after refresh expires the session (1.0863ms)
+✖ registrations.cancel cannot restore feedback after refresh expires the session (1.9106ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 0
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 98.2988
+
+✖ failing tests:
+
+test at miniprogram\tests\page-session.test.cjs:8:3
+✖ detail.act cannot restore feedback after refresh expires the session (3.3509ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + '报名已确认，去“我的报名”查看。'
+  - ''
+  
+      at TestContext.<anonymous> (E:\Project\CampusHub\miniprogram\tests\page-session.test.cjs:25:51)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '报名已确认，去“我的报名”查看。',
+    expected: '',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at miniprogram\tests\page-session.test.cjs:8:3
+✖ detail.verify cannot restore feedback after refresh expires the session (1.0863ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + '已核实，请以当前报名状态为准。'
+  - ''
+  
+      at TestContext.<anonymous> (E:\Project\CampusHub\miniprogram\tests\page-session.test.cjs:25:51)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '已核实，请以当前报名状态为准。',
+    expected: '',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at miniprogram\tests\page-session.test.cjs:8:3
+✖ registrations.cancel cannot restore feedback after refresh expires the session (1.9106ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  '已取消报名，记录已保留。' !== ''
+  
+      at TestContext.<anonymous> (E:\Project\CampusHub\miniprogram\tests\page-session.test.cjs:25:51)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '已取消报名，记录已保留。',
+    expected: '',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

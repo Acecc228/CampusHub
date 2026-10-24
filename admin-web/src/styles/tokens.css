@@ -1,0 +1,80 @@
+:root {
+  --ch-primary: #4f46e5;
+  --ch-primary-hover: #4338ca;
+  --ch-primary-soft: #eef0ff;
+  --ch-background: #f6f7fb;
+  --ch-surface: #ffffff;
+  --ch-text: #182239;
+  --ch-muted: #606b80;
+  --ch-border: #e4e7ef;
+  --ch-success: #187658;
+  --ch-success-soft: #eaf6f0;
+  --ch-danger: #b42318;
+  --ch-danger-soft: #fff0ed;
+  --ch-warning: #895516;
+  --ch-warning-soft: #fff5e5;
+  --ch-font: "Segoe UI", "Microsoft YaHei", sans-serif;
+  --ch-display: "Bahnschrift", "Microsoft YaHei", sans-serif;
+  --ch-mono: "Cascadia Code", Consolas, monospace;
+  --ch-radius: 10px;
+  --ch-radius-sm: 6px;
+  --ch-radius-lg: 16px;
+  --ch-space-1: 4px;
+  --ch-space-2: 8px;
+  --ch-space-3: 12px;
+  --ch-space-4: 16px;
+  --ch-space-5: 24px;
+  --ch-space-6: 32px;
+  --ch-space-7: 48px;
+  --ch-shadow: 0 4px 20px rgb(24 34 57 / 3%);
+  --ch-max-width: 1280px;
+  --ch-scroll-thumb: #b8bfd0;
+  --ch-scroll-track: #f6f7fb;
+  --ch-scroll-hover: #8b95ac;
+  --ch-scroll-active: #606b80;
+  --el-color-primary: var(--ch-primary);
+  --el-color-primary-dark-2: var(--ch-primary-hover);
+  --el-color-primary-light-3: #827bea;
+  --el-color-primary-light-5: #a7a2f2;
+  --el-color-primary-light-7: #cecbf8;
+  --el-color-primary-light-8: #dedbfc;
+  --el-color-primary-light-9: var(--ch-primary-soft);
+  --el-color-danger: var(--ch-danger);
+  --el-color-success: var(--ch-success);
+  --el-text-color-primary: var(--ch-text);
+  --el-text-color-regular: var(--ch-muted);
+  --el-border-color: var(--ch-border);
+  --el-border-radius-base: var(--ch-radius);
+  --el-font-family: var(--ch-font);
+  --el-font-size-base: 14px;
+}
+* {
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: var(--ch-scroll-thumb) var(--ch-scroll-track);
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: var(--ch-scroll-track);
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--ch-scroll-thumb);
+  border-radius: var(--ch-radius-sm);
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--ch-scroll-hover);
+}
+*::-webkit-scrollbar-thumb:active {
+  background: var(--ch-scroll-active);
+}
+@media (forced-colors: active) {
+  * {
+    scrollbar-color: auto;
+  }
+  :focus-visible {
+    outline-color: Highlight;
+  }
+}

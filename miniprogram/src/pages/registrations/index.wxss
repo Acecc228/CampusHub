@@ -1,0 +1,3 @@
+.registration-card { border-left: 3px solid var(--ch-primary); }
+.registration-title { font-size: 18px; line-height: 1.5; font-weight: 700; margin: 22rpx 0 12rpx; overflow-wrap: anywhere; }
+.updated { margin: 18rpx 0; }.actions { border-top: 1px dashed var(--ch-border); padding-top: 24rpx; flex-wrap: wrap; }.actions button { flex: 1; }

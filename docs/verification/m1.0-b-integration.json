@@ -1,0 +1,77 @@
+{
+  "CheckedAtUtc": "2026-10-18T23:13:27.6333771Z",
+  "Stage": "M1.0-B real database verification",
+  "Status": "PASS",
+  "Passed": 13,
+  "Failed": 0,
+  "Results": [
+    {
+      "Check": "Instance and legacy baseline",
+      "Status": "PASS",
+      "Detail": "Authenticated root@localhost; 8.4.11, port 3307, approved data directory and partial_revokes=OFF; MySQL80 baseline unchanged."
+    },
+    {
+      "Check": "Schema encoding and empty development schema",
+      "Status": "PASS",
+      "Detail": "Both databases use utf8mb4 / utf8mb4_0900_ai_ci; campushub has no tables."
+    },
+    {
+      "Check": "Account host and authentication settings",
+      "Status": "PASS",
+      "Detail": "Exactly four approved accounts, all @127.0.0.1, caching_sha2_password, non-expired and unlocked."
+    },
+    {
+      "Check": "Credential ACL and independent passwords",
+      "Status": "PASS",
+      "Detail": "Six protected files outside Git; five independent 256-bit generated secrets; no additional allowed Windows identities."
+    },
+    {
+      "Check": "Initial root password invalidated",
+      "Status": "PASS",
+      "Detail": "Old bootstrap root credential rejected with MySQL 1045."
+    },
+    {
+      "Check": "Encrypted authenticated connections",
+      "Status": "PASS",
+      "Detail": "All five current credentials authenticate to the approved instance over TLS."
+    },
+    {
+      "Check": "Migration accounts reject cross-schema access",
+      "Status": "PASS",
+      "Detail": "Both cross-schema connection attempts denied with MySQL 1044; no cross-schema writes attempted."
+    },
+    {
+      "Check": "Bootstrap application accounts reject schema access",
+      "Status": "PASS",
+      "Detail": "Both application accounts authenticate but cannot select either database; USAGE-only policy preserved."
+    },
+    {
+      "Check": "Unicode test target and conflict guard",
+      "Status": "PASS",
+      "Detail": "Only campushub_test on port 3307 can receive fixture writes; table name is unused."
+    },
+    {
+      "Check": "Unicode committed round trip",
+      "Status": "PASS",
+      "Detail": "Committed and read through a new real MySQL connection; text and exact UTF-8 bytes match. One evidence row retained in campushub_test.m10b_unicode_probe."
+    },
+    {
+      "Check": "Transaction rollback in test schema",
+      "Status": "PASS",
+      "Detail": "A new connection sees id=1 only; uncommitted id=2 was rolled back."
+    },
+    {
+      "Check": "Test application has no fixture table access",
+      "Status": "PASS",
+      "Detail": "Existing test table SELECT denied with MySQL 1142; no temporary extra grant was used."
+    },
+    {
+      "Check": "Final MySQL80 baseline",
+      "Status": "PASS",
+      "Detail": "Service state, command, account, startup mode and configuration hash remain unchanged."
+    }
+  ],
+  "Flyway": "NOT_RUN",
+  "Backend": "NOT_RUN",
+  "LegacySql": "NOT_RUN: no connection to the legacy instance"
+}

@@ -1,0 +1,22 @@
+{
+  "Suite": "Bootstrap guards (non-sensitive fixtures; no database)",
+  "Passed": 0,
+  "Failed": 3,
+  "Results": [
+    {
+      "Check": "Read bootstrap record while server holds a write handle",
+      "Status": "FAIL",
+      "ErrorType": "IOException"
+    },
+    {
+      "Check": "Reject missing bootstrap record",
+      "Status": "FAIL",
+      "ErrorType": "RuntimeException"
+    },
+    {
+      "Check": "Reject ambiguous bootstrap records",
+      "Status": "FAIL",
+      "ErrorType": "RuntimeException"
+    }
+  ]
+}

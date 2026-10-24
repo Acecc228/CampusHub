@@ -1,0 +1,11 @@
+SELECT 'instance',@@port,@@version,DATABASE(),CURRENT_USER();
+SELECT 'count_mismatches',COUNT(*) FROM activity a WHERE registered_count<>(SELECT COUNT(*) FROM activity_registration r WHERE r.activity_id=a.id AND r.status='CONFIRMED');
+SELECT 'out_of_capacity',COUNT(*) FROM activity WHERE registered_count<0 OR registered_count>capacity;
+SELECT 'duplicate_pairs',COUNT(*) FROM (SELECT activity_id,user_id FROM activity_registration GROUP BY activity_id,user_id HAVING COUNT(*)>1) d;
+SELECT 'orphan_records',COUNT(*) FROM activity_registration r LEFT JOIN activity a ON a.id=r.activity_id LEFT JOIN app_user u ON u.id=r.user_id WHERE a.id IS NULL OR u.id IS NULL;
+SELECT 'totals',(SELECT COUNT(*) FROM activity),(SELECT COUNT(*) FROM activity_registration),(SELECT COUNT(*) FROM activity_registration WHERE status='CONFIRMED'),(SELECT COUNT(*) FROM app_user);
+SELECT id,status,version,capacity,registered_count,capacity-registered_count AS remaining FROM activity WHERE id=470 OR title LIKE 'M14C02-%' ORDER BY id;
+SELECT r.id,r.activity_id,r.user_id,r.status,r.version FROM activity_registration r JOIN activity a ON a.id=r.activity_id WHERE a.id=470 OR a.title LIKE 'M14C02-%' ORDER BY r.activity_id,r.id;
+SELECT table_name,index_name,non_unique,GROUP_CONCAT(column_name ORDER BY seq_in_index) FROM information_schema.statistics WHERE table_schema=DATABASE() AND table_name='activity_registration' GROUP BY table_name,index_name,non_unique ORDER BY index_name;
+SELECT table_name,constraint_name,constraint_type FROM information_schema.table_constraints WHERE table_schema=DATABASE() AND table_name IN ('activity','activity_registration') ORDER BY table_name,constraint_type,constraint_name;
+SHOW GRANTS;

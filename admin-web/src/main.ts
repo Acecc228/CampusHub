@@ -1,0 +1,11 @@
+import { createApp } from "vue";
+import App from "./App.vue";
+import { router } from "./router";
+import "element-plus/es/components/button/style/css";
+import "element-plus/es/components/select/style/css";
+import "element-plus/es/components/option/style/css";
+import "element-plus/es/components/message/style/css";
+import "element-plus/es/components/message-box/style/css";
+import "./styles/tokens.css";
+import "./styles/app.css";
+createApp(App).use(router).mount("#app");

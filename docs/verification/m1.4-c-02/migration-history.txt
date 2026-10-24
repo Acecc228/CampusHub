@@ -1,0 +1,6 @@
+0	Verified M1.0-B evidence only	NULL	1
+1	V1__create_activity_category.sql	1160888031	1
+2	V2__create_identity_and_roles.sql	436036048	1
+3	V3__create_activity.sql	-852546724	1
+4	V4__create_activity_registration.sql	653386617	1
+

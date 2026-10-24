@@ -1,0 +1,44 @@
+[
+  {
+    "Database": "campushub",
+    "Instance": "127.0.0.1:3307",
+    "MigrationHistory": "1\t1160888031\t1\r\n2\t436036048\t1\r\n3\t-852546724\t1",
+    "Activities": 0,
+    "M12TemporaryUsers": 0,
+    "HistoryFiles": [
+      {
+        "Path": "E:\\Project\\CampusHub\\infra\\mysql\\migrations\\V1__create_activity_category.sql",
+        "Hash": "681BE845D4A9CFBD3DEE68F5BD8EC21BD1FF0A54D53FD5009CD85B287EF9C322"
+      },
+      {
+        "Path": "E:\\Project\\CampusHub\\infra\\mysql\\migrations\\V2__create_identity_and_roles.sql",
+        "Hash": "763886782E308502292485CD972D463FE8C724DC20D69F614B554A7FDC9B64BC"
+      },
+      {
+        "Path": "E:\\Project\\CampusHub\\infra\\mysql\\migrations\\V3__create_activity.sql",
+        "Hash": "AAFA605553CD2D105C40729FB7E9127A29C6F9A2470F6334E005BD72418CAFB1"
+      }
+    ]
+  },
+  {
+    "Database": "campushub_test",
+    "Instance": "127.0.0.1:3307",
+    "MigrationHistory": "0\tNULL\t1\r\n1\t1160888031\t1\r\n2\t436036048\t1\r\n3\t-852546724\t1",
+    "Activities": 0,
+    "M12TemporaryUsers": 0,
+    "HistoryFiles": [
+      {
+        "Path": "E:\\Project\\CampusHub\\infra\\mysql\\migrations\\V1__create_activity_category.sql",
+        "Hash": "681BE845D4A9CFBD3DEE68F5BD8EC21BD1FF0A54D53FD5009CD85B287EF9C322"
+      },
+      {
+        "Path": "E:\\Project\\CampusHub\\infra\\mysql\\migrations\\V2__create_identity_and_roles.sql",
+        "Hash": "763886782E308502292485CD972D463FE8C724DC20D69F614B554A7FDC9B64BC"
+      },
+      {
+        "Path": "E:\\Project\\CampusHub\\infra\\mysql\\migrations\\V3__create_activity.sql",
+        "Hash": "AAFA605553CD2D105C40729FB7E9127A29C6F9A2470F6334E005BD72418CAFB1"
+      }
+    ]
+  }
+]

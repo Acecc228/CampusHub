@@ -1,0 +1,72 @@
+{
+  "Suite": "M1.0-C protection conditions (no database writes)",
+  "Passed": 0,
+  "Failed": 13,
+  "Results": [
+    {
+      "Check": "Empty development database requires no baseline",
+      "Status": "FAIL",
+      "ErrorType": "CommandNotFoundException"
+    },
+    {
+      "Check": "Existing test probe requires explicit baseline option",
+      "Status": "FAIL",
+      "ErrorType": "RuntimeException"
+    },
+    {
+      "Check": "Explicit baseline only admits known test inventory",
+      "Status": "FAIL",
+      "ErrorType": "CommandNotFoundException"
+    },
+    {
+      "Check": "Existing valid history migrates without baseline",
+      "Status": "FAIL",
+      "ErrorType": "CommandNotFoundException"
+    },
+    {
+      "Check": "Reject conflicting inventory: mysql/",
+      "Status": "FAIL",
+      "ErrorType": "RuntimeException"
+    },
+    {
+      "Check": "Reject conflicting inventory: campushub/activity_category",
+      "Status": "FAIL",
+      "ErrorType": "RuntimeException"
+    },
+    {
+      "Check": "Reject conflicting inventory: campushub_test/m10b_unicode_probe,unexpected",
+      "Status": "FAIL",
+      "ErrorType": "RuntimeException"
+    },
+    {
+      "Check": "Reject conflicting inventory: campushub_test/",
+      "Status": "FAIL",
+      "ErrorType": "RuntimeException"
+    },
+    {
+      "Check": "Reject conflicting inventory: campushub/m10b_unicode_probe",
+      "Status": "FAIL",
+      "ErrorType": "RuntimeException"
+    },
+    {
+      "Check": "Credential parser requires exact user and generated secret format",
+      "Status": "FAIL",
+      "ErrorType": "CommandNotFoundException"
+    },
+    {
+      "Check": "Child environment removes inherited migration and datasource secrets",
+      "Status": "FAIL",
+      "ErrorType": "CommandNotFoundException"
+    },
+    {
+      "Check": "Default preview: Invoke-BackendMigration.ps1",
+      "Status": "FAIL",
+      "ErrorType": "CommandNotFoundException"
+    },
+    {
+      "Check": "Default preview: Invoke-Backend.ps1",
+      "Status": "FAIL",
+      "ErrorType": "CommandNotFoundException"
+    }
+  ]
+}

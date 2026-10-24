@@ -1,0 +1,5 @@
+{
+  "Status": "PASS",
+  "Stage": "Application table grants",
+  "NegativePrivilegeTests": "NOT_RUN: require M1.0-B integration tests"
+}

@@ -4,7 +4,33 @@ springdoc:
   swagger-ui:
     enabled: false
 server:
+  forward-headers-strategy: none
   servlet:
     session:
       cookie:
         secure: true
+  tomcat:
+    max-http-form-post-size: 16KB
+    max-swallow-size: 16KB
+spring:
+  datasource:
+    url: ${CH_PROD_DB_URL}
+    username: ${CH_PROD_DB_USERNAME}
+    password: ${CH_PROD_DB_PASSWORD}
+  lifecycle:
+    timeout-per-shutdown-phase: 30s
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+campushub:
+  auth:
+    demo-enabled: false
+  wechat:
+    app-id: ${CH_WECHAT_APP_ID}
+    app-secret: ${CH_WECHAT_APP_SECRET}
+  database:
+    production:
+      name: ${CH_PROD_DB_NAME}
+      account: ${CH_PROD_DB_ACCOUNT}

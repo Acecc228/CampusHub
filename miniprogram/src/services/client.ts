@@ -25,8 +25,8 @@ interface Csrf {
   headerName: string;
   token: string;
 }
-// The sole API origin is deliberately loopback. This build cannot be used on a real device.
-export const API_ORIGIN = "http://127.0.0.1:8080/api/v1";
+import { API_ORIGIN, DEMO_LOGIN } from "./config";
+export { API_ORIGIN } from "./config";
 export function createClient(transport: Transport) {
   let cookie = "";
   let csrf: Csrf | null = null;
@@ -82,7 +82,7 @@ export function createClient(transport: Transport) {
       });
     } catch (error) {
       if (error instanceof ApiError) throw error;
-      throw new ApiError(0, "NETWORK", "无法连接服务，请检查本地后端后重试。");
+      throw new ApiError(0, "NETWORK", "无法连接服务，请检查网络后重试。");
     }
     if (generation !== epoch)
       throw new ApiError(0, "STALE_SESSION", "登录状态已改变，请重新加载。");
@@ -112,6 +112,8 @@ export function createClient(transport: Transport) {
       form = false,
     ): Promise<T> {
       const pathname = path.split("?", 1)[0];
+      if (!DEMO_LOGIN && pathname === "/auth/demo-login")
+        return Promise.reject(new ApiError(0, "DEMO_DISABLED", "此版本不支持演示登录。"));
       if (
         !/^\/[a-zA-Z0-9/_-]+$/.test(pathname) ||
         pathname.startsWith("//") ||
@@ -132,7 +134,7 @@ export function createClient(transport: Transport) {
             generation,
           );
         const value = await send<T>(path, method, data, form, generation);
-        if (path === "/auth/demo-login" || path === "/auth/logout") csrf = null;
+        if (path === "/auth/demo-login" || path === "/auth/wechat-login" || path === "/auth/logout") csrf = null;
         return value;
       });
       queue = result.catch(() => undefined);

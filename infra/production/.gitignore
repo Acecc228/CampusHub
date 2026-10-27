@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+*.cnf
+*.age
+*.env

@@ -1,5 +1,16 @@
 # CampusHub 新对话开发交接
 
+## M1 生产化本地交付完成（2026-10-28，恢复入口）
+
+- 最新授权：完成 M1 正式认证、生产适配、测试和上线准备；允许本地提交，不推送/合并/开放公网/正式部署/微信审核发布。用户已确认正式 AppID/权限、服务器、域名/证书/备案资源**目前都没有**，不要重复索取。
+- 当前独立 worktree `C:\Users\eniaiang\.codex\worktrees\m1-production\CampusHub`，分支 `codex/m1-production`，基于 main `7ba348d`。原 `E:\Project\CampusHub` 的 M2 分支 `4f373ea` 和 v1.0.0 `685066a` 保留。不可把 M2 V5–V7 或源码带入 M1 发布。
+- 最终结论：[生产化验收](verification/m1-production.md)。本地可执行部分PASS，正式部署/微信官方交换/真机/完整恢复BLOCKED，审核发布NOT_RUN；不得宣称上线。设计见 [计划](m1-production-plan.md)，部署步骤见 [部署说明](m1-production-deployment.md)，客户端见 [客户端说明](m1-production-clients.md)。
+- 本机 MySQL84 初始停止，标准 Microsoft 签名 PowerShell UAC 启动成功；MySQL80 未修改。测试库已有 M2 V5–V7，本轮通过 `scripts/Prepare-M1ProductionTest.ps1 -Apply` 私有迁移解析目录迁移/验证 V8，并给 test-app 新映射表 SIU；probe 与 MySQL80 指纹保持。开发库未迁移 V8；旧严格迁移脚本不适用于当前共享测试历史。
+- Sol后端、Terra双端、Astra独立只读审查；主Agent独占数据库写入与最终集成，同时最多2个子Agent。首轮verify失败保留；修复初始化顺序、密码重置撤销、生产配置覆盖后，最终一次verify为23单元+75集成=98项，零失败/错误/跳过。7项微信假上游/真实HTTP+MySQL契约不等于官方微信。
+- Vue14项、小程序最终29项通过；修复明确401后重新登录恢复。两包官方8 WXML/10 WXSS编译通过，最终生产包已重验。真实Edge+Vue生产构建+本地test数据库正式管理登录/创建发布活动845/注销PASS；1440与900截图已检查。真微信/真机/公网TLS未执行。
+- 最终test库418活动/395报名/767用户/9微信映射；计数不一致、超额、重复、未绑定/孤儿映射全0。4项运维单元+1项异地摘要/篡改验证通过；完整加密恢复尚未执行。临时8080/4173进程已清理；MySQL84保持运行，MySQL80未改。
+- GitHub releases API返回空列表：现有v1.0.0标签不是Release页面。远程main/tag与本地保护基线一致；本轮未创建Release/新标签。
+
 更新日期：2026-10-24（北京时间）。工作目录：`E:\Project\CampusHub`。首次 GitHub v1.0.0 正式交付已完成：公开仓库、main、首次提交及版本标签均已实测确认。历史 G01/G02 尚未授权的描述保留为当时记录，以本节最新授权为准。
 
 ## GitHub v1.0.0 正式交付（PASS，已完成并停止）

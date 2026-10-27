@@ -1,0 +1,18 @@
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.420 s -- in com.campushub.auth.AuthenticationFiltersTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.192 s -- in com.campushub.auth.IdentityServiceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.509 s -- in com.campushub.auth.ManagementPasswordTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.269 s -- in com.campushub.auth.ProductionAuthPolicyTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.225 s -- in com.campushub.auth.WechatHttpClientTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s -- in com.campushub.auth.WechatIdentityServiceTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.169 s -- in com.campushub.auth.WechatLoginControllerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s -- in com.campushub.GlobalExceptionHandlerTest
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.72 s -- in com.campushub.ActivityIT
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.502 s -- in com.campushub.AuthenticationIT
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.006 s -- in com.campushub.BackendIT
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.388 s -- in com.campushub.DemoEnvironmentIT
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.752 s -- in com.campushub.FormalDefaultsIT
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.335 s -- in com.campushub.ProductionAuthenticationIT
+[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.91 s -- in com.campushub.RegistrationIT
+[INFO] Tests run: 75, Failures: 0, Errors: 0, Skipped: 0
+[INFO] BUILD SUCCESS

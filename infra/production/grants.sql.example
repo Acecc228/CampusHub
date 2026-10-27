@@ -1,0 +1,19 @@
+-- REVIEW ONLY. Execute on the independently approved production instance after V8.
+-- DBA creates separate app/migrator/operator/backup accounts with unique secrets,
+-- matching hosts and REQUIRE SSL before applying these grants. No local accounts reused.
+GRANT SELECT ON campushub_prod.activity_category TO 'campushub_prod_app'@'localhost';
+GRANT SELECT, INSERT, UPDATE ON campushub_prod.activity TO 'campushub_prod_app'@'localhost';
+GRANT SELECT, INSERT, UPDATE ON campushub_prod.activity_registration TO 'campushub_prod_app'@'localhost';
+GRANT SELECT, INSERT ON campushub_prod.app_user TO 'campushub_prod_app'@'localhost';
+GRANT SELECT ON campushub_prod.app_role TO 'campushub_prod_app'@'localhost';
+GRANT SELECT, INSERT ON campushub_prod.app_user_role TO 'campushub_prod_app'@'localhost';
+GRANT SELECT, INSERT, UPDATE ON campushub_prod.app_wechat_identity TO 'campushub_prod_app'@'localhost';
+
+GRANT SELECT, INSERT, UPDATE ON campushub_prod.app_user TO 'campushub_prod_operator'@'localhost';
+GRANT SELECT ON campushub_prod.app_role TO 'campushub_prod_operator'@'localhost';
+GRANT SELECT, INSERT, DELETE ON campushub_prod.app_user_role TO 'campushub_prod_operator'@'localhost';
+GRANT SELECT ON campushub_prod.* TO 'campushub_prod_backup'@'localhost';
+
+-- Migrator separate process only; no GRANT OPTION, FILE, SUPER or global permissions.
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, ALTER, INDEX, REFERENCES
+ON campushub_prod.* TO 'campushub_prod_migrator'@'localhost';

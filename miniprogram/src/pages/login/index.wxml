@@ -1,8 +1,9 @@
 <view class="page login-page"><view class="login-mark">C</view><view class="eyebrow">YOUR CAMPUS, CONNECTED</view><view class="heading">欢迎来到
 你的校园活动站。</view><view class="muted">登录后发现活动，留住每一次参与。</view>
-  <view class="panel"><view class="section-title">学生演示登录</view><view class="field"><label class="label" for="username">学生账号</label><input id="username" value="{{username}}" bindinput="username" maxlength="100" placeholder="请输入学生演示账号" aria-label="学生账号" disabled="{{busy}}"/></view><view class="field"><label class="label" for="password">密码</label><input id="password" value="{{password}}" bindinput="password" bindconfirm="submit" password maxlength="128" placeholder="请输入密码" aria-label="密码" disabled="{{busy}}" confirm-type="done"/></view>
-  <view wx:if="{{error}}" class="error" aria-live="polite">{{error}}</view><button class="primary" bindtap="submit" loading="{{busy}}" disabled="{{busy}}" hover-class="pressed">{{busy ? '正在登录' : '登录 CampusHub'}}</button></view>
-  <view class="small">本地开发演示 · 仅限微信开发者工具模拟器
+  <view class="panel"><view class="section-title">{{demo ? '学生演示登录' : '学生登录'}}</view><block wx:if="{{demo}}"><view class="field"><label class="label" for="username">学生账号</label><input id="username" value="{{username}}" bindinput="username" maxlength="100" placeholder="请输入学生演示账号" aria-label="学生账号" disabled="{{busy}}"/></view><view class="field"><label class="label" for="password">密码</label><input id="password" value="{{password}}" bindinput="password" bindconfirm="submit" password maxlength="128" placeholder="请输入密码" aria-label="密码" disabled="{{busy}}" confirm-type="done"/></view>
+  </block><view wx:if="{{error}}" class="error" aria-live="polite">{{error}}</view><button class="primary" bindtap="submit" loading="{{busy}}" disabled="{{busy || uncertain}}" hover-class="pressed">{{busy ? '正在登录' : '登录 CampusHub'}}</button><button wx:if="{{uncertain}}" bindtap="verify" disabled="{{busy}}">核实登录状态</button></view>
+  <view wx:if="{{demo}}" class="small">本地开发演示 · 仅限微信开发者工具模拟器
 账号由开发环境提供，此处不会发起微信授权。
 密码与登录凭据只保留在本次运行内存中。</view>
+  <view wx:else class="small">登录时将使用微信登录凭证以确认身份。请查看运营方提供的隐私政策及服务说明。</view>
 </view>

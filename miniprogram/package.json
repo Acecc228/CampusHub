@@ -10,7 +10,8 @@
     "lint": "node scripts/check-static.cjs",
     "build": "tsc && node scripts/build.cjs",
     "test": "npm run build && node --test tests/*.test.cjs",
-    "test:api": "node tests/real-api.cjs"
+    "test:api": "node tests/real-api.cjs",
+    "build:production": "node scripts/build-production.cjs"
   },
   "devDependencies": {
     "miniprogram-api-typings": "5.2.3",

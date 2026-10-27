@@ -1,7 +1,8 @@
+import { DEMO_LOGIN } from "./config";
 import { ApiError, createClient, Transport } from "./client";
 export const wxTransport: Transport = (input) =>
   new Promise((resolve, reject) => {
-    if (wx.getDeviceInfo().platform !== "devtools") {
+    if (DEMO_LOGIN && wx.getDeviceInfo().platform !== "devtools") {
       reject(
         new ApiError(
           0,
@@ -22,7 +23,7 @@ export const wxTransport: Transport = (input) =>
             /timeout/i.test(result.errMsg) ? "TIMEOUT" : "NETWORK",
             /timeout/i.test(result.errMsg)
               ? "请求超时，写入结果需核实。"
-              : "无法连接本地服务，请检查后端和模拟器设置。",
+              : "无法连接服务，请检查网络设置。",
           ),
         ),
     });

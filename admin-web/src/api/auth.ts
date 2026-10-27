@@ -4,11 +4,16 @@ export const authApi = {
   me: () => http.request<Identity>("/auth/me", { quiet401: true }),
   async login(username: string, password: string) {
     http.resetCsrf();
-    await http.request<Identity>("/auth/demo-login", {
-      method: "POST",
-      body: new URLSearchParams({ username, password }),
-      quiet401: true,
-    });
+    await http.request<Identity>(
+      import.meta.env.DEV && import.meta.env.VITE_DEMO_LOGIN === "true"
+        ? "/auth/demo-login"
+        : "/auth/login",
+      {
+        method: "POST",
+        body: new URLSearchParams({ username, password }),
+        quiet401: true,
+      },
+    );
     http.resetCsrf();
     return authApi.me();
   },

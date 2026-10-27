@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "browser": "real Edge headless",
+  "frontend": "production build preview",
+  "backend": "local dev profile / real campushub_test MySQL",
+  "formalLogin": true,
+  "createdPublishedActivityId": 845,
+  "logout": true,
+  "browserErrors": 0,
+  "publicHttps": "NOT_RUN",
+  "wechat": "NOT_RUN"
+}

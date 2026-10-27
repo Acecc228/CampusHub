@@ -108,9 +108,9 @@ class BackendIT extends MySqlIntegrationSupport {
     }
 
     @Test void applicationPurposeRejectsActualTestAccountAndUnknownPurpose() {
-        assertThatThrownBy(() -> new DatabaseIdentityGuard(dataSource, "application").run(null))
+        assertThatThrownBy(() -> new DatabaseIdentityGuard(dataSource, "application", new org.springframework.mock.env.MockEnvironment()).run(null))
                 .isInstanceOf(IllegalStateException.class).hasMessage("Database identity guard rejected the connection");
-        assertThatThrownBy(() -> new DatabaseIdentityGuard(dataSource, "unknown").run(null))
+        assertThatThrownBy(() -> new DatabaseIdentityGuard(dataSource, "unknown", new org.springframework.mock.env.MockEnvironment()).run(null))
                 .isInstanceOf(IllegalStateException.class).hasMessage("Unsupported database purpose");
     }
 

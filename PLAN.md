@@ -1,5 +1,13 @@
 # CampusHub 阶段计划
 
+## 2026-10-27 M1 正式版生产化授权（当前）
+
+以 main `7ba348d` 为基线，在独立 `codex/m1-production` worktree 中推进正式认证、双端生产适配、部署准备与验证。允许本地提交；不合并/推送/开放公网/正式部署/微信提交发布，不引入 M2。旧章节的阶段停止界限属于历史，最新授权见本节。
+
+详细任务、文件归属、验证和恢复点见 [m1-production-plan.md](docs/m1-production-plan.md) 与 [DEV_HANDOFF](docs/DEV_HANDOFF.md)。用户确认所有外部资源目前缺失；完成独立可验证工作后交付阻塞清单，不重复审批普通模块。
+
+2026-10-28：本地实现/验收完成，98后端、Vue14/小程序29、真实Edge正式账号创建发布、官方小程序编译通过；真实生产/官方微信/真机/全库恢复仍BLOCKED，未上线。详见 [生产化验收](docs/verification/m1-production.md)。
+
 ## 当前授权
 
 2026-10-24：用户一次性正式授权首次 commit、创建个人账号 Acecc228 下 Public 仓库 CampusHub、推送 main 与 v1.0.0 标签。此前 G01/G02 的不提交、不推送限制仅为历史阶段范围，本次授权已取代。

@@ -1,0 +1,9 @@
+activity	418
+registration	395
+users	767
+wechat_mapping	9
+count_mismatch	0
+over_capacity	0
+duplicate_registration	0
+unbound_wechat	0
+orphan_wechat	0

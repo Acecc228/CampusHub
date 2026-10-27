@@ -66,6 +66,19 @@ export const session = {
       throw error;
     }
   },
+  async loginWechat(code: string) {
+    http.clear();
+    session.invalidate();
+    await http.request("/auth/wechat-login", "POST", { code });
+    try {
+      return await session.me();
+    } catch (error) {
+      if (error instanceof ApiError && error.code === "STUDENT_ONLY") {
+        try { await http.request("/auth/logout", "POST"); } finally { http.clear(); session.invalidate(); }
+      }
+      throw error;
+    }
+  },
   async logout() {
     // Leave credentials in memory on network failure so the user can retry server-side revocation.
     try {

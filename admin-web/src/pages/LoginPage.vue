@@ -7,6 +7,8 @@ import FormField from "../components/FormField.vue";
 import { currentUser, signIn } from "../composables/auth";
 import { canManage, safeReturnPath } from "../domain/activity";
 import { errorMessage } from "../api/client";
+const demoLogin =
+  import.meta.env.DEV && import.meta.env.VITE_DEMO_LOGIN === "true";
 const props = defineProps<{ recovery?: boolean }>();
 const route = useRoute(),
   router = useRouter();
@@ -19,7 +21,7 @@ const usernameError = ref(""),
 onMounted(() => document.getElementById("username")?.focus());
 async function login() {
   if (busy.value) return;
-  usernameError.value = username.value.trim() ? "" : "请输入演示账号。";
+  usernameError.value = username.value.trim() ? "" : "请输入账号。";
   passwordError.value = password.value ? "" : "请输入密码。";
   if (usernameError.value || passwordError.value) {
     document
@@ -89,9 +91,9 @@ async function login() {
           <div v-if="error" class="notice error" role="alert">{{ error }}</div>
           <FormField
             id="username"
-            label="演示账号"
+            :label="demoLogin ? '演示账号' : '账号'"
             :error="usernameError"
-            help="demo_organizer 或 demo_admin"
+            :help="demoLogin ? 'demo_organizer 或 demo_admin' : undefined"
             required
             v-slot="f"
             ><input
@@ -101,7 +103,7 @@ async function login() {
               :aria-invalid="f.invalid"
               :aria-describedby="f.describedby"
               :disabled="busy"
-              placeholder="输入演示账号"
+              :placeholder="demoLogin ? '输入演示账号' : '输入账号'"
           /></FormField>
           <FormField
             id="password"
@@ -123,7 +125,7 @@ async function login() {
             >登录管理中心</ElButton
           >
         </form>
-        <p class="login-foot">
+        <p v-if="demoLogin" class="login-foot">
           开发环境演示登录<br />仅限组织者和管理员。请使用本机配置的演示账号密码。
         </p>
       </div>

@@ -41,8 +41,13 @@ public final class ProductionAuthPolicy {
             }
             if (!seen.contains("sslMode")) reject();
         } catch (IllegalArgumentException exception) { reject(); }
-        if (!required(env, "campushub.wechat.app-id").matches("wx[a-zA-Z0-9]{16}")
-                || !required(env, "campushub.wechat.app-secret").matches("[a-fA-F0-9]{32}")) reject();
+        if (!required(env, "campushub.wechat.app-id").matches("wx[a-zA-Z0-9]{16}")) reject();
+        if (env.getProperty("campushub.wechat.enabled",Boolean.class,true)) {
+            if (!required(env,"campushub.wechat.app-secret").matches("[a-fA-F0-9]{32}")) reject();
+        } else if (!env.getProperty("campushub.wechat.app-secret","").isBlank()) {
+            // The exchange client fails closed on an empty secret; disabled mode cannot retain one.
+            reject();
+        }
     }
 
     private static void validateEffectiveSettings(Environment env) {

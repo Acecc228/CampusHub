@@ -1,0 +1,11 @@
+{
+  "CloudHttpAcceptance": "PASS",
+  "ReleaseArchiveSha256": "837ea85cbb2a1d14d8eb0a2fbce738dc3c63d414fbc58d523a50065d508ff385",
+  "BackendUnitTests": 24,
+  "FullHistoricalIntegrationRerun": "NOT_RUN",
+  "CloudServiceRegistration": "PASS",
+  "BaseCommit": "28d028e6b9898ef1828d2bd4b0bbcf29818f9d5c",
+  "PublicRelease": "NOT_RUN",
+  "OfficialWechatLogin": "BLOCKED",
+  "RuntimeJarSha256": "992cd8c68184f7327cfed38376c6ef369e0a699ae2db62f1e8376185ab7c6978"
+}

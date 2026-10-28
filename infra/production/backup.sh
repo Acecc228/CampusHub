@@ -20,7 +20,7 @@ output="$CH_BACKUP_DIRECTORY/$CH_BACKUP_DATABASE-$(date -u +%Y%m%dT%H%M%SZ).sql.
 # No --databases / USE / DROP: restore is into a separately created empty schema.
 # Raw diagnostics can contain host/user details; discard, preserve the exit status.
 if ! mysqldump --defaults-file="$CH_BACKUP_DEFAULTS" --protocol=TCP --single-transaction --quick \
-  --no-tablespaces --set-gtid-purged=OFF --skip-add-drop-table --skip-triggers \
+  --no-tablespaces --set-gtid-purged=OFF --skip-add-drop-table --skip-add-locks --skip-triggers \
   --default-character-set=utf8mb4 "$CH_BACKUP_DATABASE" 2>/dev/null \
   | gzip -c | age -r "$CH_BACKUP_RECIPIENT" -o "$output.partial"; then
   echo 'FAIL: backup pipeline; partial encrypted output retained for diagnosis, not valid backup' >&2

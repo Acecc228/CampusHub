@@ -1,5 +1,11 @@
 # CampusHub 新对话开发交接
 
+## 2026-10-28 腾讯云受限试运行已部署
+
+最新用户授权覆盖下方历史“禁止部署”：已实际部署150.158.179.128 Lighthouse，Ubuntu24.04.4/Java21.0.12.1/MySQL官方8.4.13/Nginx1.24.0，独立campushub_prod、V1–V4/V8迁移通过，生产profile、systemd与内部TLS。仅SSH对外；3306/33060/8080/8443均回环。公网域名/公众HTTPS/真实微信AppSecret/学生HTTP链路仍BLOCKED，审核发布NOT_RUN。没有假微信登录。
+
+完整恢复/资源/账号安全位置及本机隧道方法见[云部署验收](verification/m1-lighthouse-deployment.md)。真实HTTPS管理登录、Session/CSRF、创建编辑发布、资源403、注销PASS；独立Java服务层真实MySQL报名/取消PASS，但不等于学生微信HTTP闭环。加密备份恢复到独立空库PASS，定时备份启用；系统更新后整机重启自动恢复PASS。不要重跑首次初始化脚本（会拒绝已有schema）。本轮Git改动只做本地提交，尚未推送。
+
 ## 2026-10-28 双平台上传新授权
 
 用户正式授权codex/m1-production推送及正式小程序开发版本上传，已提供正式AppID；仍无生产API/服务器，备案办理中。新构建build:upload保留正式登录代码、API为空并阻断请求，与旧测试号隔离。执行记录见[双平台上传](verification/m1-dual-upload.md)。禁止main合并、标签变更、M2推送、微信审核发布与生产部署；下方旧“不推送/没有正式AppID”仅为历史状态。

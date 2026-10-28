@@ -28,8 +28,9 @@ campushub:
   auth:
     demo-enabled: false
   wechat:
+    enabled: ${CH_WECHAT_ENABLED:true}
     app-id: ${CH_WECHAT_APP_ID}
-    app-secret: ${CH_WECHAT_APP_SECRET}
+    app-secret: ${CH_WECHAT_APP_SECRET:}
   database:
     production:
       name: ${CH_PROD_DB_NAME}

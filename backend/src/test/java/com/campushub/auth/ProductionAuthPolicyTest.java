@@ -5,6 +5,14 @@ import org.springframework.mock.env.MockEnvironment;
 import static org.assertj.core.api.Assertions.*;
 
 class ProductionAuthPolicyTest {
+    @Test void explicitWechatDisableAllowsNoSecretButRetainsOtherProductionGuards() {
+        var env=valid().withProperty("campushub.wechat.enabled","false").withProperty("campushub.wechat.app-secret","");
+        assertThatCode(()->ProductionAuthPolicy.validate(env)).doesNotThrowAnyException();
+        assertThatThrownBy(()->ProductionAuthPolicy.validate(valid().withProperty("campushub.wechat.enabled","false")))
+                .isInstanceOf(IllegalStateException.class);
+        assertThatThrownBy(()->ProductionAuthPolicy.validate(env.withProperty("server.servlet.session.cookie.secure","false")))
+                .isInstanceOf(IllegalStateException.class);
+    }
     MockEnvironment valid() {
         var env = new MockEnvironment().withProperty("spring.datasource.url", "jdbc:mysql://127.0.0.1:3306/campushub_prod?sslMode=VERIFY_IDENTITY&characterEncoding=UTF-8&connectionTimeZone=UTC")
                 .withProperty("spring.datasource.username", "campushub_prod_app")

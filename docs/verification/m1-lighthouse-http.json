@@ -1,0 +1,14 @@
+{
+  "anonymous401": "PASS",
+  "adminSessionSecureCookie": "PASS",
+  "role403": "PASS",
+  "csrf403": "PASS",
+  "wechatDisabled503": "PASS",
+  "createEditPublish": "PASS",
+  "ownership403": "PASS",
+  "studentPasswordLoginDenied": "PASS",
+  "logout401": "PASS",
+  "activityId": 1,
+  "wechatOfficialLogin": "BLOCKED",
+  "studentHttpLoginAndRegistration": "BLOCKED"
+}

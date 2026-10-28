@@ -12,6 +12,12 @@
 *.msi
 *.pem
 *.key
+*.env
+*.age
+**/.ssh/
+**/acceptance-accounts.json
+**/migration.json
+**/*_restricted_access.json
 **/target/
 **/node_modules/
 **/dist/

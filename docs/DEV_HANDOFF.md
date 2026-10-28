@@ -1,5 +1,11 @@
 # CampusHub 新对话开发交接
 
+## 2026-10-28 部署代码同步与正式域名准备
+
+用户授权将包含bf4f650的codex/m1-production同步GitHub，并准备双域名/HTTPS；不购买域名、不开放公网、不修改main/tag/M2。同步范围为既有部署提交及本轮准备材料，最终SHA以该分支git log/远程HEAD核验为准。已检查527个受跟踪文本并精确比对31项实际凭据，未发现泄露；另补强env/备份/账号/SSH目录忽略规则。原私钥/账号/恢复密钥继续位于仓库外。
+
+云端本轮仅只读检查：服务active、healthUP、内部TLS正常、仅22入站，未安装样例或reload。正式api/admin规划及未执行门槛见[域名准备](public-domain-preparation.md)，未启用样例见infra/production/public-hosts.nginx.example。Vue保留admin同源API、host-only Cookie/CSRF，无需新增跨域凭据CORS；无正式域名/DNS/公众证书/微信AppSecret，公网及微信验证仍未执行。下方历史“尚未推送”指当时状态。
+
 ## 2026-10-28 腾讯云受限试运行已部署
 
 最新用户授权覆盖下方历史“禁止部署”：已实际部署150.158.179.128 Lighthouse，Ubuntu24.04.4/Java21.0.12.1/MySQL官方8.4.13/Nginx1.24.0，独立campushub_prod、V1–V4/V8迁移通过，生产profile、systemd与内部TLS。仅SSH对外；3306/33060/8080/8443均回环。公网域名/公众HTTPS/真实微信AppSecret/学生HTTP链路仍BLOCKED，审核发布NOT_RUN。没有假微信登录。

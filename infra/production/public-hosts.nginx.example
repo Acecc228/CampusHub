@@ -1,0 +1,78 @@
+# PREPARATION ONLY. Never include as-is. Replace every __TOKEN__, obtain real certs,
+# choose operator network CIDR, validate, and obtain authorization before activation.
+# Install within nginx http{}; retain the separate localhost:8443 restricted site.
+log_format campushub_public '$time_iso8601 $host $request_method $uri $status $request_time';
+limit_req_zone $binary_remote_addr zone=ch_api_public:10m rate=10r/s;
+limit_req_zone $binary_remote_addr zone=ch_login_public:10m rate=6r/m;
+
+server {
+    listen 443 ssl default_server;
+    server_name _;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_reject_handshake on;
+}
+
+server {
+    listen 443 ssl;
+    server_name api.__BASE_DOMAIN__;
+    ssl_certificate /etc/letsencrypt/live/campushub-public/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/campushub-public/privkey.pem;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    server_tokens off;
+    client_max_body_size 32k;
+    access_log /var/log/campushub/api-access.log campushub_public;
+    add_header X-Content-Type-Options nosniff always;
+    add_header Referrer-Policy no-referrer always;
+    limit_req_status 429;
+
+    location = /api/v1/auth/demo-login { return 404; }
+    location = /api/v1/auth/login { return 404; }
+    location /api/v1/manage/ { return 404; }
+    location /api/v1/admin/ { return 404; }
+    location /api/v1/organizer/ { return 404; }
+    location = /api/v1/auth/wechat-login {
+        limit_req zone=ch_login_public burst=3 nodelay;
+        include /etc/nginx/snippets/campushub-proxy.conf;
+    }
+    location /api/v1/ {
+        limit_req zone=ch_api_public burst=20 nodelay;
+        include /etc/nginx/snippets/campushub-proxy.conf;
+    }
+    location / { return 404; }
+}
+
+server {
+    listen 443 ssl;
+    server_name admin.__BASE_DOMAIN__;
+    ssl_certificate /etc/letsencrypt/live/campushub-public/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/campushub-public/privkey.pem;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    server_tokens off;
+    root /srv/campushub/current/admin-web;
+    client_max_body_size 32k;
+    access_log /var/log/campushub/admin-access.log campushub_public;
+    allow 127.0.0.1;
+    allow __ADMIN_CIDR__;
+    deny all;
+    add_header X-Content-Type-Options nosniff always;
+    add_header X-Frame-Options DENY always;
+    add_header Referrer-Policy no-referrer always;
+    add_header Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'" always;
+    limit_req_status 429;
+
+    location = /api/v1/auth/demo-login { return 404; }
+    location = /api/v1/auth/wechat-login { return 404; }
+    location = /api/v1/auth/login {
+        limit_req zone=ch_login_public burst=3 nodelay;
+        include /etc/nginx/snippets/campushub-proxy.conf;
+    }
+    location /api/v1/ {
+        limit_req zone=ch_api_public burst=20 nodelay;
+        include /etc/nginx/snippets/campushub-proxy.conf;
+    }
+    location /assets/ { try_files $uri =404; expires 1y; }
+    location /actuator/ { return 404; }
+    location /v3/ { return 404; }
+    location /swagger-ui { return 404; }
+    location / { try_files $uri $uri/ /index.html; }
+}

@@ -30,7 +30,7 @@ Page({
       if (getCurrentPages().length > 1) wx.navigateBack();
       else wx.switchTab({ url: "/pages/home/index" });
     } catch (error) {
-      if (!DEMO_LOGIN && error instanceof ApiError && (error.status === 0 || error.status >= 500)) {
+      if (!DEMO_LOGIN && error instanceof ApiError && error.code !== "API_NOT_CONFIGURED" && (error.status === 0 || error.status >= 500)) {
         this.setData({ uncertain: true, error: "登录结果暂时无法确认，请先核实登录状态。" });
       } else this.setData({ error: errorMessage(error) });
     } finally {

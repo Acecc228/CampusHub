@@ -111,6 +111,8 @@ export function createClient(transport: Transport) {
       data?: unknown,
       form = false,
     ): Promise<T> {
+      if (!API_ORIGIN)
+        return Promise.reject(new ApiError(0, "API_NOT_CONFIGURED", "生产 API 尚未配置，当前开发版本暂不能连接服务。"));
       const pathname = path.split("?", 1)[0];
       if (!DEMO_LOGIN && pathname === "/auth/demo-login")
         return Promise.reject(new ApiError(0, "DEMO_DISABLED", "此版本不支持演示登录。"));

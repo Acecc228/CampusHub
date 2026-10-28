@@ -1,6 +1,22 @@
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const { productionConfig } = require('../scripts/config.cjs');
+
+test('explicit upload-only build has no invented API and still requires formal AppID', () => {
+  assert.deepEqual(productionConfig({CAMPUSHUB_UPLOAD_ONLY:'true',CAMPUSHUB_APPID:'wx1234567890abcdef'}),{apiOrigin:'',appid:'wx1234567890abcdef'});
+  assert.throws(()=>productionConfig({CAMPUSHUB_UPLOAD_ONLY:'true'}));
+  assert.throws(()=>productionConfig({CAMPUSHUB_UPLOAD_ONLY:'true',CAMPUSHUB_APPID:'wx1234567890abcdef',CAMPUSHUB_API_ORIGIN:'https://example.com/api/v1'}));
+});
+
+test('upload-only bundle rejects requests before transport with clear configuration error', async () => {
+  const vm=require('node:vm'),fs=require('node:fs');
+  const module={exports:{}};
+  vm.runInNewContext(fs.readFileSync(require.resolve('../dist/services/client'),'utf8'),{exports:module.exports,require:()=>({API_ORIGIN:'',DEMO_LOGIN:false})});
+  let calls=0;
+  const client=module.exports.createClient(async()=>{calls++;});
+  await assert.rejects(client.request('/auth/csrf'), e=>e.code==='API_NOT_CONFIGURED');
+  assert.equal(calls,0);
+});
 test('production requires HTTPS origin and a valid appid; demo is forbidden', () => {
   for (const env of [{}, { CAMPUSHUB_API_ORIGIN: 'http://example.com/api/v1', CAMPUSHUB_APPID: 'wx1234567890abcdef' }, { CAMPUSHUB_API_ORIGIN: 'https://example.com/api/v1', CAMPUSHUB_APPID: 'wx1234567890abcdef', CAMPUSHUB_DEMO_LOGIN: 'true' }, { CAMPUSHUB_API_ORIGIN: 'https://localhost/api/v1', CAMPUSHUB_APPID: 'wx1234567890abcdef' }]) assert.throws(() => productionConfig(env));
   assert.deepEqual(productionConfig({CAMPUSHUB_API_ORIGIN:'https://campus.example.com/api/v1', CAMPUSHUB_APPID:'wx1234567890abcdef'}), {apiOrigin:'https://campus.example.com/api/v1', appid:'wx1234567890abcdef'});

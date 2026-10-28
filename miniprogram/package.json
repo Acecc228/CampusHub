@@ -11,7 +11,8 @@
     "build": "tsc && node scripts/build.cjs",
     "test": "npm run build && node --test tests/*.test.cjs",
     "test:api": "node tests/real-api.cjs",
-    "build:production": "node scripts/build-production.cjs"
+    "build:production": "node scripts/build-production.cjs",
+    "build:upload": "node scripts/build-upload.cjs"
   },
   "devDependencies": {
     "miniprogram-api-typings": "5.2.3",

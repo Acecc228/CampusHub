@@ -19,5 +19,8 @@ copy(path.join(root, 'src'));
 fs.writeFileSync(path.join(root, 'dist-production/services/config.js'), `"use strict";\nObject.defineProperty(exports, "__esModule", { value: true });\nexports.API_ORIGIN = ${JSON.stringify(config.apiOrigin)};\nexports.DEMO_LOGIN = false;\n`);
 const project = JSON.parse(fs.readFileSync(path.join(root, 'project.config.json'), 'utf8'));
 project.appid = config.appid; project.miniprogramRoot = './'; project.description = 'CampusHub 学生端';
+project.projectname = 'CampusHub-M1-formal';
+project.setting.urlCheck = true;
+project.setting.uploadWithSourceMap = false;
 fs.writeFileSync(path.join(root, 'dist-production', 'project.config.json'), JSON.stringify(project, null, 2) + '\n');
 console.log('PASS: production bundle created; official DevTools compilation is separate.');
